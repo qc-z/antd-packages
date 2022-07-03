@@ -1,6 +1,6 @@
 {
-  "name": "antd-lib",
-  "version": "0.0.1",
+  "name": "antd-packages",
+  "version": "0.0.2",
   "description": "帮助你快速创建react组件库(集成antd)",
   "scripts": {
     "doc:dev": "dumi dev",
@@ -62,11 +62,22 @@
     "father-build": "^1.22.3",
     "lint-staged": "^10.0.7",
     "prettier": "^2.2.1",
+    "prop-types": "^15.8.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "yorkie": "^2.0.0"
   },
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/qc-z/antd-packages"
+  },
+  "sideEffects": [
+    "dist/*",
+    "es/**/style/*",
+    "lib/**/style/*",
+    "*.less"
+  ],
   "browserslist": [
     "> 0.5%",
     "last 2 versions",

@@ -4,9 +4,13 @@ Demo:
 
 ```tsx
 import React from "react";
-import { TooltipButton } from "antd-lib";
+import { TooltipButton } from "antd-packages";
 
-export default () => <TooltipButton tip="tip" placement="bottom">提示</TooltipButton>;
+export default () => (
+  <TooltipButton tip="tip" placement="bottom">
+    提示
+  </TooltipButton>
+);
 ```
 
 More skills for writing demo: https://d.umijs.org/guide/basic#write-component-demo
@@ -17,9 +21,13 @@ Demo:
 
 ```tsx
 import React from "react";
-import { TooltipButton } from "antd-lib";
+import { TooltipButton } from "antd-packages";
 
-export default () => <TooltipButton tip="tip1" placement="bottom">提示1</TooltipButton>;
+export default () => (
+  <TooltipButton tip="tip1" placement="bottom">
+    提示1
+  </TooltipButton>
+);
 ```
 
 More skills for writing demo: https://d.umijs.org/guide/basic#write-component-demo

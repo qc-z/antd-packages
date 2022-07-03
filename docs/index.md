@@ -1,7 +1,7 @@
 ---
 hero:
-  title: antd-lib
-  desc: antd-lib site example
+  title: antd-packages
+  desc: antd-packages site example
   actions:
     - text: Getting Started
       link: /components
@@ -18,4 +18,4 @@ features:
 footer: Open-source MIT Licensed | Copyright © 2020<br />Powered by [dumi](https://d.umijs.org)
 ---
 
-## Hello antd-lib!
+## Hello antd-packages!

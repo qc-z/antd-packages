@@ -1,23 +1,29 @@
-import React from 'react'
-import PropTypes from 'prop-types'
-import { Tooltip, Button } from 'antd'
+import React from "react";
+import PropTypes from "prop-types";
+import { Tooltip, Button } from "antd";
 
-const TooltipButton = (props: { [x: string]: any; children: any; tip: any; placement: any }) => {
-  const { children, tip, placement, ...restProps } = props
+const TooltipButton = (props: {
+  [x: string]: any;
+  children: any;
+  tip: any;
+  placement: any;
+}) => {
+  const { children, tip, placement, ...restProps } = props;
   return (
     <Tooltip title={tip} placement={placement}>
       <Button {...restProps}>{children}</Button>
     </Tooltip>
-  )
-}
+  );
+};
 
 TooltipButton.propTypes = {
   tip: PropTypes.string.isRequired,
-  placement: PropTypes.string.isRequired
-}
+  placement: PropTypes.string.isRequired,
+};
 
 TooltipButton.defaultProps = {
-  placement: 'top'
-}
+  placement: "top",
+};
+TooltipButton.componentName = "MyTooltipButton";
 
-export default TooltipButton
+export default TooltipButton;
