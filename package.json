@@ -89,6 +89,7 @@
     "@typescript-eslint/eslint-plugin": "^5.30.5",
     "@typescript-eslint/parser": "^5.30.5",
     "@umijs/fabric": "^2.12.2",
+    "@umijs/plugin-esbuild": "^1.4.1",
     "@umijs/ssr-darkreader": "^4.9.45",
     "antd-img-crop": "^4.2.3",
     "array-move": "^4.0.0",

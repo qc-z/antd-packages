@@ -20,6 +20,7 @@ export default defineConfig({
   },
   // mfsu
   mfsu: {},
+  esbuild: {},
   extraBabelPlugins: [
     [
       'babel-plugin-import',
