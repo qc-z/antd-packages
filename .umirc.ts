@@ -3,7 +3,7 @@ import { defineConfig } from 'dumi'
 export default defineConfig({
   // 网站描述配置
   mode: 'site',
-  title: 'antd-lib Library',
+  title: 'antd-packages Library',
   favicon: '/images/logo.svg',
   logo: '/images/logo.svg',
   description: '用于快速二次封装antd组件',

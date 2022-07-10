@@ -1,10 +1,10 @@
 ---
-title: 间距 Space
-order: 1
+title: Space 间距
 group:
   title: 布局
+  order: 1
 nav:
-  title: 间距 Space
+  title: Space 间距
   path: /components
 ---
 

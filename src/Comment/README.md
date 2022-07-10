@@ -1,12 +1,12 @@
 ---
-title: 评论 Comment
-order: 4
+title: Comment 评论
 group:
   title: 数据展示
+  order: 4
 nav:
-  title: 评论 Comment
+  title: Comment 评论
   path: /components
----
+--- 
 
 # 评论 Comment
 

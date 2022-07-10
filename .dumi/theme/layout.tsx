@@ -121,7 +121,7 @@ const LayoutPage = ({
     if (!context.meta.title) {
       return '组件'
     }
-    return `${context.meta.title} - ProComponents`
+    return `${context.meta.title} - antd-packages`
   }, [context])
 
   return (

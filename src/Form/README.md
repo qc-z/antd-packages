@@ -1,12 +1,12 @@
 ---
-title: 表单 Form
-order: 3
+title: Form 表单
 group:
   title: 数据录入
+  order: 3
 nav:
-  title: 表单 Form
+  title: Form 表单
   path: /components
----
+--- 
 
 # 表单 Form
 

@@ -1,10 +1,10 @@
 ---
-title: 步骤条 Steps
-order: 2
+title: Steps 步骤条
 group:
   title: 导航
+  order: 2
 nav:
-  title: 步骤条 Steps
+  title: Steps 步骤条
   path: /components
 ---
 

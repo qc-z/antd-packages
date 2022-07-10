@@ -1,10 +1,10 @@
 ---
-title: 时间轴 Timeline
-order: 4
+title: Timeline 时间轴
 group:
   title: 数据展示
+  order: 4
 nav:
-  title: 时间轴 Timeline
+  title: Timeline 时间轴
   path: /components
 ---
 

@@ -1,10 +1,10 @@
 ---
-title: 表格 Table
-order: 4
+title: Table 表格
 group:
   title: 数据展示
+  order: 4
 nav:
-  title: 表格 Table
+  title: Table 表格
   path: /components
 ---
 

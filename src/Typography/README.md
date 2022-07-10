@@ -1,10 +1,10 @@
 ---
-title: 排版 Typography
-order: 0
+title: Typography 排版
 group:
   title: 通用
+  order: 0
 nav:
-  title: 排版 Typography
+  title: Typography 排版
   path: /components
 ---
 

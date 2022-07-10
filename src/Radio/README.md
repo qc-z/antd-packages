@@ -1,10 +1,10 @@
 ---
-title: 单选框 Radio
-order: 3
+title: Radio 单选框
 group:
   title: 数据录入
+  order: 3
 nav:
-  title: 单选框 Radio
+  title: Radio 单选框
   path: /components
 ---
 

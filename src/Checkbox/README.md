@@ -1,12 +1,12 @@
 ---
-title: 多选框 Checkbox
-order: 3
+title: Checkbox 多选框
 group:
   title: 数据录入
+  order: 3
 nav:
-  title: 多选框 Checkbox
+  title: Checkbox 多选框
   path: /components
----
+--- 
 
 # 多选框 Checkbox
 

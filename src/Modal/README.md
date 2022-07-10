@@ -1,10 +1,10 @@
 ---
-title: 对话框 Modal
-order: 5
+title: Modal 对话框
 group:
   title: 反馈
+  order: 5
 nav:
-  title: 对话框 Modal
+  title: Modal 对话框
   path: /components
 ---
 

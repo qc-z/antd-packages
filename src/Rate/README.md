@@ -1,10 +1,10 @@
 ---
-title: 评分 Rate
-order: 3
+title: Rate 评分
 group:
   title: 数据录入
+  order: 3
 nav:
-  title: 评分 Rate
+  title: Rate 评分
   path: /components
 ---
 

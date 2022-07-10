@@ -1,12 +1,12 @@
 ---
-title: 数字输入框 InputNumber
-order: 3
+title: InputNumber 数字输入框
 group:
   title: 数据录入
+  order: 3
 nav:
-  title: 数字输入框 InputNumber
+  title: InputNumber 数字输入框
   path: /components
----
+--- 
 
 # 数字输入框 InputNumber
 

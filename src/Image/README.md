@@ -1,12 +1,12 @@
 ---
-title: 图片 Image
-order: 4
+title: Image 图片
 group:
   title: 数据展示
+  order: 4
 nav:
-  title: 图片 Image
+  title: Image 图片
   path: /components
----
+--- 
 
 # 图片 Image
 

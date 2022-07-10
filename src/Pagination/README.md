@@ -1,10 +1,10 @@
 ---
-title: 分页 Pagination
-order: 2
+title: Pagination 分页
 group:
   title: 导航
+  order: 2
 nav:
-  title: 分页 Pagination
+  title: Pagination 分页
   path: /components
 ---
 

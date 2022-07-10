@@ -1,12 +1,12 @@
 ---
-title: 描述列表 Descriptions
-order: 4
+title: Descriptions 描述列表
 group:
   title: 数据展示
+  order: 4
 nav:
-  title: 描述列表 Descriptions
+  title: Descriptions 描述列表
   path: /components
----
+--- 
 
 # 描述列表 Descriptions
 

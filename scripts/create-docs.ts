@@ -348,22 +348,21 @@ function fixMd() {
       'utf-8'
     )
     const data = matter(md)
+    if (!data?.data) continue
+
     const formatter = `---
-title: ${data?.data?.title.split(' ')[1]} ${
-      data?.data?.title.split(' ')[0]
+title: ${data?.data?.title?.split(' ')[1]} ${
+      data?.data?.title?.split(' ')[0]
     }
 group:
   title: ${data?.data?.group?.title}
   order: ${data?.data?.order}
 nav:
-  title: ${data?.data?.title.split(' ')[1]} ${
-      data?.data?.title.split(' ')[0]
+  title: ${data?.data?.title?.split(' ')[1]} ${
+      data?.data?.title?.split(' ')[0]
     }
   path: /components
 --- `
-    console.log(formatter)
-    console.log(data.data)
-
     //     const result = `${formatter}\n# ${data?.data?.subtitle} ${data?.data?.title}\n${data.content}`
     //     const pure = result
     //       .split('```tsx')
@@ -375,7 +374,7 @@ nav:
     // 重新编译为dumi readme需要的格式
     fs.writeFileSync(
       path.join(`src/${[name]}/README.md`),
-      formatter,
+      `${formatter}\n${data.content}`,
       'utf-8'
     )
   }
@@ -395,4 +394,4 @@ nav:
 // removeMd()
 
 // bug 重新处理md数据
-fixMd()
+// fixMd()

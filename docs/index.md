@@ -1,22 +1,20 @@
 ---
 hero:
-  # title: dumi
-  # desc: dumi site example
   actions:
-    - text: 快速上手
-      link: /components
+    - text: 快速开始 →
+      link: /introduce/quick-start
 features:
-  - icon: https://gw.alipayobjects.com/zos/bmw-prod/881dc458-f20b-407b-947a-95104b5ec82b/k79dm8ih_w144_h144.png
-    title: 开箱即用
-    desc: 考究的默认配置和约定式的目录结构，帮助开发者零成本上手，让所有注意力都能放在文档编写和组件开发上
+  - icon: https://mdn.alipayobjects.com/yuyan_qk0oxh/afts/img/q48YQ5X4ytAAAAAAAAAAAAAAFl94AQBr
+    title: 简单易用
+    desc: 在 Ant Design 上进行了自己的封装，更加易用
 
-  - icon: https://gw.alipayobjects.com/zos/bmw-prod/d60657df-0822-4631-9d7c-e7a869c2f21c/k79dmz3q_w126_h126.png
-    title: 为组件开发而生
-    desc: 丰富的 Markdown 扩展，不止于渲染组件 demo，使得组件的文档不仅易于编写、管理，还好看、好用
+  - icon: https://mdn.alipayobjects.com/yuyan_qk0oxh/afts/img/Y_NMQKxw7OgAAAAAAAAAAAAAFl94AQBr
+    title: 预设样式
+    desc: 样式风格与 antd 一脉相承，无需魔改，浑然天成
 
-  - icon: https://gw.alipayobjects.com/zos/bmw-prod/d1ee0c6f-5aed-4a45-a507-339a4bfe076c/k7bjsocq_w144_h144.png
-    title: 主题系统
-    desc: 渐进式的自定义主题能力，小到扩展自己的 Markdown 标签，大到自定义完整主题包，全由你定
+  - icon: https://gw.alipayobjects.com/zos/antfincdn/Eb8IHpb9jE/Typescript_logo_2020.svg
+    title: TypeScript
+    desc: 使用 TypeScript 开发，提供完整的类型定义文件。
 
 footer: Open-source MIT Licensed | Copyright © 2022
 ---

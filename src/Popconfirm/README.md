@@ -1,10 +1,10 @@
 ---
-title: 气泡确认框 Popconfirm
-order: 5
+title: Popconfirm 气泡确认框
 group:
   title: 反馈
+  order: 5
 nav:
-  title: 气泡确认框 Popconfirm
+  title: Popconfirm 气泡确认框
   path: /components
 ---
 

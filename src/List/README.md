@@ -1,10 +1,10 @@
 ---
-title: 列表 List
-order: 4
+title: List 列表
 group:
   title: 数据展示
+  order: 4
 nav:
-  title: 列表 List
+  title: List 列表
   path: /components
 ---
 

@@ -1,10 +1,10 @@
 ---
-title: 标签 Tag
-order: 4
+title: Tag 标签
 group:
   title: 数据展示
+  order: 4
 nav:
-  title: 标签 Tag
+  title: Tag 标签
   path: /components
 ---
 

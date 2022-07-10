@@ -1,12 +1,12 @@
 ---
-title: 输入框 Input
-order: 3
+title: Input 输入框
 group:
   title: 数据录入
+  order: 3
 nav:
-  title: 输入框 Input
+  title: Input 输入框
   path: /components
----
+--- 
 
 # 输入框 Input
 

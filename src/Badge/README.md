@@ -1,12 +1,12 @@
 ---
-title: 徽标数 Badge
-order: 4
+title: Badge 徽标数
 group:
   title: 数据展示
+  order: 4
 nav:
-  title: 徽标数 Badge
+  title: Badge 徽标数
   path: /components
----
+--- 
 
 # 徽标数 Badge
 

@@ -1,10 +1,10 @@
 ---
-title: 头像 Avatar
-order: 4
+title: Avatar 头像
 group:
   title: 数据展示
+  order: 4
 nav:
-  title: 头像 Avatar
+  title: Avatar 头像
   path: /components
 ---
 

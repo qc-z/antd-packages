@@ -1,10 +1,10 @@
 ---
-title: 页头 PageHeader
-order: 2
+title: PageHeader 页头
 group:
   title: 导航
+  order: 2
 nav:
-  title: 页头 PageHeader
+  title: PageHeader 页头
   path: /components
 ---
 

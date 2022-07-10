@@ -1,10 +1,10 @@
 ---
-title: 穿梭框 Transfer
-order: 3
+title: Transfer 穿梭框
 group:
   title: 数据录入
+  order: 3
 nav:
-  title: 穿梭框 Transfer
+  title: Transfer 穿梭框
   path: /components
 ---
 

@@ -1,10 +1,10 @@
 ---
-title: 布局 Layout
-order: 1
+title: Layout 布局
 group:
   title: 布局
+  order: 1
 nav:
-  title: 布局 Layout
+  title: Layout 布局
   path: /components
 ---
 

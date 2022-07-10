@@ -1,10 +1,10 @@
 ---
-title: 警告提示 Alert
-order: 5
+title: Alert 警告提示
 group:
   title: 反馈
+  order: 5
 nav:
-  title: 警告提示 Alert
+  title: Alert 警告提示
   path: /components
 ---
 

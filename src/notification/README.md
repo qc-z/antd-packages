@@ -1,10 +1,10 @@
 ---
-title: 通知提醒框 Notification
-order: 5
+title: Notification 通知提醒框
 group:
   title: 反馈
+  order: 5
 nav:
-  title: 通知提醒框 Notification
+  title: Notification 通知提醒框
   path: /components
 ---
 

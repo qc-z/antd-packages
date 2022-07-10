@@ -1,10 +1,10 @@
 ---
-title: 进度条 Progress
-order: 5
+title: Progress 进度条
 group:
   title: 反馈
+  order: 5
 nav:
-  title: 进度条 Progress
+  title: Progress 进度条
   path: /components
 ---
 

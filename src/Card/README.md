@@ -1,12 +1,12 @@
 ---
-title: 卡片 Card
-order: 4
+title: Card 卡片
 group:
   title: 数据展示
+  order: 4
 nav:
-  title: 卡片 Card
+  title: Card 卡片
   path: /components
----
+--- 
 
 # 卡片 Card
 

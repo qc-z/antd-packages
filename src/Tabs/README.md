@@ -1,10 +1,10 @@
 ---
-title: 标签页 Tabs
-order: 4
+title: Tabs 标签页
 group:
   title: 数据展示
+  order: 4
 nav:
-  title: 标签页 Tabs
+  title: Tabs 标签页
   path: /components
 ---
 

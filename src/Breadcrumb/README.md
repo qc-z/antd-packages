@@ -1,12 +1,12 @@
 ---
-title: 面包屑 Breadcrumb
-order: 2
+title: Breadcrumb 面包屑
 group:
   title: 导航
+  order: 2
 nav:
-  title: 面包屑 Breadcrumb
+  title: Breadcrumb 面包屑
   path: /components
----
+--- 
 
 # 面包屑 Breadcrumb
 

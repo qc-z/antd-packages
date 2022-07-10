@@ -1,10 +1,10 @@
 ---
-title: 统计数值 Statistic
-order: 4
+title: Statistic 统计数值
 group:
   title: 数据展示
+  order: 4
 nav:
-  title: 统计数值 Statistic
+  title: Statistic 统计数值
   path: /components
 ---
 

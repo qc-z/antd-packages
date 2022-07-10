@@ -1,12 +1,12 @@
 ---
-title: 分割线 Divider
-order: 1
+title: Divider 分割线
 group:
   title: 布局
+  order: 1
 nav:
-  title: 分割线 Divider
+  title: Divider 分割线
   path: /components
----
+--- 
 
 # 分割线 Divider
 

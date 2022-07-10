@@ -1,10 +1,10 @@
 ---
-title: 自动完成 AutoComplete
-order: 3
+title: AutoComplete 自动完成
 group:
   title: 数据录入
+  order: 3
 nav:
-  title: 自动完成 AutoComplete
+  title: AutoComplete 自动完成
   path: /components
 ---
 

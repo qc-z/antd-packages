@@ -1,12 +1,12 @@
 ---
-title: 下拉菜单 Dropdown
-order: 2
+title: Dropdown 下拉菜单
 group:
   title: 导航
+  order: 2
 nav:
-  title: 下拉菜单 Dropdown
+  title: Dropdown 下拉菜单
   path: /components
----
+--- 
 
 # 下拉菜单 Dropdown
 

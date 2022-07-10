@@ -1,12 +1,12 @@
 ---
-title: 全局化配置 ConfigProvider
-order: 6
+title: ConfigProvider 全局化配置
 group:
   title: 其他
+  order: 6
 nav:
-  title: 全局化配置 ConfigProvider
+  title: ConfigProvider 全局化配置
   path: /components
----
+--- 
 
 # 全局化配置 ConfigProvider
 

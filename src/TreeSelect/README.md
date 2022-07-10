@@ -1,10 +1,10 @@
 ---
-title: 树选择 TreeSelect
-order: 3
+title: TreeSelect 树选择
 group:
   title: 数据录入
+  order: 3
 nav:
-  title: 树选择 TreeSelect
+  title: TreeSelect 树选择
   path: /components
 ---
 

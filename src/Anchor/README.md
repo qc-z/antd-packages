@@ -1,10 +1,10 @@
 ---
-title: 锚点 Anchor
-order: 6
+title: Anchor 锚点
 group:
   title: 其他
+  order: 6
 nav:
-  title: 锚点 Anchor
+  title: Anchor 锚点
   path: /components
 ---
 

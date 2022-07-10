@@ -1,10 +1,10 @@
 ---
-title: 时间选择框 TimePicker
-order: 3
+title: TimePicker 时间选择框
 group:
   title: 数据录入
+  order: 3
 nav:
-  title: 时间选择框 TimePicker
+  title: TimePicker 时间选择框
   path: /components
 ---
 

@@ -1,12 +1,12 @@
 ---
-title: 折叠面板 Collapse
-order: 4
+title: Collapse 折叠面板
 group:
   title: 数据展示
+  order: 4
 nav:
-  title: 折叠面板 Collapse
+  title: Collapse 折叠面板
   path: /components
----
+--- 
 
 # 折叠面板 Collapse
 

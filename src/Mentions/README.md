@@ -1,10 +1,10 @@
 ---
-title: 提及 Mentions
-order: 3
+title: Mentions 提及
 group:
   title: 数据录入
+  order: 3
 nav:
-  title: 提及 Mentions
+  title: Mentions 提及
   path: /components
 ---
 

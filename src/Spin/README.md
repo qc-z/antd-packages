@@ -1,10 +1,10 @@
 ---
-title: 加载中 Spin
-order: 5
+title: Spin 加载中
 group:
   title: 反馈
+  order: 5
 nav:
-  title: 加载中 Spin
+  title: Spin 加载中
   path: /components
 ---
 

@@ -1,10 +1,10 @@
 ---
-title: 导航菜单 Menu
-order: 2
+title: Menu 导航菜单
 group:
   title: 导航
+  order: 2
 nav:
-  title: 导航菜单 Menu
+  title: Menu 导航菜单
   path: /components
 ---
 
@@ -43,9 +43,11 @@ const items = [
     ]
   }
 ]
-return <Menu items={items} />
+return (
+  <Menu items={items} />
 
-// <4.20.0 可用，>=4.20.0 时不推荐 🙅🏻‍♀️
+  // <4.20.0 可用，>=4.20.0 时不推荐 🙅🏻‍♀️
+)
 ;<Menu>
   <Menu.Item>菜单项一</Menu.Item>
   <Menu.Item>菜单项二</Menu.Item>

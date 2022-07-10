@@ -1,10 +1,10 @@
 ---
-title: 树形控件 Tree
-order: 4
+title: Tree 树形控件
 group:
   title: 数据展示
+  order: 4
 nav:
-  title: 树形控件 Tree
+  title: Tree 树形控件
   path: /components
 ---
 

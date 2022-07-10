@@ -1,12 +1,12 @@
 ---
-title: 走马灯 Carousel
-order: 4
+title: Carousel 走马灯
 group:
   title: 数据展示
+  order: 4
 nav:
-  title: 走马灯 Carousel
+  title: Carousel 走马灯
   path: /components
----
+--- 
 
 # 走马灯 Carousel
 

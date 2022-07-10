@@ -1,10 +1,10 @@
 ---
-title: 骨架屏 Skeleton
-order: 5
+title: Skeleton 骨架屏
 group:
   title: 反馈
+  order: 5
 nav:
-  title: 骨架屏 Skeleton
+  title: Skeleton 骨架屏
   path: /components
 ---
 

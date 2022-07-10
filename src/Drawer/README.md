@@ -1,12 +1,12 @@
 ---
-title: 抽屉 Drawer
-order: 5
+title: Drawer 抽屉
 group:
   title: 反馈
+  order: 5
 nav:
-  title: 抽屉 Drawer
+  title: Drawer 抽屉
   path: /components
----
+--- 
 
 # 抽屉 Drawer
 

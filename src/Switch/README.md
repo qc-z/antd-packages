@@ -1,10 +1,10 @@
 ---
-title: 开关 Switch
-order: 3
+title: Switch 开关
 group:
   title: 数据录入
+  order: 3
 nav:
-  title: 开关 Switch
+  title: Switch 开关
   path: /components
 ---
 

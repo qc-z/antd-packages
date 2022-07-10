@@ -1,10 +1,10 @@
 ---
-title: 结果 Result
-order: 5
+title: Result 结果
 group:
   title: 反馈
+  order: 5
 nav:
-  title: 结果 Result
+  title: Result 结果
   path: /components
 ---
 

@@ -1,10 +1,10 @@
 ---
-title: 气泡卡片 Popover
-order: 4
+title: Popover 气泡卡片
 group:
   title: 数据展示
+  order: 4
 nav:
-  title: 气泡卡片 Popover
+  title: Popover 气泡卡片
   path: /components
 ---
 

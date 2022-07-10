@@ -1,12 +1,12 @@
 ---
-title: 日历 Calendar
-order: 4
+title: Calendar 日历
 group:
   title: 数据展示
+  order: 4
 nav:
-  title: 日历 Calendar
+  title: Calendar 日历
   path: /components
----
+--- 
 
 # 日历 Calendar
 

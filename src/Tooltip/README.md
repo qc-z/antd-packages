@@ -1,10 +1,10 @@
 ---
-title: 文字提示 Tooltip
-order: 4
+title: Tooltip 文字提示
 group:
   title: 数据展示
+  order: 4
 nav:
-  title: 文字提示 Tooltip
+  title: Tooltip 文字提示
   path: /components
 ---
 

@@ -1,12 +1,12 @@
 ---
-title: 日期选择框 DatePicker
-order: 3
+title: DatePicker 日期选择框
 group:
   title: 数据录入
+  order: 3
 nav:
-  title: 日期选择框 DatePicker
+  title: DatePicker 日期选择框
   path: /components
----
+--- 
 
 # 日期选择框 DatePicker
 

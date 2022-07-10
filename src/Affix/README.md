@@ -1,10 +1,10 @@
 ---
-title: 固钉 Affix
-order: 2
+title: Affix 固钉
 group:
   title: 导航
+  order: 2
 nav:
-  title: 固钉 Affix
+  title: Affix 固钉
   path: /components
 ---
 

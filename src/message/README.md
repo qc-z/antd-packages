@@ -1,10 +1,10 @@
 ---
-title: 全局提示 Message
-order: 5
+title: Message 全局提示
 group:
   title: 反馈
+  order: 5
 nav:
-  title: 全局提示 Message
+  title: Message 全局提示
   path: /components
 ---
 

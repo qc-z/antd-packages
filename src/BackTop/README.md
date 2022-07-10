@@ -1,10 +1,10 @@
 ---
-title: 回到顶部 BackTop
-order: 6
+title: BackTop 回到顶部
 group:
   title: 其他
+  order: 6
 nav:
-  title: 回到顶部 BackTop
+  title: BackTop 回到顶部
   path: /components
 ---
 

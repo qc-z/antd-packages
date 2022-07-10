@@ -1,10 +1,10 @@
 ---
-title: 分段控制器 Segmented
-order: 4
+title: Segmented 分段控制器
 group:
   title: 数据展示
+  order: 4
 nav:
-  title: 分段控制器 Segmented
+  title: Segmented 分段控制器
   path: /components
 ---
 

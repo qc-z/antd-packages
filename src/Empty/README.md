@@ -1,12 +1,12 @@
 ---
-title: 空状态 Empty
-order: 4
+title: Empty 空状态
 group:
   title: 数据展示
+  order: 4
 nav:
-  title: 空状态 Empty
+  title: Empty 空状态
   path: /components
----
+--- 
 
 # 空状态 Empty
 

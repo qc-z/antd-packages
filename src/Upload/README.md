@@ -1,10 +1,10 @@
 ---
-title: 上传 Upload
-order: 3
+title: Upload 上传
 group:
   title: 数据录入
+  order: 3
 nav:
-  title: 上传 Upload
+  title: Upload 上传
   path: /components
 ---
 

@@ -1,10 +1,10 @@
 ---
-title: 选择器 Select
-order: 3
+title: Select 选择器
 group:
   title: 数据录入
+  order: 3
 nav:
-  title: 选择器 Select
+  title: Select 选择器
   path: /components
 ---
 

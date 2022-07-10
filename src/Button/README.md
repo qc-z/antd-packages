@@ -1,13 +1,12 @@
 ---
-title: 按钮 Button
-order: 0
+title: Button 按钮
 group:
   title: 通用
   order: 0
 nav:
-  title: 按钮 Button
+  title: Button 按钮
   path: /components
----
+--- 
 
 # 按钮 Button
 

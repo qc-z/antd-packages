@@ -1,10 +1,10 @@
 ---
-title: 滑动输入条 Slider
-order: 3
+title: Slider 滑动输入条
 group:
   title: 数据录入
+  order: 3
 nav:
-  title: 滑动输入条 Slider
+  title: Slider 滑动输入条
   path: /components
 ---
 

@@ -1,12 +1,12 @@
 ---
-title: 级联选择 Cascader
-order: 3
+title: Cascader 级联选择
 group:
   title: 数据录入
+  order: 3
 nav:
-  title: 级联选择 Cascader
+  title: Cascader 级联选择
   path: /components
----
+--- 
 
 # 级联选择 Cascader
 
