@@ -12,7 +12,7 @@ order: 0
 
 <h1 align="center">antd packages</h1>
 
-<div align="center">
+<div>
 
 一套企业级 UI 设计语言和 React 组件库。
 
