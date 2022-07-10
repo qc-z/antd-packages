@@ -1,24 +1,27 @@
 export default {
-  entry: "src/index.ts",
-  esm: "babel",
-  cjs: "babel",
+  entry: 'src/index.ts',
+  esm: 'babel',
+  cjs: 'babel',
   umd: {
-    name: "antd-lib",
+    name: 'antd-packages',
     globals: {
-      react: "React",
-      antd: "antd",
-      "react-dom": "ReactDOM",
-    },
+      react: 'React',
+      antd: 'antd',
+      'react-dom': 'ReactDOM'
+    }
   },
-  extraExternals: ["antd"],
+  extraExternals: ['antd'],
   extractCSS: true,
   lessInBabelMode: true,
   extraRollupPlugins: [],
   extraBabelPlugins: [
-    ['babel-plugin-import', {
-      libraryName: 'antd',
-      libraryDirectory: 'es',
-      style: true,
-    }],
+    [
+      'babel-plugin-import',
+      {
+        libraryName: 'antd',
+        libraryDirectory: 'es',
+        style: true
+      }
+    ]
   ]
-};
+}

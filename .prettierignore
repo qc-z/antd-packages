@@ -1,7 +1,13 @@
 **/*.svg
 **/*.ejs
 **/*.html
+**/*.hbs
 package.json
 .umi
 .umi-production
 .umi-test
+dist
+doc-dist
+lib
+es
+node_modules
