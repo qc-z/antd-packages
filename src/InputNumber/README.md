@@ -6,7 +6,7 @@ group:
 nav:
   title: InputNumber 数字输入框
   path: /components
---- 
+---
 
 # 数字输入框 InputNumber
 

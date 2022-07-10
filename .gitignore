@@ -22,6 +22,8 @@
 .umi-production
 .umi-test
 .env.local
+src/.umi
+src/.umi-production
 
 # ide
 /.vscode

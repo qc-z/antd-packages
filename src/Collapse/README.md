@@ -6,7 +6,7 @@ group:
 nav:
   title: Collapse 折叠面板
   path: /components
---- 
+---
 
 # 折叠面板 Collapse
 

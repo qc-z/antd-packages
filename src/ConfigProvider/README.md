@@ -6,7 +6,7 @@ group:
 nav:
   title: ConfigProvider 全局化配置
   path: /components
---- 
+---
 
 # 全局化配置 ConfigProvider
 

@@ -6,7 +6,7 @@ group:
 nav:
   title: Image 图片
   path: /components
---- 
+---
 
 # 图片 Image
 

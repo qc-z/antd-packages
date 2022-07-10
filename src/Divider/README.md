@@ -6,7 +6,7 @@ group:
 nav:
   title: Divider 分割线
   path: /components
---- 
+---
 
 # 分割线 Divider
 

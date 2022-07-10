@@ -1,6 +1,6 @@
 {
   "name": "antd-packages",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "帮助你快速创建react组件库(集成antd)",
   "scripts": {
     "docs:dev": "dumi dev",
@@ -22,8 +22,7 @@
   "files": [
     "lib",
     "es",
-    "dist",
-    "src"
+    "dist"
   ],
   "keywords": [
     "ant",

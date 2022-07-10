@@ -6,7 +6,7 @@ group:
 nav:
   title: Checkbox 多选框
   path: /components
---- 
+---
 
 # 多选框 Checkbox
 

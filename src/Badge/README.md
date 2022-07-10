@@ -6,7 +6,7 @@ group:
 nav:
   title: Badge 徽标数
   path: /components
---- 
+---
 
 # 徽标数 Badge
 

@@ -6,7 +6,7 @@ group:
 nav:
   title: Comment 评论
   path: /components
---- 
+---
 
 # 评论 Comment
 

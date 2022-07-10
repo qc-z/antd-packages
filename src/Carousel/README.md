@@ -6,7 +6,7 @@ group:
 nav:
   title: Carousel 走马灯
   path: /components
---- 
+---
 
 # 走马灯 Carousel
 

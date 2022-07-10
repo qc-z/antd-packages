@@ -6,7 +6,7 @@ group:
 nav:
   title: Card 卡片
   path: /components
---- 
+---
 
 # 卡片 Card
 
