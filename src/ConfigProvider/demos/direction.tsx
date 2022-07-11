@@ -32,7 +32,7 @@ import {
   Switch,
   Tree,
   TreeSelect
-} from 'antd'
+} from 'antd-packages'
 import type { DirectionType } from 'antd/lib/config-provider'
 import React, { useState } from 'react'
 

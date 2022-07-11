@@ -17,7 +17,7 @@ import {
   Table,
   TimePicker,
   Transfer
-} from 'antd'
+} from 'antd-packages'
 import enUS from 'antd/lib/locale/en_US'
 import zhCN from 'antd/lib/locale/zh_CN'
 import moment from 'moment'

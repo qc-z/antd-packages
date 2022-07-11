@@ -23,6 +23,7 @@ import Drawer from './Drawer'
 import Dropdown from './Dropdown'
 import Empty from './Empty'
 import Form from './Form'
+import Grid from './Grid'
 import Image from './Image'
 import Input from './Input'
 import InputNumber from './InputNumber'
@@ -89,6 +90,7 @@ export {
   Dropdown,
   Empty,
   Form,
+  Grid,
   Image,
   Input,
   InputNumber,
@@ -156,6 +158,7 @@ export default {
   Dropdown,
   Empty,
   Form,
+  Grid,
   Image,
   Input,
   InputNumber,

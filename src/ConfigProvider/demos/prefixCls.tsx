@@ -8,7 +8,7 @@ import {
   Button,
   ConfigProvider,
   Select
-} from 'antd'
+} from 'antd-packages'
 import React, { useState } from 'react'
 
 // Ant Design site use `es` module for view

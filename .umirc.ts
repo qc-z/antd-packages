@@ -13,7 +13,6 @@ export default defineConfig({
   outputPath: 'docs-dist',
   exportStatic: {}, // 对每隔路由输出html
   dynamicImport: {}, // 动态导入
-
   // hash: true, //加hash配置，清除缓存
   manifest: {
     fileName: 'manifest.json'
