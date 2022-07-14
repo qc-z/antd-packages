@@ -1,3 +1,15 @@
 import { Button } from 'antd'
 
-export default Button
+const MyButton = (props: {
+  [x: string]: any
+  children: any
+}) => {
+  const { children, ...restProps } = props
+
+  return (
+    <Button {...restProps} className="my-button">
+      {children}
+    </Button>
+  )
+}
+export default MyButton

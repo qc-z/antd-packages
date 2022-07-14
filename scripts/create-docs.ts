@@ -69,8 +69,6 @@ const finallyNames = {
   InputNumber: 'input-number',
   Layout: 'layout',
   List: 'list',
-  Locale: 'locale',
-  LocaleProvider: 'locale-provider',
   Mentions: 'mentions',
   Menu: 'menu',
   message: 'message',
@@ -394,4 +392,30 @@ nav:
 // removeMd()
 
 // bug 重新处理md数据
-fixMd()
+// fixMd()
+
+// 按需加载css
+autoImportCss()
+function autoImportCss() {
+  for (const name in finallyNames) {
+    fs.writeFileSync(
+      path.join(`src/${[name]}/style/index.less`),
+      `@import 'antd/es/${finallyNames[name]}/style/index.less';
+@import '../../style/custom.less';
+@import './my-${finallyNames[name]}.less';`,
+      'utf-8'
+    )
+
+    fs.writeFileSync(
+      path.join(
+        `src/${[name]}/style/my-${
+          finallyNames[name]
+        }.less`
+      ),
+      `.my-${finallyNames[name]}{
+
+}`,
+      'utf-8'
+    )
+  }
+}

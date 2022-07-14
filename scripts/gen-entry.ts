@@ -46,7 +46,20 @@ export async function parseComponentExports() {
     componentNames.push(path.basename(comp))
     const name = path.basename(comp)
     str += `import ${name} from './${name}'\n`
-    style += `@import '../${name}/style/index.less';\n`
+    let componentName = name.replace(
+      name[0],
+      name[0].toLowerCase()
+    )
+    componentName = componentName.replace(
+      /([A-Z])/g,
+      (match, p1, offset, string) => {
+        // 一个捕获组捕获全部，所以match等于p1
+        return '-' + p1.toLowerCase()
+      }
+    )
+    console.log(componentName)
+
+    style += `@import '../${name}/style/my-${componentName}.less';\n`
   }
   str += '\n'
   str += `export { ${componentNames.join(
@@ -67,7 +80,7 @@ async function writeEntry() {
     await parseComponentExports()
   )
   fs.writeFileSync(
-    `${CWD}/src/style/index.less`,
+    `${CWD}/src/style/components.less`,
     style
   )
   console.log(
@@ -77,7 +90,7 @@ async function writeEntry() {
   )
   console.log(
     `${chalk.cyanBright.bold(
-      '已更新 src/style/index.less 样式文件'
+      '已更新 src/style/components.less 样式文件'
     )}`
   )
   /**

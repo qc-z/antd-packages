@@ -20,17 +20,17 @@ export default defineConfig({
   // mfsu
   mfsu: {},
   esbuild: {},
-  extraBabelPlugins: [
-    [
-      'babel-plugin-import',
-      {
-        libraryName: 'antd',
-        libraryDirectory: 'es',
-        style: true
-      },
-      'antd'
-    ]
-  ],
+  // extraBabelPlugins: [
+  //   [
+  //     'babel-plugin-import',
+  //     {
+  //       libraryName: 'antd',
+  //       libraryDirectory: 'es',
+  //       style: true
+  //     },
+  //     'antd'
+  //   ]
+  // ],
   navs: [
     {
       title: '文档',

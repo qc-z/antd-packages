@@ -12,16 +12,16 @@ export default {
   },
   extraExternals: ['antd'],
   extractCSS: true,
-  lessInBabelMode: true,
-  extraRollupPlugins: [],
-  extraBabelPlugins: [
-    [
-      'babel-plugin-import',
-      {
-        libraryName: 'antd',
-        libraryDirectory: 'es',
-        style: true
-      }
-    ]
-  ]
+  // lessInBabelMode: true,
+  extraRollupPlugins: []
+  // extraBabelPlugins: [
+  //   [
+  //     'babel-plugin-import',
+  //     {
+  //       libraryName: 'antd',
+  //       libraryDirectory: 'es',
+  //       style: true
+  //     }
+  //   ]
+  // ]
 }
