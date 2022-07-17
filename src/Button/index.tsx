@@ -1,15 +1,4 @@
-import { Button } from 'antd'
+import Button from './button'
+export * from './index.d'
 
-const MyButton = (props: {
-  [x: string]: any
-  children: any
-}) => {
-  const { children, ...restProps } = props
-
-  return (
-    <Button {...restProps} className="my-button">
-      {children}
-    </Button>
-  )
-}
-export default MyButton
+export default Button

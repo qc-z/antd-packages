@@ -1,3 +1,4 @@
-import { Dropdown } from 'antd'
+import Dropdown from './dropdown'
+export * from './index.d'
 
 export default Dropdown

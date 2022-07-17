@@ -1,3 +1,4 @@
-import { BackTop } from 'antd'
+import BackTop from './backtop'
+export * from './index.d'
 
 export default BackTop

@@ -1,3 +1,4 @@
-import { Carousel } from 'antd'
+import Carousel from './carousel'
+export * from './index.d'
 
 export default Carousel

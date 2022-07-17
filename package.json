@@ -1,6 +1,6 @@
 {
   "name": "antd-packages",
-  "version": "1.0.4",
+  "version": "1.0.9",
   "description": "帮助你快速创建react组件库(集成antd)",
   "scripts": {
     "docs:dev": "dumi dev",
@@ -16,8 +16,10 @@
     "prettier": "prettier --write \"**/*.{js,jsx,tsx,ts,less,md,json}\"",
     "create": "esno ./scripts/create-docs.ts"
   },
-  "main": "dist/index.umd.js",
+  "main": "lib/index.js",
   "module": "es/index.js",
+  "typings": "lib/index.d.ts",
+  "unpkg": "dist/index.min.js",
   "files": [
     "lib",
     "es",

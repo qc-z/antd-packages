@@ -1,3 +1,4 @@
-import { Popover } from 'antd'
+import Popover from './popover'
+export * from './index.d'
 
 export default Popover

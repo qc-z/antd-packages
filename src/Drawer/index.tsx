@@ -1,3 +1,4 @@
-import { Drawer } from 'antd'
+import Drawer from './drawer'
+export * from './index.d'
 
 export default Drawer

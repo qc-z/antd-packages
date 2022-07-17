@@ -1,3 +1,4 @@
-import { Anchor } from 'antd'
+import Anchor from './anchor'
+export * from './index.d'
 
 export default Anchor

@@ -1,3 +1,6 @@
+/* eslint-disable */
+// @ts-nocheck
+
 const exec = require('child_process').exec
 import fs from 'fs'
 import path from 'path'
@@ -64,6 +67,7 @@ const finallyNames = {
   Dropdown: 'dropdown',
   Empty: 'empty',
   Form: 'form',
+  Grid: 'grid',
   Image: 'image',
   Input: 'input',
   InputNumber: 'input-number',
@@ -377,25 +381,7 @@ nav:
     )
   }
 }
-// 生成基本组件结构
-// genComponents()
 
-// 获取antd所有组件名字
-// auto()
-// 生成demos
-// genDemos()
-// 复制md
-// copyMd()
-// docs里面的md转换成tsx
-// md2Tsx()
-// 删除md临时文件
-// removeMd()
-
-// bug 重新处理md数据
-// fixMd()
-
-// 按需加载css
-autoImportCss()
 function autoImportCss() {
   for (const name in finallyNames) {
     fs.writeFileSync(
@@ -419,3 +405,57 @@ function autoImportCss() {
     )
   }
 }
+
+function fixFolder() {
+  for (const name in finallyNames) {
+    fs.writeFileSync(
+      path.join(
+        `src/${name}/${name.toLowerCase()}.tsx`
+      ),
+      `import { ${name} } from 'antd'\n
+export default ${name}`,
+      'utf-8'
+    )
+    fs.writeFileSync(
+      path.join(`src/${[name]}/index.d.ts`),
+      `import { ${name}Props as My${name}Props } from 'antd/lib/${name.toLowerCase()}'\n
+export type ${name}Props = My${name}Props`,
+      'utf-8'
+    )
+
+    fs.writeFileSync(
+      path.join(`src/${[name]}/index.tsx`),
+      `import ${name} from './${name.toLowerCase()}'
+export * from './index.d'\n
+export default ${name}`,
+      'utf-8'
+    )
+    // fs.unlinkSync(path.join(`src/${[name]}/${[name]}.tsx`))
+    // fs.unlinkSync(path.join(`src/${[name]}/${[name]}.d.ts`))
+    // fs.unlinkSync(path.join(`src/${[name]}/index.tsx`))
+  }
+}
+
+// 生成基本组件结构
+// genComponents()
+
+// 获取antd所有组件名字
+// auto()
+// 生成demos
+// genDemos()
+// 复制md
+// copyMd()
+// docs里面的md转换成tsx
+// md2Tsx()
+// 删除md临时文件
+// removeMd()
+
+// bug 重新处理md数据
+// fixMd()
+
+// 按需加载css
+// autoImportCss()
+
+// 重新组织目录结构
+
+fixFolder()

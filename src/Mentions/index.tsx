@@ -1,3 +1,4 @@
-import { Mentions } from 'antd'
+import Mentions from './mentions'
+export * from './index.d'
 
 export default Mentions

@@ -1,3 +1,4 @@
-import { Collapse } from 'antd'
+import Collapse from './collapse'
+export * from './index.d'
 
 export default Collapse

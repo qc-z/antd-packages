@@ -1,201 +1,65 @@
-import Affix from './Affix'
-import Alert from './Alert'
-import Anchor from './Anchor'
-import AutoComplete from './AutoComplete'
-import Avatar from './Avatar'
-import BackTop from './BackTop'
-import Badge from './Badge'
-import Breadcrumb from './Breadcrumb'
-import Button from './Button'
-import Calendar from './Calendar'
-import Card from './Card'
-import Carousel from './Carousel'
-import Cascader from './Cascader'
-import Checkbox from './Checkbox'
-import Col from './Col'
-import Collapse from './Collapse'
-import Comment from './Comment'
-import ConfigProvider from './ConfigProvider'
-import DatePicker from './DatePicker'
-import Descriptions from './Descriptions'
-import Divider from './Divider'
-import Drawer from './Drawer'
-import Dropdown from './Dropdown'
-import Empty from './Empty'
-import Form from './Form'
-import Grid from './Grid'
-import Image from './Image'
-import Input from './Input'
-import InputNumber from './InputNumber'
-import Layout from './Layout'
-import List from './List'
-import Mentions from './Mentions'
-import Menu from './Menu'
-import Modal from './Modal'
-import PageHeader from './PageHeader'
-import Pagination from './Pagination'
-import Popconfirm from './Popconfirm'
-import Popover from './Popover'
-import Progress from './Progress'
-import Radio from './Radio'
-import Rate from './Rate'
-import Result from './Result'
-import Row from './Row'
-import Segmented from './Segmented'
-import Select from './Select'
-import Skeleton from './Skeleton'
-import Slider from './Slider'
-import Space from './Space'
-import Spin from './Spin'
-import Statistic from './Statistic'
-import Steps from './Steps'
-import Switch from './Switch'
-import Table from './Table'
-import Tabs from './Tabs'
-import Tag from './Tag'
-import TimePicker from './TimePicker'
-import Timeline from './Timeline'
-import Tooltip from './Tooltip'
-import Transfer from './Transfer'
-import Tree from './Tree'
-import TreeSelect from './TreeSelect'
-import Typography from './Typography'
-import Upload from './Upload'
-import message from './message'
-import notification from './notification'
-
-export {
-  Affix,
-  Alert,
-  Anchor,
-  AutoComplete,
-  Avatar,
-  BackTop,
-  Badge,
-  Breadcrumb,
-  Button,
-  Calendar,
-  Card,
-  Carousel,
-  Cascader,
-  Checkbox,
-  Col,
-  Collapse,
-  Comment,
-  ConfigProvider,
-  DatePicker,
-  Descriptions,
-  Divider,
-  Drawer,
-  Dropdown,
-  Empty,
-  Form,
-  Grid,
-  Image,
-  Input,
-  InputNumber,
-  Layout,
-  List,
-  Mentions,
-  Menu,
-  Modal,
-  PageHeader,
-  Pagination,
-  Popconfirm,
-  Popover,
-  Progress,
-  Radio,
-  Rate,
-  Result,
-  Row,
-  Segmented,
-  Select,
-  Skeleton,
-  Slider,
-  Space,
-  Spin,
-  Statistic,
-  Steps,
-  Switch,
-  Table,
-  Tabs,
-  Tag,
-  TimePicker,
-  Timeline,
-  Tooltip,
-  Transfer,
-  Tree,
-  TreeSelect,
-  Typography,
-  Upload,
-  message,
-  notification
-}
-
-export default {
-  Affix,
-  Alert,
-  Anchor,
-  AutoComplete,
-  Avatar,
-  BackTop,
-  Badge,
-  Breadcrumb,
-  Button,
-  Calendar,
-  Card,
-  Carousel,
-  Cascader,
-  Checkbox,
-  Col,
-  Collapse,
-  Comment,
-  ConfigProvider,
-  DatePicker,
-  Descriptions,
-  Divider,
-  Drawer,
-  Dropdown,
-  Empty,
-  Form,
-  Grid,
-  Image,
-  Input,
-  InputNumber,
-  Layout,
-  List,
-  Mentions,
-  Menu,
-  Modal,
-  PageHeader,
-  Pagination,
-  Popconfirm,
-  Popover,
-  Progress,
-  Radio,
-  Rate,
-  Result,
-  Row,
-  Segmented,
-  Select,
-  Skeleton,
-  Slider,
-  Space,
-  Spin,
-  Statistic,
-  Steps,
-  Switch,
-  Table,
-  Tabs,
-  Tag,
-  TimePicker,
-  Timeline,
-  Tooltip,
-  Transfer,
-  Tree,
-  TreeSelect,
-  Typography,
-  Upload,
-  message,
-  notification
-}
+export { default as Affix } from './Affix'
+export { default as Alert } from './Alert'
+export { default as Anchor } from './Anchor'
+export { default as AutoComplete } from './AutoComplete'
+export { default as Avatar } from './Avatar'
+export { default as BackTop } from './BackTop'
+export { default as Badge } from './Badge'
+export { default as Breadcrumb } from './Breadcrumb'
+export { default as Button } from './Button'
+export { default as Calendar } from './Calendar'
+export { default as Card } from './Card'
+export { default as Carousel } from './Carousel'
+export { default as Cascader } from './Cascader'
+export { default as Checkbox } from './Checkbox'
+export { default as Col } from './Col'
+export { default as Collapse } from './Collapse'
+export { default as Comment } from './Comment'
+export { default as ConfigProvider } from './ConfigProvider'
+export { default as DatePicker } from './DatePicker'
+export { default as Descriptions } from './Descriptions'
+export { default as Divider } from './Divider'
+export { default as Drawer } from './Drawer'
+export { default as Dropdown } from './Dropdown'
+export { default as Empty } from './Empty'
+export { default as Form } from './Form'
+export { default as Grid } from './Grid'
+export { default as Image } from './Image'
+export { default as Input } from './Input'
+export { default as InputNumber } from './InputNumber'
+export { default as Layout } from './Layout'
+export { default as List } from './List'
+export { default as Mentions } from './Mentions'
+export { default as Menu } from './Menu'
+export { default as Modal } from './Modal'
+export { default as PageHeader } from './PageHeader'
+export { default as Pagination } from './Pagination'
+export { default as Popconfirm } from './Popconfirm'
+export { default as Popover } from './Popover'
+export { default as Progress } from './Progress'
+export { default as Radio } from './Radio'
+export { default as Rate } from './Rate'
+export { default as Result } from './Result'
+export { default as Row } from './Row'
+export { default as Segmented } from './Segmented'
+export { default as Select } from './Select'
+export { default as Skeleton } from './Skeleton'
+export { default as Slider } from './Slider'
+export { default as Space } from './Space'
+export { default as Spin } from './Spin'
+export { default as Statistic } from './Statistic'
+export { default as Steps } from './Steps'
+export { default as Switch } from './Switch'
+export { default as Table } from './Table'
+export { default as Tabs } from './Tabs'
+export { default as Tag } from './Tag'
+export { default as TimePicker } from './TimePicker'
+export { default as Timeline } from './Timeline'
+export { default as Tooltip } from './Tooltip'
+export { default as Transfer } from './Transfer'
+export { default as Tree } from './Tree'
+export { default as TreeSelect } from './TreeSelect'
+export { default as Typography } from './Typography'
+export { default as Upload } from './Upload'
+export { default as message } from './message'
+export { default as notification } from './notification'

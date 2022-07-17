@@ -1,3 +1,4 @@
-import { Comment } from 'antd'
+import Comment from './comment'
+export * from './index.d'
 
 export default Comment

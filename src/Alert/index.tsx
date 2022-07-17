@@ -1,3 +1,4 @@
-import { Alert } from 'antd'
+import Alert from './alert'
+export * from './index.d'
 
 export default Alert

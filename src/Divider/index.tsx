@@ -1,3 +1,4 @@
-import { Divider } from 'antd'
+import Divider from './divider'
+export * from './index.d'
 
 export default Divider

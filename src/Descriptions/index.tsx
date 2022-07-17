@@ -1,3 +1,4 @@
-import { Descriptions } from 'antd'
+import Descriptions from './descriptions'
+export * from './index.d'
 
 export default Descriptions

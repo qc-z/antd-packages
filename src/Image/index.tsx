@@ -1,3 +1,4 @@
-import { Image } from 'antd'
+import Image from './image'
+export * from './index.d'
 
 export default Image

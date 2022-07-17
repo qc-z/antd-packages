@@ -34,6 +34,7 @@ const componentEntrys = klawSync(PACKAGES_PATH, {
   )
 
 let str = ''
+let type = ''
 let style = ''
 
 export async function parseComponentExports() {
@@ -45,7 +46,10 @@ export async function parseComponentExports() {
   for (const comp of componentEntrys) {
     componentNames.push(path.basename(comp))
     const name = path.basename(comp)
-    str += `import ${name} from './${name}'\n`
+    // str += `export { default as ${name} } from './${name}'\n`
+    str += `export { default as ${name} } from './${name}'\n`
+    type += `export { default as ${name} } from './${name}'\n`
+    type += `export type { ${name}Props } from './${name}'\n`
     let componentName = name.replace(
       name[0],
       name[0].toLowerCase()
@@ -61,15 +65,15 @@ export async function parseComponentExports() {
 
     style += `@import '../${name}/style/my-${componentName}.less';\n`
   }
-  str += '\n'
-  str += `export { ${componentNames.join(
-    ', '
-  )} }\n`
+  // str += '\n'
+  // str += `export { ${componentNames.join(
+  //   ', '
+  // )} }\n`
 
-  str += '\n'
-  str += `export default { ${componentNames.join(
-    ', '
-  )} }\n`
+  // str += '\n'
+  // str += `export default { ${componentNames.join(
+  //   ', '
+  // )} }\n`
 
   return str
 }
@@ -79,19 +83,10 @@ async function writeEntry() {
     `${CWD}/src/index.ts`,
     await parseComponentExports()
   )
+  fs.writeFileSync(`${CWD}/src/index.d.ts`, type)
   fs.writeFileSync(
     `${CWD}/src/style/components.less`,
     style
-  )
-  console.log(
-    `${chalk.cyanBright.bold(
-      '已更新 src/index.ts 入口文件'
-    )}`
-  )
-  console.log(
-    `${chalk.cyanBright.bold(
-      '已更新 src/style/components.less 样式文件'
-    )}`
   )
   /**
    * 格式化
@@ -104,6 +99,21 @@ async function writeEntry() {
   ).on('error', function (err) {
     throw err
   })
+  console.log(
+    `${chalk.cyanBright.bold(
+      '已更新 src/index.ts 入口文件'
+    )}`
+  )
+  console.log(
+    `${chalk.cyanBright.bold(
+      '已更新 src/index.d.ts 入口文件'
+    )}`
+  )
+  console.log(
+    `${chalk.cyanBright.bold(
+      '已更新 src/style/components.less 样式文件'
+    )}`
+  )
 }
 
 writeEntry()
