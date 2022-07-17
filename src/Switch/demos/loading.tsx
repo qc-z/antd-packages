@@ -3,7 +3,7 @@
  * desc: 标识开关操作仍在执行中。
  */
 
-import { Switch } from 'antd'
+import { Switch } from 'antd-packages'
 import React from 'react'
 
 const App: React.FC = () => (

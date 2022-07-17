@@ -3,8 +3,8 @@
  * desc: 受控制的页码。
  */
 
-import type { PaginationProps } from 'antd'
-import { Pagination } from 'antd'
+import type { PaginationProps } from 'antd-packages'
+import { Pagination } from 'antd-packages'
 import React, { useState } from 'react'
 
 const App: React.FC = () => {

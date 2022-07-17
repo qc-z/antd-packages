@@ -3,8 +3,8 @@
  * desc: 对于长表格，需要滚动才能查看表头和滚动条，那么现在可以设置跟随页面固定表头和滚动条。
  */
 
-import { Switch, Table } from 'antd'
-import type { ColumnsType } from 'antd/lib/table'
+import { Switch, Table } from 'antd-packages'
+import type { ColumnsType } from 'antd-packages/lib/table'
 import React, { useState } from 'react'
 
 interface DataType {

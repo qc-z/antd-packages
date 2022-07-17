@@ -4,7 +4,7 @@
  */
 
 import { DownOutlined } from '@ant-design/icons'
-import { Dropdown, Menu, Space } from 'antd'
+import { Dropdown, Menu, Space } from 'antd-packages'
 import React, { useState } from 'react'
 
 const menu = (

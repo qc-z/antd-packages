@@ -1,4 +1,5 @@
 import Calendar from './calendar'
-export * from './index.d'
+
+export { CalendarProps } from './calendar'
 
 export default Calendar

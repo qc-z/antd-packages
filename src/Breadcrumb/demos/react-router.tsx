@@ -3,7 +3,7 @@
  * desc: 与`react-router@6+`结合使用，生成和路由绑定的面包屑。
  */
 
-import { Alert, Breadcrumb } from 'antd'
+import { Alert, Breadcrumb } from 'antd-packages'
 import React from 'react'
 import {
   HashRouter,

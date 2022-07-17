@@ -8,7 +8,7 @@ import {
   Input,
   Select,
   Segmented
-} from 'antd'
+} from 'antd-packages'
 
 export default () => (
   <>

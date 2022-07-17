@@ -3,7 +3,7 @@
  * desc: 通过`react-window`引入虚拟滚动方案，实现100000条数据的高性能表格。
  */
 
-import { Table } from 'antd'
+import { Table } from 'antd-packages'
 import classNames from 'classnames'
 import ResizeObserver from 'rc-resize-observer'
 import React, {

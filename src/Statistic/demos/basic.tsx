@@ -3,7 +3,7 @@
  * desc: 简单的展示。
  */
 
-import { Button, Col, Row, Statistic } from 'antd'
+import { Button, Col, Row, Statistic } from 'antd-packages'
 import React from 'react'
 
 const App: React.FC = () => (

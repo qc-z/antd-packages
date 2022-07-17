@@ -3,8 +3,8 @@
  * desc: 使用react-sticky组件实现吸顶效果。
  */
 
-import type { TabsProps } from 'antd'
-import { Tabs } from 'antd'
+import type { TabsProps } from 'antd-packages'
+import { Tabs } from 'antd-packages'
 import React from 'react'
 import {
   Sticky,

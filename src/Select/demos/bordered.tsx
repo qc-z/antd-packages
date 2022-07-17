@@ -3,7 +3,7 @@
  * desc: 无边框样式。
  */
 
-import { Select } from 'antd'
+import { Select } from 'antd-packages'
 import React from 'react'
 
 const { Option } = Select

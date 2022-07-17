@@ -3,8 +3,8 @@
  * desc: 有四个位置，`tabPosition="left|right|top|bottom"`。在移动端下，`left|right`会自动切换成`top`。
  */
 
-import type { RadioChangeEvent } from 'antd'
-import { Radio, Space, Tabs } from 'antd'
+import type { RadioChangeEvent } from 'antd-packages'
+import { Radio, Space, Tabs } from 'antd-packages'
 import React, { useState } from 'react'
 
 const { TabPane } = Tabs

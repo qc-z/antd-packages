@@ -3,7 +3,7 @@
  * desc: 在搜索模式下对过滤结果项进行排序。
  */
 
-import { Select } from 'antd'
+import { Select } from 'antd-packages'
 import React from 'react'
 
 const { Option } = Select

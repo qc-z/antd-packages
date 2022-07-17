@@ -1,4 +1,5 @@
 import Progress from './progress'
-export * from './index.d'
+
+export { ProgressProps } from './progress'
 
 export default Progress

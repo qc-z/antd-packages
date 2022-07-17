@@ -3,7 +3,7 @@
  * desc: 通常配合内容及按钮使用，表示一个流程的处理进度。
  */
 
-import { Button, message, Steps } from 'antd'
+import { Button, message, Steps } from 'antd-packages'
 import React, { useState } from 'react'
 
 const { Step } = Steps

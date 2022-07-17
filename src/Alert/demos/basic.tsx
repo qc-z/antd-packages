@@ -3,7 +3,7 @@
  * desc: 最简单的用法，适用于简短的警告提示。
  */
 
-import { Alert } from 'antd'
+import { Alert } from 'antd-packages'
 import React from 'react'
 
 const App: React.FC = () => (

@@ -3,7 +3,7 @@
  * desc: 一个通用的日历面板，支持年/月切换。
  */
 
-import { Alert, Calendar } from 'antd'
+import { Alert, Calendar } from 'antd-packages'
 import type { Moment } from 'moment'
 import moment from 'moment'
 import React, { useState } from 'react'

@@ -10,11 +10,11 @@ import {
   MailOutlined,
   SettingOutlined
 } from '@ant-design/icons'
-import { Divider, Menu, Switch } from 'antd'
+import { Divider, Menu, Switch } from 'antd-packages'
 import type {
   MenuProps,
   MenuTheme
-} from 'antd/es/menu'
+} from 'antd-packages/es/menu'
 import React, { useState } from 'react'
 
 type MenuItem =

@@ -3,7 +3,7 @@
  * desc: Seeissue[#32980](https://github.com/ant-design/ant-design/issues/32980).
  */
 
-import { Button, Form, Input } from 'antd'
+import { Button, Form, Input } from 'antd-packages'
 import React from 'react'
 
 const App: React.FC = () => {

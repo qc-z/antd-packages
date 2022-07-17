@@ -10,7 +10,7 @@ import {
   Select,
   Space,
   Typography
-} from 'antd'
+} from 'antd-packages'
 import React, { useState } from 'react'
 
 const { Option } = Select

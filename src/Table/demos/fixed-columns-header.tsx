@@ -3,8 +3,8 @@
  * desc: 适合同时展示有大量数据和数据列。>若列头与内容不对齐或出现列重复，请指定**固定列**的宽度`width`。如果指定`width`不生效或出现白色垂直空隙，请尝试建议留一列不设宽度以适应弹性布局，或者检查是否有[超长连续字段破坏布局](https://github.com/ant-design/ant-design/issues/13825#issuecomment-449889241)。>>建议指定`scroll.x`为大于表格宽度的固定值或百分比。注意，且非固定列宽度之和不要超过`scroll.x`。
  */
 
-import { Table } from 'antd'
-import type { ColumnsType } from 'antd/lib/table'
+import { Table } from 'antd-packages'
+import type { ColumnsType } from 'antd-packages/lib/table'
 import React from 'react'
 
 interface DataType {

@@ -3,7 +3,7 @@
  * desc: 通过设置`ShowCheckedStrategy`选择回填方式。
  */
 
-import { Cascader } from 'antd'
+import { Cascader } from 'antd-packages'
 
 const { SHOW_CHILD } = Cascader
 

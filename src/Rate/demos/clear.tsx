@@ -3,7 +3,7 @@
  * desc: 支持允许或者禁用清除。
  */
 
-import { Rate } from 'antd'
+import { Rate } from 'antd-packages'
 import React from 'react'
 
 const App: React.FC = () => (

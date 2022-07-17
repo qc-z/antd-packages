@@ -14,7 +14,7 @@ import {
   Select,
   Switch,
   TreeSelect
-} from 'antd'
+} from 'antd-packages'
 import React, { useState } from 'react'
 
 type SizeType = Parameters<typeof Form>[0]['size']

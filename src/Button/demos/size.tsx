@@ -5,7 +5,7 @@
 
 import { DownloadOutlined } from '@ant-design/icons'
 import { Button, Radio } from 'antd-packages'
-import type { SizeType } from 'antd/es/config-provider/SizeContext'
+import type { SizeType } from 'antd-packages/es/config-provider/SizeContext'
 import React, { useState } from 'react'
 
 const App: React.FC = () => {

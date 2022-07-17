@@ -3,7 +3,7 @@
  * desc: 同行布局
  */
 
-import { Checkbox, Radio, Space } from 'antd'
+import { Checkbox, Radio, Space } from 'antd-packages'
 import React from 'react'
 
 const sharedStyle: React.CSSProperties = {

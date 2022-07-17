@@ -3,7 +3,7 @@
  * desc: checkbox不可用。
  */
 
-import { Checkbox } from 'antd'
+import { Checkbox } from 'antd-packages'
 import React from 'react'
 
 const App: React.FC = () => (

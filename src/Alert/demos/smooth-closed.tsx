@@ -3,7 +3,7 @@
  * desc: 平滑、自然的卸载提示。
  */
 
-import { Alert } from 'antd'
+import { Alert } from 'antd-packages'
 import React, { useState } from 'react'
 
 const App: React.FC = () => {

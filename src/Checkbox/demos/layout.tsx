@@ -3,8 +3,8 @@
  * desc: Checkbox.Group内嵌Checkbox并与Grid组件一起使用，可以实现灵活的布局。
  */
 
-import { Checkbox, Col, Row } from 'antd'
-import type { CheckboxValueType } from 'antd/es/checkbox/Group'
+import { Checkbox, Col, Row } from 'antd-packages'
+import type { CheckboxValueType } from 'antd-packages/es/checkbox/Group'
 import React from 'react'
 
 const onChange = (

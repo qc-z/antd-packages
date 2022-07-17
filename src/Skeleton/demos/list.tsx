@@ -14,7 +14,7 @@ import {
   List,
   Skeleton,
   Switch
-} from 'antd'
+} from 'antd-packages'
 import React, { useState } from 'react'
 
 interface IconTextProps {

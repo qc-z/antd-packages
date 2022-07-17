@@ -8,7 +8,7 @@ import {
   Button,
   List,
   Skeleton
-} from 'antd'
+} from 'antd-packages'
 import React, { useEffect, useState } from 'react'
 
 interface DataType {

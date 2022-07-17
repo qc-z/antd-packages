@@ -3,7 +3,7 @@
  * desc: 省市联动是典型的例子。推荐使用[Cascader](/components/cascader/)组件。
  */
 
-import { Select } from 'antd'
+import { Select } from 'antd-packages'
 import React, { useState } from 'react'
 
 const { Option } = Select

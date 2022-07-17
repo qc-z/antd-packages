@@ -1,4 +1,5 @@
 import Checkbox from './checkbox'
-export * from './index.d'
+
+export { CheckboxProps } from './checkbox'
 
 export default Checkbox

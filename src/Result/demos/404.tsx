@@ -3,7 +3,7 @@
  * desc: 此页面未找到。
  */
 
-import { Button, Result } from 'antd'
+import { Button, Result } from 'antd-packages'
 import React from 'react'
 
 const App: React.FC = () => (

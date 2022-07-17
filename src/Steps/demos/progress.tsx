@@ -3,7 +3,7 @@
  * desc: 带有进度的步骤。
  */
 
-import { Steps } from 'antd'
+import { Steps } from 'antd-packages'
 import React from 'react'
 
 const { Step } = Steps

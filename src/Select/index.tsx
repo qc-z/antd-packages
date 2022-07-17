@@ -1,4 +1,5 @@
 import Select from './select'
-export * from './index.d'
+
+export { SelectProps } from './select'
 
 export default Select

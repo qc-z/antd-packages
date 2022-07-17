@@ -1,4 +1,5 @@
 import Empty from './empty'
-export * from './index.d'
+
+export { EmptyProps } from './empty'
 
 export default Empty

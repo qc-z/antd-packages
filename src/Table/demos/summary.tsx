@@ -3,8 +3,8 @@
  * desc: 通过`summary`设置总结栏。使用`Table.Summary.Cell`同步Column的固定状态。你可以通过配置`Table.Summary`的`fixed`属性使其固定(`4.16.0`支持)。
  */
 
-import { Table, Typography } from 'antd'
-import type { ColumnsType } from 'antd/lib/table'
+import { Table, Typography } from 'antd-packages'
+import type { ColumnsType } from 'antd-packages/lib/table'
 import React from 'react'
 
 const { Text } = Typography

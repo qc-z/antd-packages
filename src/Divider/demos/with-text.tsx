@@ -3,7 +3,7 @@
  * desc: 分割线中带有文字，可以用`orientation`指定文字位置。
  */
 
-import { Divider } from 'antd'
+import { Divider } from 'antd-packages'
 import React from 'react'
 
 const App: React.FC = () => (

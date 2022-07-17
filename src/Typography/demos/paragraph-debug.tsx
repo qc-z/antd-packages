@@ -3,7 +3,7 @@
  * desc: 展示标题与段落的组合。
  */
 
-import { Typography } from 'antd'
+import { Typography } from 'antd-packages'
 import React from 'react'
 
 const { Title, Paragraph, Text } = Typography

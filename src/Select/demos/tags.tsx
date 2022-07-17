@@ -3,7 +3,7 @@
  * desc: tagsselect，随意输入的内容（scrollthemenu）。
  */
 
-import { Select } from 'antd'
+import { Select } from 'antd-packages'
 import React from 'react'
 
 const { Option } = Select

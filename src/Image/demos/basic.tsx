@@ -3,7 +3,7 @@
  * desc: 单击图像可以放大显示。
  */
 
-import { Image } from 'antd'
+import { Image } from 'antd-packages'
 import React from 'react'
 
 const App: React.FC = () => (

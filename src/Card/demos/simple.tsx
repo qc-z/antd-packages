@@ -3,7 +3,7 @@
  * desc: 只包含内容区域。
  */
 
-import { Card } from 'antd'
+import { Card } from 'antd-packages'
 import React from 'react'
 
 const App: React.FC = () => (

@@ -3,7 +3,7 @@
  * desc: 以下示例显示如何创建可悬停和单击的弹出窗口。
  */
 
-import { Button, Popover } from 'antd'
+import { Button, Popover } from 'antd-packages'
 import React, { useState } from 'react'
 
 const App: React.FC = () => {

@@ -3,7 +3,7 @@
  * desc: 最简单的用法。
  */
 
-import { Affix, Button } from 'antd'
+import { Affix, Button } from 'antd-packages'
 import React, { useState } from 'react'
 
 const App: React.FC = () => {

@@ -3,7 +3,7 @@
  * desc: Buggy!
  */
 
-import { Form, Input } from 'antd'
+import { Form, Input } from 'antd-packages'
 import React from 'react'
 
 let acc = 0

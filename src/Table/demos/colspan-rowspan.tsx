@@ -3,8 +3,8 @@
  * desc: 表头只支持列合并，使用column里的colSpan进行设置。表格支持行/列合并，使用render里的单元格属性colSpan或者rowSpan设值为0时，设置的表格不会渲染。
  */
 
-import { Table } from 'antd'
-import type { ColumnsType } from 'antd/lib/table'
+import { Table } from 'antd-packages'
+import type { ColumnsType } from 'antd-packages/lib/table'
 import React from 'react'
 
 interface DataType {

@@ -1,4 +1,5 @@
 import Avatar from './avatar'
-export * from './index.d'
+
+export { AvatarProps } from './avatar'
 
 export default Avatar

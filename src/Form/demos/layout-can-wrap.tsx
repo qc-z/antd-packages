@@ -3,7 +3,7 @@
  * desc: 使用`labelWrap`可以开启`label`换行。
  */
 
-import { Button, Form, Input } from 'antd'
+import { Button, Form, Input } from 'antd-packages'
 import React from 'react'
 
 const App: React.FC = () => (

@@ -3,7 +3,7 @@
  * desc: 使用`dropdownRender`对下拉菜单进行自由扩展。
  */
 
-import { Cascader, Divider } from 'antd'
+import { Cascader, Divider } from 'antd-packages'
 import React from 'react'
 
 interface Option {

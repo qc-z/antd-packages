@@ -3,7 +3,7 @@
  * desc: 通过指定options里的`disabled`字段。
  */
 
-import { Cascader } from 'antd'
+import { Cascader } from 'antd-packages'
 import React from 'react'
 
 interface Option {

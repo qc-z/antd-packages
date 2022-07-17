@@ -3,7 +3,7 @@
  * desc: 自定义时长`10s`，默认时长为`3s`。
  */
 
-import { Button, message } from 'antd'
+import { Button, message } from 'antd-packages'
 import React from 'react'
 
 const success = () => {

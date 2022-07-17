@@ -3,7 +3,7 @@
  * desc: 各种类型的信息提示，只提供一个按钮用于关闭。
  */
 
-import { Button, Modal, Space } from 'antd'
+import { Button, Modal, Space } from 'antd-packages'
 import React from 'react'
 
 const info = () => {

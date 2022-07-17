@@ -3,8 +3,8 @@
  * desc: 使用`status`为Mentions添加状态。可选`error`或者`warning`。
  */
 
-import { Mentions, Space } from 'antd'
-import type { OptionProps } from 'antd/es/mentions'
+import { Mentions, Space } from 'antd-packages'
+import type { OptionProps } from 'antd-packages/es/mentions'
 import React from 'react'
 
 const { Option } = Mentions

@@ -3,7 +3,7 @@
  * desc: Segmented不可用。
  */
 
-import { Segmented } from 'antd'
+import { Segmented } from 'antd-packages'
 
 export default () => (
   <>

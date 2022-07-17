@@ -1,4 +1,5 @@
 import Radio from './radio'
-export * from './index.d'
+
+export { RadioProps } from './radio'
 
 export default Radio

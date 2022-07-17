@@ -3,7 +3,7 @@
  * desc: 通过设置`showTotal`展示总共有多少数据。
  */
 
-import { Pagination } from 'antd'
+import { Pagination } from 'antd-packages'
 import React from 'react'
 
 const App: React.FC = () => (

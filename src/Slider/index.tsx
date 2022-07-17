@@ -1,4 +1,5 @@
 import Slider from './slider'
-export * from './index.d'
+
+export { SliderProps } from './slider'
 
 export default Slider

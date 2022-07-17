@@ -3,7 +3,7 @@
  * desc: 垂直带边框和背景颜色的列表。
  */
 
-import { Badge, Descriptions } from 'antd'
+import { Badge, Descriptions } from 'antd-packages'
 import React from 'react'
 
 const App: React.FC = () => (

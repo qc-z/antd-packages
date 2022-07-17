@@ -1,4 +1,5 @@
 import Statistic from './statistic'
-export * from './index.d'
+
+export { StatisticProps } from './statistic'
 
 export default Statistic

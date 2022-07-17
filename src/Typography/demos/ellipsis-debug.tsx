@@ -3,7 +3,7 @@
  * desc: 多行文本省略。
  */
 
-import { Slider, Switch, Typography } from 'antd'
+import { Slider, Switch, Typography } from 'antd-packages'
 import React, { useState } from 'react'
 
 const { Text, Paragraph } = Typography

@@ -3,7 +3,7 @@
  * desc: 用于多行输入。
  */
 
-import { Input } from 'antd'
+import { Input } from 'antd-packages'
 import React from 'react'
 
 const { TextArea } = Input

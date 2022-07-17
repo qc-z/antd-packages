@@ -10,7 +10,7 @@ import {
   Drawer,
   List,
   Row
-} from 'antd'
+} from 'antd-packages'
 import React, { useState } from 'react'
 
 interface DescriptionItemProps {

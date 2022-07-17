@@ -3,7 +3,7 @@
  * desc: 展开后可对选项进行搜索。
  */
 
-import { Select } from 'antd'
+import { Select } from 'antd-packages'
 import React from 'react'
 
 const { Option } = Select

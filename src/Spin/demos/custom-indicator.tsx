@@ -4,7 +4,7 @@
  */
 
 import { LoadingOutlined } from '@ant-design/icons'
-import { Spin } from 'antd'
+import { Spin } from 'antd-packages'
 import React from 'react'
 
 const antIcon = (

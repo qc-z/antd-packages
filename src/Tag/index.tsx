@@ -1,4 +1,5 @@
 import Tag from './tag'
-export * from './index.d'
+
+export { TagProps } from './tag'
 
 export default Tag

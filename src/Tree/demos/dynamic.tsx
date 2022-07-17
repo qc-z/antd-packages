@@ -3,7 +3,7 @@
  * desc: 点击展开节点，动态加载数据。
  */
 
-import { Tree } from 'antd'
+import { Tree } from 'antd-packages'
 import React, { useState } from 'react'
 
 interface DataNode {

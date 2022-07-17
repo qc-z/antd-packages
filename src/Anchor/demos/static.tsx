@@ -3,7 +3,7 @@
  * desc: 不浮动，状态不随页面滚动变化。
  */
 
-import { Anchor } from 'antd'
+import { Anchor } from 'antd-packages'
 import React from 'react'
 
 const { Link } = Anchor

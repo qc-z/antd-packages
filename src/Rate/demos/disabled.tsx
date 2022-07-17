@@ -3,7 +3,7 @@
  * desc: 只读，无法进行鼠标交互。
  */
 
-import { Rate } from 'antd'
+import { Rate } from 'antd-packages'
 import React from 'react'
 
 const App: React.FC = () => (

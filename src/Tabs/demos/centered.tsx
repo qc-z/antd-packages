@@ -3,7 +3,7 @@
  * desc: 标签居中展示。
  */
 
-import { Tabs } from 'antd'
+import { Tabs } from 'antd-packages'
 import React from 'react'
 
 const { TabPane } = Tabs

@@ -3,7 +3,7 @@
  * desc: 实色填底的单选按钮样式。
  */
 
-import { Radio } from 'antd'
+import { Radio } from 'antd-packages'
 import React from 'react'
 
 const App: React.FC = () => (

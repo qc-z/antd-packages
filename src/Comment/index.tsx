@@ -1,4 +1,5 @@
 import Comment from './comment'
-export * from './index.d'
+
+export { CommentProps } from './comment'
 
 export default Comment

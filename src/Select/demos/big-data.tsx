@@ -3,8 +3,8 @@
  * desc: Select使用了[虚拟滚动](https://github.com/react-component/virtual-list)技术，因而获得了比[3.0更好的性能](https://codesandbox.io/s/beautiful-banzai-m72lv)。
  */
 
-import type { SelectProps } from 'antd'
-import { Divider, Select, Typography } from 'antd'
+import type { SelectProps } from 'antd-packages'
+import { Divider, Select, Typography } from 'antd-packages'
 import React from 'react'
 
 const { Title } = Typography

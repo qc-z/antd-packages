@@ -1,4 +1,5 @@
 import Tooltip from './tooltip'
-export * from './index.d'
+
+export { TooltipProps } from './tooltip'
 
 export default Tooltip

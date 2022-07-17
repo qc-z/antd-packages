@@ -3,7 +3,7 @@
  * desc: 一种常见的卡片内容区隔模式。
  */
 
-import { Card } from 'antd'
+import { Card } from 'antd-packages'
 import React from 'react'
 
 const gridStyle: React.CSSProperties = {

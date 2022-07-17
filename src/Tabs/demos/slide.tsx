@@ -3,8 +3,8 @@
  * desc: 可以左右、上下滑动，容纳更多标签。
  */
 
-import type { RadioChangeEvent } from 'antd'
-import { Radio, Tabs } from 'antd'
+import type { RadioChangeEvent } from 'antd-packages'
+import { Radio, Tabs } from 'antd-packages'
 import React, { useState } from 'react'
 
 const { TabPane } = Tabs

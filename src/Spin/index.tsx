@@ -1,4 +1,5 @@
 import Spin from './spin'
-export * from './index.d'
+
+export { SpinProps } from './spin'
 
 export default Spin

@@ -9,7 +9,7 @@ import {
   Input,
   InputNumber,
   Typography
-} from 'antd'
+} from 'antd-packages'
 
 const Demo = () => {
   const [form] = Form.useForm<{

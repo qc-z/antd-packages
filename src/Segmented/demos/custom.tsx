@@ -3,7 +3,7 @@
  * desc: 使用ReactNode自定义渲染每一个SegmentedItem。
  */
 
-import { Avatar, Segmented } from 'antd'
+import { Avatar, Segmented } from 'antd-packages'
 import { UserOutlined } from '@ant-design/icons'
 
 export default () => (

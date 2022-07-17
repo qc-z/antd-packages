@@ -3,7 +3,7 @@
  * desc: 大图使用placeholder渐进加载。
  */
 
-import { Button, Image, Space } from 'antd'
+import { Button, Image, Space } from 'antd-packages'
 import React, { useState } from 'react'
 
 const App: React.FC = () => {

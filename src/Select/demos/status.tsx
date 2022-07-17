@@ -3,7 +3,7 @@
  * desc: 使用`status`为Select添加状态，可选`error`或者`warning`。
  */
 
-import { Select, Space } from 'antd'
+import { Select, Space } from 'antd-packages'
 import React from 'react'
 
 const App: React.FC = () => (

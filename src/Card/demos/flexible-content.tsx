@@ -3,7 +3,7 @@
  * desc: 可以利用`Card.Meta`支持更灵活的内容。
  */
 
-import { Card } from 'antd'
+import { Card } from 'antd-packages'
 import React from 'react'
 
 const { Meta } = Card

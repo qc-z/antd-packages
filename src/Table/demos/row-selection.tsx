@@ -3,8 +3,8 @@
  * desc: 第一列是联动的选择框。可以通过`rowSelection.type`属性指定选择类型，默认为`checkbox`。>默认点击checkbox触发选择行为，需要点击行触发可以参考例子：<https://codesandbox.io/s/000vqw38rl>
  */
 
-import { Divider, Radio, Table } from 'antd'
-import type { ColumnsType } from 'antd/lib/table'
+import { Divider, Radio, Table } from 'antd-packages'
+import type { ColumnsType } from 'antd-packages/lib/table'
 import React, { useState } from 'react'
 
 interface DataType {

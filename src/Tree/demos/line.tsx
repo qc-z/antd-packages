@@ -7,8 +7,8 @@ import {
   CarryOutOutlined,
   FormOutlined
 } from '@ant-design/icons'
-import { Switch, Tree } from 'antd'
-import type { DataNode } from 'antd/lib/tree'
+import { Switch, Tree } from 'antd-packages'
+import type { DataNode } from 'antd-packages/lib/tree'
 import React, { useState } from 'react'
 
 const treeData: DataNode[] = [

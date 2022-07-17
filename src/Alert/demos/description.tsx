@@ -3,7 +3,7 @@
  * desc: 含有辅助性文字介绍的警告提示。
  */
 
-import { Alert } from 'antd'
+import { Alert } from 'antd-packages'
 import React from 'react'
 
 const App: React.FC = () => (

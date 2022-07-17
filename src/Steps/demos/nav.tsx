@@ -3,7 +3,7 @@
  * desc: 导航类型的步骤条。
  */
 
-import { Steps } from 'antd'
+import { Steps } from 'antd-packages'
 import React, { useState } from 'react'
 
 const { Step } = Steps

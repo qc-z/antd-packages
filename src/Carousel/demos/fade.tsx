@@ -3,7 +3,7 @@
  * desc: 切换效果为渐显。
  */
 
-import { Carousel } from 'antd'
+import { Carousel } from 'antd-packages'
 import React from 'react'
 
 const contentStyle: React.CSSProperties = {

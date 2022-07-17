@@ -3,7 +3,7 @@
  * desc: 用`OptGroup`进行选项分组。
  */
 
-import { Select } from 'antd'
+import { Select } from 'antd-packages'
 import React from 'react'
 
 const { Option, OptGroup } = Select

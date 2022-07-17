@@ -3,7 +3,7 @@
  * desc: 基础抽屉，点击触发按钮抽屉从右滑出，点击遮罩区关闭。
  */
 
-import { Button, Drawer } from 'antd'
+import { Button, Drawer } from 'antd-packages'
 import React, { useState } from 'react'
 
 const App: React.FC = () => {

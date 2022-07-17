@@ -4,7 +4,7 @@
  */
 
 import { ClockCircleOutlined } from '@ant-design/icons'
-import { Badge, Space, Switch } from 'antd'
+import { Badge, Space, Switch } from 'antd-packages'
 import React, { useState } from 'react'
 
 const App: React.FC = () => {

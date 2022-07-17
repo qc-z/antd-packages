@@ -3,7 +3,7 @@
  * desc: 用于表示状态的小圆点。
  */
 
-import { Badge } from 'antd'
+import { Badge } from 'antd-packages'
 import React from 'react'
 
 const App: React.FC = () => (

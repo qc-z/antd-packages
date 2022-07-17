@@ -1,4 +1,5 @@
 import Anchor from './anchor'
-export * from './index.d'
+
+export { AnchorProps } from './anchor'
 
 export default Anchor

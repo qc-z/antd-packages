@@ -10,7 +10,7 @@ import {
   UserOutlined,
   VideoCameraOutlined
 } from '@ant-design/icons'
-import { Layout, Menu } from 'antd'
+import { Layout, Menu } from 'antd-packages'
 import React, { useState } from 'react'
 
 const { Header, Sider, Content } = Layout

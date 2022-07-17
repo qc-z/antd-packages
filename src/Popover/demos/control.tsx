@@ -3,7 +3,7 @@
  * desc: 使用`visible`属性控制浮层显示。
  */
 
-import { Button, Popover } from 'antd'
+import { Button, Popover } from 'antd-packages'
 import React, { useState } from 'react'
 
 const App: React.FC = () => {

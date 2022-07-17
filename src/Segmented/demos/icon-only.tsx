@@ -3,7 +3,7 @@
  * desc: 在SegmentedItem选项中只设置Icon。
  */
 
-import { Segmented } from 'antd'
+import { Segmented } from 'antd-packages'
 import {
   AppstoreOutlined,
   BarsOutlined

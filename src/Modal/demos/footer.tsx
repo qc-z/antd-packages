@@ -3,7 +3,7 @@
  * desc: 更复杂的例子，自定义了页脚的按钮，点击提交后进入loading状态，完成后关闭。不需要默认确定取消按钮时，你可以把`footer`设为`null`。
  */
 
-import { Button, Modal } from 'antd'
+import { Button, Modal } from 'antd-packages'
 import React, { useState } from 'react'
 
 const App: React.FC = () => {

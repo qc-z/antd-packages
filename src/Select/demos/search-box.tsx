@@ -3,7 +3,7 @@
  * desc: 搜索和远程数据结合。
  */
 
-import { Select } from 'antd'
+import { Select } from 'antd-packages'
 import jsonp from 'fetch-jsonp'
 import qs from 'qs'
 import React, { useState } from 'react'

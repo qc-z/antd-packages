@@ -4,7 +4,7 @@
  */
 
 import { InfoCircleOutlined } from '@ant-design/icons'
-import { Button, Form, Input, Radio } from 'antd'
+import { Button, Form, Input, Radio } from 'antd-packages'
 import React, { useState } from 'react'
 
 type RequiredMark = boolean | 'optional'

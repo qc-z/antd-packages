@@ -1,4 +1,5 @@
 import Form from './form'
-export * from './index.d'
+
+export { FormProps } from './form'
 
 export default Form

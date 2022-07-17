@@ -8,7 +8,7 @@ import {
   Form,
   Input,
   InputNumber
-} from 'antd'
+} from 'antd-packages'
 import React from 'react'
 
 const layout = {

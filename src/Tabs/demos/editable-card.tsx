@@ -3,7 +3,7 @@
  * desc: 只有卡片样式的页签支持新增和关闭选项。使用`closable={false}`禁止关闭。
  */
 
-import { Tabs } from 'antd'
+import { Tabs } from 'antd-packages'
 import React, { useRef, useState } from 'react'
 
 const { TabPane } = Tabs

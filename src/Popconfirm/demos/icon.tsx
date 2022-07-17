@@ -4,7 +4,7 @@
  */
 
 import { QuestionCircleOutlined } from '@ant-design/icons'
-import { Popconfirm } from 'antd'
+import { Popconfirm } from 'antd-packages'
 import React from 'react'
 
 const App: React.FC = () => (

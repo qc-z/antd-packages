@@ -3,8 +3,8 @@
  * desc: 受控操作示例
  */
 
-import { Tree } from 'antd'
-import type { DataNode } from 'antd/lib/tree'
+import { Tree } from 'antd-packages'
+import type { DataNode } from 'antd-packages/lib/tree'
 import React, { useState } from 'react'
 
 const treeData: DataNode[] = [

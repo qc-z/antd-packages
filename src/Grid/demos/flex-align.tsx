@@ -2,9 +2,9 @@
 /**
   * title: 对齐
   * desc: 子元素垂直对齐。
-  */ 
+  */
 
-import { Col, Divider, Row } from 'antd';
+import { Col, Divider, Row } from 'antd-packages';
 import React from 'react';
 
 const DemoBox: React.FC<{ children: React.ReactNode; value: number }> = props => (

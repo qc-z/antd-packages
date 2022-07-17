@@ -3,7 +3,7 @@
  * desc: 通过`destroyTooltipOnHide`控制提示关闭时是否销毁dom节点。
  */
 
-import { Tooltip } from 'antd'
+import { Tooltip } from 'antd-packages'
 import React from 'react'
 
 const App: React.FC = () => (

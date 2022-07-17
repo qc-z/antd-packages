@@ -3,7 +3,7 @@
  * desc: 隐藏默认的页签增加图标，给自定义触发器绑定事件。
  */
 
-import { Button, Tabs } from 'antd'
+import { Button, Tabs } from 'antd-packages'
 import React, { useRef, useState } from 'react'
 
 const { TabPane } = Tabs

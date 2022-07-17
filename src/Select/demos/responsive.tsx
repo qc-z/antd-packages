@@ -3,8 +3,8 @@
  * desc: 多选下通过响应式布局让选项自动收缩。该功能对性能有所消耗，不推荐在大表单场景下使用。
  */
 
-import type { SelectProps } from 'antd'
-import { Select, Space } from 'antd'
+import type { SelectProps } from 'antd-packages'
+import { Select, Space } from 'antd-packages'
 import React, { useState } from 'react'
 
 interface ItemProps {

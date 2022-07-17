@@ -3,11 +3,11 @@
  * desc: 最简单的用法，展示可勾选，可选中，禁用，默认展开等功能。
  */
 
-import { Tree } from 'antd'
+import { Tree } from 'antd-packages'
 import type {
   DataNode,
   TreeProps
-} from 'antd/lib/tree'
+} from 'antd-packages/lib/tree'
 import React from 'react'
 
 const treeData: DataNode[] = [

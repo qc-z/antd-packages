@@ -4,7 +4,7 @@
  */
 
 import { UserOutlined } from '@ant-design/icons'
-import { Avatar, Image } from 'antd'
+import { Avatar, Image } from 'antd-packages'
 import React from 'react'
 
 const App: React.FC = () => (

@@ -3,11 +3,11 @@
  * desc: 穿梭框高级用法，可配置操作文案，可定制宽高，可对底部进行自定义渲染。
  */
 
-import { Button, Transfer } from 'antd'
+import { Button, Transfer } from 'antd-packages'
 import type {
   TransferDirection,
   TransferListProps
-} from 'antd/es/transfer'
+} from 'antd-packages/es/transfer'
 import React, { useEffect, useState } from 'react'
 
 interface RecordType {
@@ -32,9 +32,8 @@ const App: React.FC = () => {
       const data = {
         key: i.toString(),
         title: `content${i + 1}`,
-        description: `description of content${
-          i + 1
-        }`,
+        description: `description of content${i + 1
+          }`,
         chosen: Math.random() * 2 > 1
       }
       if (data.chosen) {

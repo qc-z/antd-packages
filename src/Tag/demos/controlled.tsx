@@ -3,7 +3,7 @@
  * desc: 通过`visible`属性控制关闭状态。
  */
 
-import { Button, Tag } from 'antd'
+import { Button, Tag } from 'antd-packages'
 import React, { useState } from 'react'
 
 const App: React.FC = () => {

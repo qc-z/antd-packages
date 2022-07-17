@@ -3,7 +3,7 @@
  * desc: 加载失败显示图像占位符。
  */
 
-import { Image } from 'antd'
+import { Image } from 'antd-packages'
 import React from 'react'
 
 const App: React.FC = () => (

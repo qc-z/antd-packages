@@ -7,7 +7,7 @@ import {
   MinusOutlined,
   PlusOutlined
 } from '@ant-design/icons'
-import { Button, Progress } from 'antd'
+import { Button, Progress } from 'antd-packages'
 import React, { useState } from 'react'
 
 const App: React.FC = () => {

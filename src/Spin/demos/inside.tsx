@@ -3,7 +3,7 @@
  * desc: 放入一个容器中。
  */
 
-import { Spin } from 'antd'
+import { Spin } from 'antd-packages'
 import React from 'react'
 
 const App: React.FC = () => (

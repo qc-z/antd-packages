@@ -3,8 +3,8 @@
  * desc: 修改上一步和下一步为文字链接。
  */
 
-import type { PaginationProps } from 'antd'
-import { Pagination } from 'antd'
+import type { PaginationProps } from 'antd-packages'
+import { Pagination } from 'antd-packages'
 import React from 'react'
 
 const itemRender: PaginationProps['itemRender'] =

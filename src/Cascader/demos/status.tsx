@@ -3,7 +3,7 @@
  * desc: 使用`status`为Cascader添加状态，可选`error`或者`warning`。
  */
 
-import { Cascader, Space } from 'antd'
+import { Cascader, Space } from 'antd-packages'
 import React from 'react'
 
 const App: React.FC = () => (

@@ -3,8 +3,8 @@
  * desc: 带搜索框的穿梭框，可以自定义搜索函数。
  */
 
-import { Transfer } from 'antd'
-import type { TransferDirection } from 'antd/es/transfer'
+import { Transfer } from 'antd-packages'
+import type { TransferDirection } from 'antd-packages/es/transfer'
 import React, { useEffect, useState } from 'react'
 
 interface RecordType {
@@ -29,9 +29,8 @@ const App: React.FC = () => {
       const data = {
         key: i.toString(),
         title: `content${i + 1}`,
-        description: `description of content${
-          i + 1
-        }`,
+        description: `description of content${i + 1
+          }`,
         chosen: Math.random() * 2 > 1
       }
       if (data.chosen) {

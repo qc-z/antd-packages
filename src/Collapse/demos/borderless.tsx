@@ -3,7 +3,7 @@
  * desc: 一套没有边框的简洁样式。
  */
 
-import { Collapse } from 'antd'
+import { Collapse } from 'antd-packages'
 import React from 'react'
 
 const { Panel } = Collapse

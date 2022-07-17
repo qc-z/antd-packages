@@ -4,7 +4,7 @@
  */
 
 import { useState } from 'react'
-import { Segmented } from 'antd'
+import { Segmented } from 'antd-packages'
 
 const Demo = () => {
   const [foo, setFoo] = useState('AND')

@@ -4,8 +4,8 @@
  */
 
 import { DownOutlined } from '@ant-design/icons'
-import type { MenuProps } from 'antd'
-import { Dropdown, Menu, Space } from 'antd'
+import type { MenuProps } from 'antd-packages'
+import { Dropdown, Menu, Space } from 'antd-packages'
 import React, { useState } from 'react'
 
 const App: React.FC = () => {

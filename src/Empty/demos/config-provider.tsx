@@ -14,7 +14,7 @@ import {
   Table,
   Transfer,
   TreeSelect
-} from 'antd'
+} from 'antd-packages'
 import React, { useState } from 'react'
 
 const customizeRenderEmpty = () => (

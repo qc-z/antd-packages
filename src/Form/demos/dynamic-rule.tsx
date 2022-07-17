@@ -8,7 +8,7 @@ import {
   Checkbox,
   Form,
   Input
-} from 'antd'
+} from 'antd-packages'
 import React, { useEffect, useState } from 'react'
 
 const formItemLayout = {

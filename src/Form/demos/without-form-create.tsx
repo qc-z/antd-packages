@@ -3,7 +3,7 @@
  * desc: `Form`具有自动收集数据并校验的功能，但如果您不需要这个功能，或者默认的行为无法满足业务需求，可以选择自行处理数据。
  */
 
-import { Form, InputNumber } from 'antd'
+import { Form, InputNumber } from 'antd-packages'
 import React, { useState } from 'react'
 
 type ValidateStatus = Parameters<

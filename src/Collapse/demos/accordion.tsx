@@ -3,7 +3,7 @@
  * desc: 手风琴，每次只打开一个tab。
  */
 
-import { Collapse } from 'antd'
+import { Collapse } from 'antd-packages'
 import React from 'react'
 
 const { Panel } = Collapse

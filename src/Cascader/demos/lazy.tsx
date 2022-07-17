@@ -3,7 +3,7 @@
  * desc: 使用`loadData`实现动态加载选项。>注意：`loadData`与`showSearch`无法一起使用。
  */
 
-import { Cascader } from 'antd'
+import { Cascader } from 'antd-packages'
 import React, { useState } from 'react'
 
 interface Option {

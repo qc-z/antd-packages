@@ -1,4 +1,5 @@
 import Cascader from './cascader'
-export * from './index.d'
+
+export { CascaderProps } from './cascader'
 
 export default Cascader

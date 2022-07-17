@@ -3,7 +3,7 @@
  * desc: 监听锚点链接改变
  */
 
-import { Anchor } from 'antd'
+import { Anchor } from 'antd-packages'
 import React from 'react'
 
 const { Link } = Anchor

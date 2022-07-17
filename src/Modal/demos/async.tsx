@@ -3,7 +3,7 @@
  * desc: 点击确定后异步关闭对话框，例如提交表单。
  */
 
-import { Button, Modal } from 'antd'
+import { Button, Modal } from 'antd-packages'
 import React, { useState } from 'react'
 
 const App: React.FC = () => {

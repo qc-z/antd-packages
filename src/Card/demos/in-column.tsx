@@ -3,7 +3,7 @@
  * desc: 在系统概览页面常常和栅格进行配合。
  */
 
-import { Card, Col, Row } from 'antd'
+import { Card, Col, Row } from 'antd-packages'
 import React from 'react'
 
 const App: React.FC = () => (

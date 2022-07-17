@@ -3,8 +3,8 @@
  * desc: 表格的分页设置。
  */
 
-import { Radio, Space, Table, Tag } from 'antd'
-import type { ColumnsType } from 'antd/lib/table'
+import { Radio, Space, Table, Tag } from 'antd-packages'
+import type { ColumnsType } from 'antd-packages/lib/table'
 import React, { useState } from 'react'
 
 interface DataType {

@@ -3,7 +3,7 @@
  * desc: 可承载更多内容。
  */
 
-import { Card } from 'antd'
+import { Card } from 'antd-packages'
 import React, { useState } from 'react'
 
 const tabList = [

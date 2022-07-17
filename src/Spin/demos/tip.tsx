@@ -3,7 +3,7 @@
  * desc: 自定义描述文案。
  */
 
-import { Alert, Spin } from 'antd'
+import { Alert, Spin } from 'antd-packages'
 import React from 'react'
 
 const App: React.FC = () => (

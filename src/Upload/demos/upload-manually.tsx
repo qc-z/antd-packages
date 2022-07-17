@@ -4,12 +4,12 @@
  */
 
 import { UploadOutlined } from '@ant-design/icons'
-import { Button, message, Upload } from 'antd'
+import { Button, message, Upload } from 'antd-packages'
 import type {
   RcFile,
   UploadFile,
   UploadProps
-} from 'antd/es/upload/interface'
+} from 'antd-packages/es/upload/interface'
 import React, { useState } from 'react'
 
 const App: React.FC = () => {

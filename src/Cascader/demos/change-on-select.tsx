@@ -3,7 +3,7 @@
  * desc: 这种交互允许只选中父级选项。
  */
 
-import { Cascader } from 'antd'
+import { Cascader } from 'antd-packages'
 import React from 'react'
 
 interface Option {

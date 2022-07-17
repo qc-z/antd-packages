@@ -9,7 +9,7 @@ import {
   Input,
   Modal,
   Radio
-} from 'antd'
+} from 'antd-packages'
 import React, { useState } from 'react'
 
 interface Values {

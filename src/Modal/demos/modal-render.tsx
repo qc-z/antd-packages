@@ -3,7 +3,7 @@
  * desc: 自定义渲染对话框,可通过`react-draggable`来实现拖拽。
  */
 
-import { Button, Modal } from 'antd'
+import { Button, Modal } from 'antd-packages'
 import React, { useRef, useState } from 'react'
 import type {
   DraggableData,

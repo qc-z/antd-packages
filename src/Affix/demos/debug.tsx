@@ -3,7 +3,7 @@
  * desc: DEBUG
  */
 
-import { Affix, Button } from 'antd'
+import { Affix, Button } from 'antd-packages'
 import React, { useState } from 'react'
 
 const App: React.FC = () => {

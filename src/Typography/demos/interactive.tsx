@@ -9,7 +9,7 @@ import {
   SmileFilled,
   SmileOutlined
 } from '@ant-design/icons'
-import { Divider, Radio, Typography } from 'antd'
+import { Divider, Radio, Typography } from 'antd-packages'
 import React, { useState } from 'react'
 
 const { Paragraph } = Typography

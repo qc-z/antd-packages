@@ -7,13 +7,13 @@ import {
   LoadingOutlined,
   PlusOutlined
 } from '@ant-design/icons'
-import { message, Upload } from 'antd'
-import type { UploadChangeParam } from 'antd/es/upload'
+import { message, Upload } from 'antd-packages'
+import type { UploadChangeParam } from 'antd-packages/es/upload'
 import type {
   RcFile,
   UploadFile,
   UploadProps
-} from 'antd/es/upload/interface'
+} from 'antd-packages/es/upload/interface'
 import React, { useState } from 'react'
 
 const getBase64 = (

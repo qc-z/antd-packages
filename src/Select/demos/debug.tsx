@@ -3,7 +3,7 @@
  * desc: 基本使用。
  */
 
-import { Button, Input, Select } from 'antd'
+import { Button, Input, Select } from 'antd-packages'
 import React from 'react'
 
 const { Option } = Select

@@ -4,13 +4,13 @@
  */
 
 import { SearchOutlined } from '@ant-design/icons'
-import type { InputRef } from 'antd'
-import { Button, Input, Space, Table } from 'antd'
+import type { InputRef } from 'antd-packages'
+import { Button, Input, Space, Table } from 'antd-packages'
 import type {
   ColumnsType,
   ColumnType
-} from 'antd/lib/table'
-import type { FilterConfirmProps } from 'antd/lib/table/interface'
+} from 'antd-packages/lib/table'
+import type { FilterConfirmProps } from 'antd-packages/lib/table/interface'
 import React, { useRef, useState } from 'react'
 import Highlighter from 'react-highlight-words'
 

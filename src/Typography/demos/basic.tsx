@@ -3,7 +3,7 @@
  * desc: 展示文档样例。
  */
 
-import { Divider, Typography } from 'antd'
+import { Divider, Typography } from 'antd-packages'
 import React from 'react'
 
 const { Title, Paragraph, Text, Link } =

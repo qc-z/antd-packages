@@ -3,7 +3,7 @@
  * desc: 展示字数提示。
  */
 
-import { Input } from 'antd'
+import { Input } from 'antd-packages'
 import React from 'react'
 
 const { TextArea } = Input

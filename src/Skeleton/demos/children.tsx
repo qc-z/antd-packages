@@ -3,7 +3,7 @@
  * desc: 加载占位图包含子组件。
  */
 
-import { Button, Skeleton } from 'antd'
+import { Button, Skeleton } from 'antd-packages'
 import React, { useState } from 'react'
 
 const App: React.FC = () => {

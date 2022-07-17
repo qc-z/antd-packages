@@ -3,11 +3,11 @@
  * desc: 可以使用`filterMode`来修改筛选菜单的UI，可选值有`menu`（默认）和`tree`。
  */
 
-import { Table } from 'antd'
+import { Table } from 'antd-packages'
 import type {
   ColumnsType,
   TableProps
-} from 'antd/lib/table'
+} from 'antd-packages/lib/table'
 import React from 'react'
 
 interface DataType {

@@ -3,7 +3,7 @@
  * desc: 超过`overflowCount`的会显示为`${overflowCount}+`，默认的`overflowCount`为`99`。
  */
 
-import { Avatar, Badge } from 'antd'
+import { Avatar, Badge } from 'antd-packages'
 import React from 'react'
 
 const App: React.FC = () => (

@@ -3,7 +3,7 @@
  * desc: Debugusage
  */
 
-import { Button, Popconfirm, Space } from 'antd'
+import { Button, Popconfirm, Space } from 'antd-packages'
 import React from 'react'
 
 const App: React.FC = () => (

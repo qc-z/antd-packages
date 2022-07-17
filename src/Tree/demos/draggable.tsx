@@ -3,11 +3,11 @@
  * desc: 将节点拖拽到其他节点内部或前后。
  */
 
-import { Tree } from 'antd'
+import { Tree } from 'antd-packages'
 import type {
   DataNode,
   TreeProps
-} from 'antd/lib/tree'
+} from 'antd-packages/lib/tree'
 import React, { useState } from 'react'
 
 const x = 3

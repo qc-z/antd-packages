@@ -16,7 +16,7 @@ import {
   TimePicker,
   TreeSelect,
   Typography
-} from 'antd'
+} from 'antd-packages'
 import React from 'react'
 
 const { Text } = Typography

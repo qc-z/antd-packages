@@ -3,7 +3,7 @@
  * desc: 简单的步骤条。
  */
 
-import { Steps } from 'antd'
+import { Steps } from 'antd-packages'
 import React from 'react'
 
 const { Step } = Steps

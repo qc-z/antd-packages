@@ -1,4 +1,5 @@
 import Affix from './affix'
-export * from './index.d'
+
+export { AffixProps } from './affix'
 
 export default Affix

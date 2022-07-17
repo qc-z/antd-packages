@@ -3,8 +3,8 @@
  * desc: 一组互斥的Radio配合使用。
  */
 
-import type { RadioChangeEvent } from 'antd'
-import { Radio } from 'antd'
+import type { RadioChangeEvent } from 'antd-packages'
+import { Radio } from 'antd-packages'
 import React, { useState } from 'react'
 
 const App: React.FC = () => {

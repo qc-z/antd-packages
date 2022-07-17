@@ -3,7 +3,7 @@
  * desc: 自定义锚点高亮。
  */
 
-import { Anchor } from 'antd'
+import { Anchor } from 'antd-packages'
 import React from 'react'
 
 const { Link } = Anchor

@@ -2,9 +2,9 @@
 /**
   * title: Flex 填充
   * desc: Col提供`flex`属性以支持填充。
-  */ 
+  */
 
-import { Col, Divider, Row } from 'antd';
+import { Col, Divider, Row } from 'antd-packages';
 import React from 'react';
 
 const App: React.FC = () => (

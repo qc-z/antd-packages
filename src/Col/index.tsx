@@ -1,4 +1,5 @@
 import Col from './col'
-export * from './index.d'
+
+export { ColProps } from './col'
 
 export default Col

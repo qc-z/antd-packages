@@ -1,4 +1,5 @@
 import Transfer from './transfer'
-export * from './index.d'
+
+export { TransferProps } from './transfer'
 
 export default Transfer

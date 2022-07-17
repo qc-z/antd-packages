@@ -3,7 +3,7 @@
  * desc: 锚点目标滚动到屏幕正中间。
  */
 
-import { Anchor } from 'antd'
+import { Anchor } from 'antd-packages'
 import React, { useEffect, useState } from 'react'
 
 const { Link } = Anchor

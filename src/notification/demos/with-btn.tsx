@@ -3,7 +3,7 @@
  * desc: 自定义关闭按钮的样式和文字。
  */
 
-import { Button, notification } from 'antd'
+import { Button, notification } from 'antd-packages'
 import React from 'react'
 
 const close = () => {

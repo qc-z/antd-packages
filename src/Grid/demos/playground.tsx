@@ -2,9 +2,9 @@
 /**
   * title: 栅格配置器
   * desc: 可以简单配置几种等分栅格和间距。
-  */ 
+  */
 
-import { Col, Row, Slider } from 'antd';
+import { Col, Row, Slider } from 'antd-packages';
 import React, { useState } from 'react';
 
 const gutters: Record<string, number> = {};

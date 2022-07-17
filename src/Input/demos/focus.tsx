@@ -3,14 +3,14 @@
  * desc: 聚焦额外配置属性。
  */
 
-import type { InputRef } from 'antd'
+import type { InputRef } from 'antd-packages'
 
 import {
   Button,
   Input,
   Space,
   Switch
-} from 'antd'
+} from 'antd-packages'
 import React, { useRef, useState } from 'react'
 
 const App: React.FC = () => {

@@ -3,11 +3,11 @@
  * desc: 内置的目录树，`multiple`模式支持`ctrl(Windows)`/`command(Mac)`复选。
  */
 
-import { Tree } from 'antd'
+import { Tree } from 'antd-packages'
 import type {
   DataNode,
   DirectoryTreeProps
-} from 'antd/lib/tree'
+} from 'antd-packages/lib/tree'
 import React from 'react'
 
 const { DirectoryTree } = Tree

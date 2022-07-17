@@ -1,4 +1,5 @@
 import Menu from './menu'
-export * from './index.d'
+
+export { MenuProps } from './menu'
 
 export default Menu

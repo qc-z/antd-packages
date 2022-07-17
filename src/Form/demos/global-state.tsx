@@ -3,7 +3,7 @@
  * desc: 通过`onFieldsChange`和`fields`，可以把表单的数据存储到上层组件或者[Redux](https://github.com/reactjs/redux)、[dva](https://github.com/dvajs/dva)中，更多可参考[rc-field-form示例](https://rc-field-form.react-component.now.sh/?selectedKind=rc-field-form&selectedStory=StateForm-redux&full=0&addons=1&stories=1&panelRight=0&addonPanel=storybook%2Factions%2Factions-panel)。**注意：**将表单数据存储于外部容器[并非好的实践](https://github.com/reduxjs/redux/issues/1287#issuecomment-175351978)，如无必要请避免使用。
  */
 
-import { Form, Input } from 'antd'
+import { Form, Input } from 'antd-packages'
 import React, { useState } from 'react'
 
 interface FieldData {

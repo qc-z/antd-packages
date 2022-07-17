@@ -3,8 +3,8 @@
  * desc: 自定义穿梭框全选按钮的文字。
  */
 
-import { Transfer } from 'antd'
-import type { SelectAllLabel } from 'antd/es/transfer'
+import { Transfer } from 'antd-packages'
+import type { SelectAllLabel } from 'antd-packages/es/transfer'
 import React, { useState } from 'react'
 
 interface RecordType {

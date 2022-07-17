@@ -3,7 +3,7 @@
  * desc: Debugusage
  */
 
-import { Space, Switch } from 'antd'
+import { Space, Switch } from 'antd-packages'
 import React, { useState } from 'react'
 
 const style: React.CSSProperties = {

@@ -7,7 +7,7 @@ import {
   AndroidOutlined,
   AppleOutlined
 } from '@ant-design/icons'
-import { Tabs } from 'antd'
+import { Tabs } from 'antd-packages'
 import React from 'react'
 
 const { TabPane } = Tabs

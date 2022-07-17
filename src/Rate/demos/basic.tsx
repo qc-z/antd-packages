@@ -3,7 +3,7 @@
  * desc: 最简单的用法。
  */
 
-import { Rate } from 'antd'
+import { Rate } from 'antd-packages'
 import React from 'react'
 
 const App: React.FC = () => <Rate />

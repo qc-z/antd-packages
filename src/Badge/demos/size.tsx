@@ -3,7 +3,7 @@
  * desc: 可以设置有数字徽标的大小。
  */
 
-import { Avatar, Badge } from 'antd'
+import { Avatar, Badge } from 'antd-packages'
 import React from 'react'
 
 const App: React.FC = () => (

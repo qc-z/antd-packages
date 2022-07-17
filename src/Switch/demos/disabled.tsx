@@ -3,7 +3,7 @@
  * desc: Switch失效状态。
  */
 
-import { Button, Switch } from 'antd'
+import { Button, Switch } from 'antd-packages'
 import React, { useState } from 'react'
 
 const App: React.FC = () => {

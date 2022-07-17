@@ -1,4 +1,5 @@
 import Result from './result'
-export * from './index.d'
+
+export { ResultProps } from './result'
 
 export default Result

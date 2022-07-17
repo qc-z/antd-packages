@@ -3,7 +3,7 @@
  * desc: 自定义图片链接、图片大小、描述、附属内容。
  */
 
-import { Button, Empty } from 'antd'
+import { Button, Empty } from 'antd-packages'
 import React from 'react'
 
 const App: React.FC = () => (

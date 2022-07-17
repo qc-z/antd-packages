@@ -3,7 +3,7 @@
  * desc: 多图预览时顶部展示进度,支持自定义
  */
 
-import { Image } from 'antd'
+import { Image } from 'antd-packages'
 
 const App = () => (
   <Image.PreviewGroup

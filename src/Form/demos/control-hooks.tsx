@@ -3,7 +3,7 @@
  * desc: 通过`Form.useForm`对表单数据域进行交互。>注意`useForm`是[ReactHooks](https://reactjs.org/docs/hooks-intro.html)的实现，只能用于函数组件，class组件请查看下面的例子。
  */
 
-import { Button, Form, Input, Select } from 'antd'
+import { Button, Form, Input, Select } from 'antd-packages'
 import React from 'react'
 
 const { Option } = Select

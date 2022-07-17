@@ -3,7 +3,7 @@
  * desc: 给评分组件加上文案展示。
  */
 
-import { Rate } from 'antd'
+import { Rate } from 'antd-packages'
 import React, { useState } from 'react'
 
 const desc = [

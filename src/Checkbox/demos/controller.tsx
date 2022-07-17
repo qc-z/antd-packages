@@ -3,8 +3,8 @@
  * desc: 联动checkbox。
  */
 
-import { Button, Checkbox } from 'antd'
-import type { CheckboxChangeEvent } from 'antd/es/checkbox'
+import { Button, Checkbox } from 'antd-packages'
+import type { CheckboxChangeEvent } from 'antd-packages/es/checkbox'
 import React, { useState } from 'react'
 
 const App: React.FC = () => {
@@ -24,9 +24,8 @@ const App: React.FC = () => {
     setChecked(e.target.checked)
   }
 
-  const label = `${
-    checked ? 'Checked' : 'Unchecked'
-  }-${disabled ? 'Disabled' : 'Enabled'}`
+  const label = `${checked ? 'Checked' : 'Unchecked'
+    }-${disabled ? 'Disabled' : 'Enabled'}`
 
   return (
     <>

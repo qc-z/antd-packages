@@ -3,8 +3,8 @@
  * desc: 基本使用。
  */
 
-import { Mentions } from 'antd'
-import type { OptionProps } from 'antd/es/mentions'
+import { Mentions } from 'antd-packages'
+import type { OptionProps } from 'antd-packages/es/mentions'
 import React from 'react'
 
 const { Option } = Mentions

@@ -3,7 +3,7 @@
  * desc: 气泡框不可见时自动调整位置
  */
 
-import { Button, Tooltip } from 'antd'
+import { Button, Tooltip } from 'antd-packages'
 import React from 'react'
 
 const wrapStyles: React.CSSProperties = {

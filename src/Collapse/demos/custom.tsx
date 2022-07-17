@@ -4,7 +4,7 @@
  */
 
 import { CaretRightOutlined } from '@ant-design/icons'
-import { Collapse } from 'antd'
+import { Collapse } from 'antd-packages'
 import React from 'react'
 
 const { Panel } = Collapse

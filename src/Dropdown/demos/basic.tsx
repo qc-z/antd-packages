@@ -7,7 +7,7 @@ import {
   DownOutlined,
   SmileOutlined
 } from '@ant-design/icons'
-import { Dropdown, Menu, Space } from 'antd'
+import { Dropdown, Menu, Space } from 'antd-packages'
 import React from 'react'
 
 const menu = (

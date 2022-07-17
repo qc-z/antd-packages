@@ -3,11 +3,11 @@
  * desc: 对某一列数据进行筛选，使用列的`filters`属性来指定需要筛选菜单的列，`onFilter`用于筛选当前数据，`filterMultiple`用于指定多选和单选。对某一列数据进行排序，通过指定列的`sorter`函数即可启动排序按钮。`sorter:function(rowA,rowB){...}`，rowA、rowB为比较的两个行数据。`sortDirections:['ascend'|'descend']`改变每列可用的排序方式，切换排序时按数组内容依次切换，设置在tableprops上时对所有列生效。你可以通过设置`['ascend','descend','ascend']`禁止排序恢复到默认状态。使用`defaultSortOrder`属性，设置列的默认排序顺序。
  */
 
-import { Table } from 'antd'
+import { Table } from 'antd-packages'
 import type {
   ColumnsType,
   TableProps
-} from 'antd/lib/table'
+} from 'antd-packages/lib/table'
 import React from 'react'
 
 interface DataType {

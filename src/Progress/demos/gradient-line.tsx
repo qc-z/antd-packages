@@ -3,7 +3,7 @@
  * desc: `linear-gradient`的封装。推荐只传两种颜色。
  */
 
-import { Progress } from 'antd'
+import { Progress } from 'antd-packages'
 import React from 'react'
 
 const App: React.FC = () => (

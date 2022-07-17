@@ -8,7 +8,7 @@ import {
   EllipsisOutlined,
   SettingOutlined
 } from '@ant-design/icons'
-import { Avatar, Card } from 'antd'
+import { Avatar, Card } from 'antd-packages'
 import React from 'react'
 
 const { Meta } = Card

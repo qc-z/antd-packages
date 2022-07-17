@@ -3,7 +3,7 @@
  * desc: 位置有十二个方向。如需箭头指向目标元素中心，可以设置`arrowPointAtCenter`。
  */
 
-import { Button, message, Popconfirm } from 'antd'
+import { Button, message, Popconfirm } from 'antd-packages'
 import React from 'react'
 
 const text = 'Are you sure to delete this task?'

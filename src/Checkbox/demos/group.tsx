@@ -3,8 +3,8 @@
  * desc: 方便的从数组生成Checkbox组。
  */
 
-import { Checkbox } from 'antd'
-import type { CheckboxValueType } from 'antd/es/checkbox/Group'
+import { Checkbox } from 'antd-packages'
+import type { CheckboxValueType } from 'antd-packages/es/checkbox/Group'
 import React from 'react'
 
 const onChange = (

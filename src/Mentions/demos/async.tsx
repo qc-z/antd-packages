@@ -3,7 +3,7 @@
  * desc: 匹配内容列表为异步返回时。
  */
 
-import { Mentions } from 'antd'
+import { Mentions } from 'antd-packages'
 import debounce from 'lodash/debounce'
 import React, {
   useCallback,

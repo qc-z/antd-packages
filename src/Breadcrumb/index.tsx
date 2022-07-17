@@ -1,4 +1,5 @@
 import Breadcrumb from './breadcrumb'
-export * from './index.d'
+
+export { BreadcrumbProps } from './breadcrumb'
 
 export default Breadcrumb

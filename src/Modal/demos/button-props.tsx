@@ -3,7 +3,7 @@
  * desc: 传入`okButtonProps`和`cancelButtonProps`可分别自定义确定按钮和取消按钮的props。
  */
 
-import { Button, Modal } from 'antd'
+import { Button, Modal } from 'antd-packages'
 import React, { useState } from 'react'
 
 const App: React.FC = () => {

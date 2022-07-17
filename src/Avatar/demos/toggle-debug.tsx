@@ -3,7 +3,7 @@
  * desc: 切换Avatar显示的时候，文本样式应该居中并正确调整字体大小。
  */
 
-import { Avatar, Button } from 'antd'
+import { Avatar, Button } from 'antd-packages'
 import React, { useState } from 'react'
 
 type SizeType =

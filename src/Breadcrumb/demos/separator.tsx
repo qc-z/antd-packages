@@ -3,7 +3,7 @@
  * desc: 使用`separator=">"`可以自定义分隔符。
  */
 
-import { Breadcrumb } from 'antd'
+import { Breadcrumb } from 'antd-packages'
 import React from 'react'
 
 const App: React.FC = () => (

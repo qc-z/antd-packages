@@ -1,4 +1,5 @@
 import Table from './table'
-export * from './index.d'
+
+export { TableProps } from './table'
 
 export default Table

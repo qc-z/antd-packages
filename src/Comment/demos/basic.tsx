@@ -9,7 +9,7 @@ import {
   LikeFilled,
   LikeOutlined
 } from '@ant-design/icons'
-import { Avatar, Comment, Tooltip } from 'antd'
+import { Avatar, Comment, Tooltip } from 'antd-packages'
 import moment from 'moment'
 import React, {
   createElement,

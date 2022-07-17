@@ -4,11 +4,11 @@
  */
 
 import { UploadOutlined } from '@ant-design/icons'
-import { Button, Tooltip, Upload } from 'antd'
+import { Button, Tooltip, Upload } from 'antd-packages'
 import type {
   UploadFile,
   UploadProps
-} from 'antd/es/upload/interface'
+} from 'antd-packages/es/upload/interface'
 import update from 'immutability-helper'
 import React, {
   useCallback,
@@ -82,9 +82,8 @@ const DragableUploadListItem = ({
   return (
     <div
       ref={ref}
-      className={`ant-upload-draggable-list-item ${
-        isOver ? dropClassName : ''
-      }`}
+      className={`ant-upload-draggable-list-item ${isOver ? dropClassName : ''
+        }`}
       style={{ cursor: 'move' }}
     >
       {file.status === 'error'

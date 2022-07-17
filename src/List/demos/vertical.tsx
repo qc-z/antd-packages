@@ -8,7 +8,7 @@ import {
   MessageOutlined,
   StarOutlined
 } from '@ant-design/icons'
-import { Avatar, List, Space } from 'antd'
+import { Avatar, List, Space } from 'antd-packages'
 import React from 'react'
 
 const data = Array.from({ length: 23 }).map(

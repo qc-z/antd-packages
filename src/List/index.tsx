@@ -1,4 +1,5 @@
 import List from './list'
-export * from './index.d'
+
+export { ListProps } from './list'
 
 export default List

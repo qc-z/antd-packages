@@ -3,7 +3,7 @@
  * desc: 将折叠面板的背景变成透明。
  */
 
-import { Collapse } from 'antd'
+import { Collapse } from 'antd-packages'
 import React from 'react'
 
 const { Panel } = Collapse

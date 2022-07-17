@@ -7,7 +7,7 @@ import {
   EyeInvisibleOutlined,
   EyeTwoTone
 } from '@ant-design/icons'
-import { Input, Space } from 'antd'
+import { Input, Space } from 'antd-packages'
 import React from 'react'
 
 const App: React.FC = () => (

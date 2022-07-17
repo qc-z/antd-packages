@@ -3,7 +3,7 @@
  * desc: 省市区级联。
  */
 
-import { Cascader } from 'antd'
+import { Cascader } from 'antd-packages'
 import React from 'react'
 
 interface Option {

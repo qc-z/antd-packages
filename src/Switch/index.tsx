@@ -1,4 +1,5 @@
 import Switch from './switch'
-export * from './index.d'
+
+export { SwitchProps } from './switch'
 
 export default Switch

@@ -3,7 +3,7 @@
  * desc: 使用style和className来定义样式。
  */
 
-import { Button, notification } from 'antd'
+import { Button, notification } from 'antd-packages'
 import React from 'react'
 
 const openNotification = () => {

@@ -3,7 +3,7 @@
  * desc: 最简单的用法。
  */
 
-import { message, Popconfirm } from 'antd'
+import { message, Popconfirm } from 'antd-packages'
 import React from 'react'
 
 const confirm = (

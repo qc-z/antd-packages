@@ -7,7 +7,7 @@ import {
   MehOutlined,
   SmileOutlined
 } from '@ant-design/icons'
-import { Select } from 'antd'
+import { Select } from 'antd-packages'
 import React from 'react'
 
 const smileIcon = <SmileOutlined />

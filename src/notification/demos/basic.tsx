@@ -3,7 +3,7 @@
  * desc: 最简单的用法，4.5秒后自动关闭。
  */
 
-import { Button, notification } from 'antd'
+import { Button, notification } from 'antd-packages'
 import React from 'react'
 
 const openNotification = () => {

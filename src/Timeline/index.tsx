@@ -1,4 +1,5 @@
 import Timeline from './timeline'
-export * from './index.d'
+
+export { TimelineProps } from './timeline'
 
 export default Timeline

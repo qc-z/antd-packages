@@ -6,13 +6,13 @@
 import type {
   DrawerProps,
   RadioChangeEvent
-} from 'antd'
+} from 'antd-packages'
 import {
   Button,
   Drawer,
   Radio,
   Space
-} from 'antd'
+} from 'antd-packages'
 import React, { useState } from 'react'
 
 const App: React.FC = () => {

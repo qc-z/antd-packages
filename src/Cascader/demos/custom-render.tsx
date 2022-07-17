@@ -3,8 +3,8 @@
  * desc: 例如给最后一项加上邮编链接。
  */
 
-import { Cascader } from 'antd'
-import type { DefaultOptionType } from 'antd/es/cascader'
+import { Cascader } from 'antd-packages'
+import type { DefaultOptionType } from 'antd-packages/es/cascader'
 import React from 'react'
 
 interface Option {

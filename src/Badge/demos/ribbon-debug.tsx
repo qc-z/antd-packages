@@ -3,7 +3,7 @@
  * desc: Buggy!
  */
 
-import { Badge, Card, Space } from 'antd'
+import { Badge, Card, Space } from 'antd-packages'
 import React from 'react'
 
 const App: React.FC = () => (

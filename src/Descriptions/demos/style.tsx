@@ -8,7 +8,7 @@ import {
   Divider,
   Radio,
   Switch
-} from 'antd'
+} from 'antd-packages'
 import React, { useState } from 'react'
 
 const labelStyle: React.CSSProperties = {

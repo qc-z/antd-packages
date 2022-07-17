@@ -3,7 +3,7 @@
  * desc: 通过`prefix`属性自定义触发字符。默认为`@`,可以定义为数组。
  */
 
-import { Mentions } from 'antd'
+import { Mentions } from 'antd-packages'
 import React, { useState } from 'react'
 
 const { Option } = Mentions

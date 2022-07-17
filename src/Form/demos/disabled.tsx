@@ -16,7 +16,7 @@ import {
   TreeSelect,
   Switch,
   Checkbox
-} from 'antd'
+} from 'antd-packages'
 
 const { RangePicker } = DatePicker
 const { TextArea } = Input

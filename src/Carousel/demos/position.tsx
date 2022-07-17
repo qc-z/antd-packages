@@ -3,9 +3,9 @@
  * desc: 位置有4个方向。
  */
 
-import type { RadioChangeEvent } from 'antd'
-import { Carousel, Radio } from 'antd'
-import type { DotPosition } from 'antd/lib/carousel'
+import type { RadioChangeEvent } from 'antd-packages'
+import { Carousel, Radio } from 'antd-packages'
+import type { DotPosition } from 'antd-packages/lib/carousel'
 import React, { useState } from 'react'
 
 const contentStyle: React.CSSProperties = {

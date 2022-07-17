@@ -3,7 +3,7 @@
  * desc: 用`target`设置`Affix`需要监听其滚动事件的元素，默认为`window`。
  */
 
-import { Affix, Button } from 'antd'
+import { Affix, Button } from 'antd-packages'
 import React, { useState } from 'react'
 
 const App: React.FC = () => {

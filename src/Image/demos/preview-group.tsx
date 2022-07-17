@@ -3,7 +3,7 @@
  * desc: 点击左右切换按钮可以预览多张图片。
  */
 
-import { Image } from 'antd'
+import { Image } from 'antd-packages'
 import React from 'react'
 
 const App: React.FC = () => (

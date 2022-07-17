@@ -3,7 +3,7 @@
  * desc: 可通过`CheckableTag`实现类似Checkbox的效果，点击切换选中效果。>该组件为完全受控组件，不支持非受控用法。
  */
 
-import { Tag } from 'antd'
+import { Tag } from 'antd-packages'
 import React, { useState } from 'react'
 
 const { CheckableTag } = Tag

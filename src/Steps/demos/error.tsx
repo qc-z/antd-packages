@@ -3,7 +3,7 @@
  * desc: 使用Steps的`status`属性来指定当前步骤的状态。
  */
 
-import { Steps } from 'antd'
+import { Steps } from 'antd-packages'
 import React from 'react'
 
 const { Step } = Steps

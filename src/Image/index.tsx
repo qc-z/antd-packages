@@ -1,4 +1,5 @@
 import Image from './image'
-export * from './index.d'
+
+export { ImageProps } from './image'
 
 export default Image

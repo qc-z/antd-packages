@@ -15,8 +15,8 @@ import {
   InputNumber,
   Modal,
   Typography
-} from 'antd'
-import type { FormInstance } from 'antd/es/form'
+} from 'antd-packages'
+import type { FormInstance } from 'antd-packages/es/form'
 import React, {
   useEffect,
   useRef,

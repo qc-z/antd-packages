@@ -3,8 +3,8 @@
  * desc: 设置`column.ellipsis.showTitle`关闭单元格内容自动省略后默认的`title`提示,使用`Tooltip`替代。
  */
 
-import { Table, Tooltip } from 'antd'
-import type { ColumnsType } from 'antd/lib/table'
+import { Table, Tooltip } from 'antd-packages'
+import type { ColumnsType } from 'antd-packages/lib/table'
 import React from 'react'
 
 interface DataType {

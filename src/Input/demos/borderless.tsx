@@ -3,7 +3,7 @@
  * desc: 没有边框。
  */
 
-import { Input } from 'antd'
+import { Input } from 'antd-packages'
 import React from 'react'
 
 const App: React.FC = () => (

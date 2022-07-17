@@ -4,7 +4,7 @@
  */
 
 import { UploadOutlined } from '@ant-design/icons'
-import { Button, Upload } from 'antd'
+import { Button, Upload } from 'antd-packages'
 import React from 'react'
 
 const App: React.FC = () => (

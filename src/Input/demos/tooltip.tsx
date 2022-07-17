@@ -3,7 +3,7 @@
  * desc: 结合[Tooltip](/components/tooltip)组件，实现一个数值输入框，方便内容超长时的全量展现。
  */
 
-import { Input, Tooltip } from 'antd'
+import { Input, Tooltip } from 'antd-packages'
 import React, { useState } from 'react'
 
 interface NumericInputProps {

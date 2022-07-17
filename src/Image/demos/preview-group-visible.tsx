@@ -3,7 +3,7 @@
  * desc: 从一张图片点开相册。
  */
 
-import { Image } from 'antd'
+import { Image } from 'antd-packages'
 import React, { useState } from 'react'
 
 const App: React.FC = () => {

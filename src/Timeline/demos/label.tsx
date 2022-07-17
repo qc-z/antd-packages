@@ -3,8 +3,8 @@
  * desc: 使用`label`标签单独展示时间。
  */
 
-import type { RadioChangeEvent } from 'antd'
-import { Radio, Timeline } from 'antd'
+import type { RadioChangeEvent } from 'antd-packages'
+import { Radio, Timeline } from 'antd-packages'
 import React, { useState } from 'react'
 
 const App: React.FC = () => {

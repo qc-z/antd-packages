@@ -1,4 +1,5 @@
 import Popover from './popover'
-export * from './index.d'
+
+export { PopoverProps } from './popover'
 
 export default Popover

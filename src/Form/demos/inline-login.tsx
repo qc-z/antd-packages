@@ -7,7 +7,7 @@ import {
   LockOutlined,
   UserOutlined
 } from '@ant-design/icons'
-import { Button, Form, Input } from 'antd'
+import { Button, Form, Input } from 'antd-packages'
 import React, { useEffect, useState } from 'react'
 
 const App: React.FC = () => {

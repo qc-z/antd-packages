@@ -3,7 +3,7 @@
  * desc: `size="small"`表示小号开关。
  */
 
-import { Switch } from 'antd'
+import { Switch } from 'antd-packages'
 import React from 'react'
 
 const App: React.FC = () => (

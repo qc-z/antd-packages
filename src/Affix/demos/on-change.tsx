@@ -3,7 +3,7 @@
  * desc: 可以获得是否固定的状态。
  */
 
-import { Affix, Button } from 'antd'
+import { Affix, Button } from 'antd-packages'
 import React from 'react'
 
 const App: React.FC = () => (

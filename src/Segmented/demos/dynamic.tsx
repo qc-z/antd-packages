@@ -4,7 +4,7 @@
  */
 
 import React, { useState } from 'react'
-import { Segmented, Button } from 'antd'
+import { Segmented, Button } from 'antd-packages'
 
 const defaultOptions = [
   'Daily',

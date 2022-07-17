@@ -3,7 +3,7 @@
  * desc: 在灰色背景上使用无边框的卡片。
  */
 
-import { Card } from 'antd'
+import { Card } from 'antd-packages'
 import React from 'react'
 
 const App: React.FC = () => (

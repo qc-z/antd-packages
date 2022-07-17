@@ -3,7 +3,7 @@
  * desc: 使用`optionLabelProp`指定回填到选择框的`Option`属性。
  */
 
-import { Select } from 'antd'
+import { Select } from 'antd-packages'
 import React from 'react'
 
 const { Option } = Select

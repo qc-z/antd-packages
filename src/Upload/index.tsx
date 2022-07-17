@@ -1,4 +1,5 @@
 import Upload from './upload'
-export * from './index.d'
+
+export { UploadProps } from './upload'
 
 export default Upload

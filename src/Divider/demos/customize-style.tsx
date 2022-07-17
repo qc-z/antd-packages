@@ -3,7 +3,7 @@
  * desc: 测试一些`style`修改样式的行为。
  */
 
-import { Divider } from 'antd'
+import { Divider } from 'antd-packages'
 import React from 'react'
 
 const App: React.FC = () => (

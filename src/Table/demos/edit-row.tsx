@@ -10,7 +10,7 @@ import {
   Popconfirm,
   Table,
   Typography
-} from 'antd'
+} from 'antd-packages'
 import React, { useState } from 'react'
 
 interface Item {

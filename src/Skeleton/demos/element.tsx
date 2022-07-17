@@ -3,7 +3,7 @@
  * desc: 骨架按钮、头像、输入框和图像。
  */
 
-import type { RadioChangeEvent } from 'antd'
+import type { RadioChangeEvent } from 'antd-packages'
 import {
   Divider,
   Form,
@@ -11,7 +11,7 @@ import {
   Skeleton,
   Space,
   Switch
-} from 'antd'
+} from 'antd-packages'
 import React, { useState } from 'react'
 
 type SizeType = 'default' | 'small' | 'large'

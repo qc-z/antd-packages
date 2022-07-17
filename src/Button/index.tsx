@@ -1,4 +1,5 @@
 import Button from './button'
-export * from './index.d'
+
+export { ButtonProps } from './button'
 
 export default Button

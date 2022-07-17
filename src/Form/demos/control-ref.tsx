@@ -3,8 +3,8 @@
  * desc: 我们推荐使用`Form.useForm`创建表单数据域进行控制。如果是在classcomponent下，你也可以通过`ref`获取数据域。
  */
 
-import { Button, Form, Input, Select } from 'antd'
-import type { FormInstance } from 'antd/es/form'
+import { Button, Form, Input, Select } from 'antd-packages'
+import type { FormInstance } from 'antd-packages/es/form'
 import React from 'react'
 
 const { Option } = Select
@@ -96,7 +96,7 @@ class App extends React.Component {
         >
           {({ getFieldValue }) =>
             getFieldValue('gender') ===
-            'other' ? (
+              'other' ? (
               <Form.Item
                 name="customizeGender"
                 label="Customize Gender"

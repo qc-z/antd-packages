@@ -1,4 +1,5 @@
 import Input from './input'
-export * from './index.d'
+
+export { InputProps } from './input'
 
 export default Input

@@ -3,7 +3,7 @@
  * desc: 标准的进度条。
  */
 
-import { Progress } from 'antd'
+import { Progress } from 'antd-packages'
 import React from 'react'
 
 const App: React.FC = () => (

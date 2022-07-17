@@ -4,8 +4,8 @@
  */
 
 import { PlusOutlined } from '@ant-design/icons'
-import type { InputRef } from 'antd'
-import { Input, Tag } from 'antd'
+import type { InputRef } from 'antd-packages'
+import { Input, Tag } from 'antd-packages'
 import { TweenOneGroup } from 'rc-tween-one'
 import React, {
   useEffect,

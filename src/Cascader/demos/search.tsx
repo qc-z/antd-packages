@@ -3,8 +3,8 @@
  * desc: 可以直接搜索选项并选择。>`Cascader[showSearch]`暂不支持服务端搜索，更多信息见[#5547](https://github.com/ant-design/ant-design/issues/5547)
  */
 
-import { Cascader } from 'antd'
-import type { DefaultOptionType } from 'antd/es/cascader'
+import { Cascader } from 'antd-packages'
+import type { DefaultOptionType } from 'antd-packages/es/cascader'
 import React from 'react'
 
 interface Option {

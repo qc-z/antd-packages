@@ -3,7 +3,7 @@
  * desc: 圈形的进度。
  */
 
-import { Progress } from 'antd'
+import { Progress } from 'antd-packages'
 import React from 'react'
 
 const App: React.FC = () => (

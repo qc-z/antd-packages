@@ -3,11 +3,11 @@
  * desc: `filterSearch`用于开启筛选项的搜索，通过`filterSearch:(input,record)=>boolean`设置自定义筛选方法
  */
 
-import { Table } from 'antd'
+import { Table } from 'antd-packages'
 import type {
   ColumnsType,
   TableProps
-} from 'antd/lib/table'
+} from 'antd-packages/lib/table'
 import React from 'react'
 
 interface DataType {

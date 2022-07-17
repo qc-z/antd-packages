@@ -1,4 +1,5 @@
 import Modal from './modal'
-export * from './index.d'
+
+export { ModalProps } from './modal'
 
 export default Modal

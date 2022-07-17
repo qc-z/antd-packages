@@ -3,7 +3,7 @@
  * desc: 使用缎带型的徽标。
  */
 
-import { Badge, Card } from 'antd'
+import { Badge, Card } from 'antd-packages'
 import React from 'react'
 
 const App: React.FC = () => (

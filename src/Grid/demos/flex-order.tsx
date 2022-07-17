@@ -2,9 +2,9 @@
 /**
   * title: 排序
   * desc: 通过`order`来改变元素的排序。
-  */ 
+  */
 
-import { Col, Divider, Row } from 'antd';
+import { Col, Divider, Row } from 'antd-packages';
 import React from 'react';
 
 const App: React.FC = () => (

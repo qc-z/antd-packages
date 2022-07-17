@@ -7,7 +7,7 @@ import {
   Button,
   ConfigProvider,
   Drawer
-} from 'antd'
+} from 'antd-packages'
 import React, { useRef, useState } from 'react'
 
 const App: React.FC = () => {

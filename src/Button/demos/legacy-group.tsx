@@ -5,7 +5,7 @@
 
 import { DownloadOutlined } from '@ant-design/icons'
 import { Button, Tooltip } from 'antd-packages'
-import type { ButtonGroupProps } from 'antd/es/button'
+import type { ButtonGroupProps } from 'antd/lib/button'
 import React from 'react'
 
 const getGroup = (props?: ButtonGroupProps) => (

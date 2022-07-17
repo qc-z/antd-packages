@@ -8,7 +8,7 @@ import {
   Checkbox,
   Divider,
   Tabs
-} from 'antd'
+} from 'antd-packages'
 import React, { useMemo, useState } from 'react'
 
 const { TabPane } = Tabs

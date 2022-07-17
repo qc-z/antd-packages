@@ -14,7 +14,7 @@ import {
   Row,
   Select,
   Space
-} from 'antd'
+} from 'antd-packages'
 import React, { useState } from 'react'
 
 const { Option } = Select

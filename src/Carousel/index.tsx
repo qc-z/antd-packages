@@ -1,4 +1,5 @@
 import Carousel from './carousel'
-export * from './index.d'
+
+export { CarouselProps } from './carousel'
 
 export default Carousel

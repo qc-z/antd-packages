@@ -3,7 +3,7 @@
  * desc: 通过语法糖的方式组织菜单目录树，在`4.20.0`之后推荐通过`items`属性实现。在下个大版本中语法糖用法将被移除从而让Menu可以获得更好的性能优化。
  */
 
-import { Menu } from 'antd'
+import { Menu } from 'antd-packages'
 import {
   MailOutlined,
   AppstoreOutlined,

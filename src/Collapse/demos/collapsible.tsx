@@ -3,7 +3,7 @@
  * desc: 通过`collapsible`属性，可以设置面板的可折叠触发区域。
  */
 
-import { Collapse, Space } from 'antd'
+import { Collapse, Space } from 'antd-packages'
 import React from 'react'
 
 const { Panel } = Collapse

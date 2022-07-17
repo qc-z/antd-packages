@@ -2,9 +2,9 @@
 /**
   * title: undefined
   * desc: 使用`useBreakpoint`Hook个性化布局。
-  */ 
+  */
 
-import { Grid, Tag } from 'antd';
+import { Grid, Tag } from 'antd-packages';
 import React from 'react';
 
 const { useBreakpoint } = Grid;

@@ -1,4 +1,5 @@
 import Segmented from './segmented'
-export * from './index.d'
+
+export { SegmentedProps } from './segmented'
 
 export default Segmented

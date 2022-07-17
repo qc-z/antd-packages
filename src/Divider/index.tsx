@@ -1,4 +1,5 @@
 import Divider from './divider'
-export * from './index.d'
+
+export { DividerProps } from './divider'
 
 export default Divider

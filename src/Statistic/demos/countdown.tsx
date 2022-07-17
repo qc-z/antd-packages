@@ -3,8 +3,8 @@
  * desc: 倒计时组件。
  */
 
-import { Col, Row, Statistic } from 'antd'
-import type { countdownValueType } from 'antd/lib/statistic/utils'
+import { Col, Row, Statistic } from 'antd-packages'
+import type { countdownValueType } from 'antd-packages/lib/statistic/utils'
 import React from 'react'
 
 const { Countdown } = Statistic

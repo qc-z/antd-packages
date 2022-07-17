@@ -3,7 +3,7 @@
  * desc: 设置`reverse`可以将滑动条置反。
  */
 
-import { Slider, Switch } from 'antd'
+import { Slider, Switch } from 'antd-packages'
 import React, { useState } from 'react'
 
 const App: React.FC = () => {

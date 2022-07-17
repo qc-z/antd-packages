@@ -3,7 +3,7 @@
  * desc: 嵌套折叠面板。
  */
 
-import { Collapse } from 'antd'
+import { Collapse } from 'antd-packages'
 import React from 'react'
 
 const { Panel } = Collapse

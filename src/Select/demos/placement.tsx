@@ -3,9 +3,9 @@
  * desc: 可以通过`placement`手动指定弹出的位置。
  */
 
-import type { RadioChangeEvent } from 'antd'
-import { Radio, Select } from 'antd'
-import type { SelectCommonPlacement } from 'antd/es/_util/motion'
+import type { RadioChangeEvent } from 'antd-packages'
+import { Radio, Select } from 'antd-packages'
+import type { SelectCommonPlacement } from 'antd-packages/es/_util/motion'
 import React, { useState } from 'react'
 
 const { Option } = Select

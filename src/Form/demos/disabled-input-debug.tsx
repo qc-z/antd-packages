@@ -3,7 +3,7 @@
  * desc: TestdisabledInputwithvalidatestate
  */
 
-import { Form, Input } from 'antd'
+import { Form, Input } from 'antd-packages'
 import React from 'react'
 
 const App: React.FC = () => (

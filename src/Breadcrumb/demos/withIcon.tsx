@@ -7,7 +7,7 @@ import {
   HomeOutlined,
   UserOutlined
 } from '@ant-design/icons'
-import { Breadcrumb } from 'antd'
+import { Breadcrumb } from 'antd-packages'
 import React from 'react'
 
 const App: React.FC = () => (

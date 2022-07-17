@@ -4,13 +4,13 @@
  */
 
 import { DownOutlined } from '@ant-design/icons'
-import type { MenuProps } from 'antd'
+import type { MenuProps } from 'antd-packages'
 import {
   Dropdown,
   Menu,
   message,
   Space
-} from 'antd'
+} from 'antd-packages'
 import React from 'react'
 
 const onClick: MenuProps['onClick'] = ({

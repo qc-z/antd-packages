@@ -3,8 +3,8 @@
  * desc: 你可以通过`Table.EXPAND_COLUMN`和`Table.SELECT_COLUMN`来控制选择和展开列的顺序。
  */
 
-import { Table } from 'antd'
-import type { ColumnsType } from 'antd/lib/table'
+import { Table } from 'antd-packages'
+import type { ColumnsType } from 'antd-packages/lib/table'
 import React from 'react'
 
 interface DataType {

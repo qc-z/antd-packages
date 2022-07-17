@@ -3,8 +3,8 @@
  * desc: 迷你版本。
  */
 
-import type { PaginationProps } from 'antd'
-import { Pagination } from 'antd'
+import type { PaginationProps } from 'antd-packages'
+import { Pagination } from 'antd-packages'
 import React from 'react'
 
 const showTotal: PaginationProps['showTotal'] = (

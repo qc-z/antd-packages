@@ -3,7 +3,7 @@
  * desc: Radio不可用。
  */
 
-import { Button, Radio } from 'antd'
+import { Button, Radio } from 'antd-packages'
 import React, { useState } from 'react'
 
 const App: React.FC = () => {

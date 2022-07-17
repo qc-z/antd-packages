@@ -3,7 +3,7 @@
  * desc: 表单有三种布局。
  */
 
-import { Button, Form, Input, Radio } from 'antd'
+import { Button, Form, Input, Radio } from 'antd-packages'
 import React, { useState } from 'react'
 
 type LayoutType = Parameters<

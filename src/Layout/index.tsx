@@ -1,4 +1,5 @@
 import Layout from './layout'
-export * from './index.d'
+
+export { LayoutProps } from './layout'
 
 export default Layout

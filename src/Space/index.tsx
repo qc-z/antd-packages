@@ -1,4 +1,5 @@
 import Space from './space'
-export * from './index.d'
+
+export { SpaceProps } from './space'
 
 export default Space

@@ -3,8 +3,8 @@
  * desc: 抽屉的默认宽度为`378px`，另外还提供一个大号抽屉`736px`，可以用`size`属性来设置。
  */
 
-import { Button, Drawer, Space } from 'antd'
-import type { DrawerProps } from 'antd/es/drawer'
+import { Button, Drawer, Space } from 'antd-packages'
+import type { DrawerProps } from 'antd-packages/es/drawer'
 import React, { useState } from 'react'
 
 const App: React.FC = () => {

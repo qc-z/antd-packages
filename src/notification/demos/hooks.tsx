@@ -14,8 +14,8 @@ import {
   Divider,
   notification,
   Space
-} from 'antd'
-import type { NotificationPlacement } from 'antd/lib/notification'
+} from 'antd-packages'
+import type { NotificationPlacement } from 'antd-packages/lib/notification'
 import React from 'react'
 
 const Context = React.createContext({

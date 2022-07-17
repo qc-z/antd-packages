@@ -1,4 +1,5 @@
 import Dropdown from './dropdown'
-export * from './index.d'
+
+export { DropdownProps } from './dropdown'
 
 export default Dropdown

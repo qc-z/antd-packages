@@ -3,9 +3,9 @@
  * desc: 大号页签用在页头区域，小号用在弹出框等较狭窄的容器内。
  */
 
-import type { RadioChangeEvent } from 'antd'
-import { Radio, Tabs } from 'antd'
-import type { SizeType } from 'antd/lib/config-provider/SizeContext'
+import type { RadioChangeEvent } from 'antd-packages'
+import { Radio, Tabs } from 'antd-packages'
+import type { SizeType } from 'antd-packages/lib/config-provider/SizeContext'
 import React, { useState } from 'react'
 
 const { TabPane } = Tabs

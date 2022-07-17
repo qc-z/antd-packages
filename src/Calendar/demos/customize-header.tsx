@@ -10,8 +10,8 @@ import {
   Row,
   Select,
   Typography
-} from 'antd'
-import type { CalendarMode } from 'antd/lib/calendar/generateCalendar'
+} from 'antd-packages'
+import type { CalendarMode } from 'antd-packages/lib/calendar/generateCalendar'
 import type { Moment } from 'moment'
 import React from 'react'
 

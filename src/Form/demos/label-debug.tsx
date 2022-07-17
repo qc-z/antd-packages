@@ -3,7 +3,7 @@
  * desc: `label`中使用`<Typography.Textellipsis>`时应该显示`...`。
  */
 
-import { Form, Input, Typography } from 'antd'
+import { Form, Input, Typography } from 'antd-packages'
 import React from 'react'
 
 const App: React.FC = () => (

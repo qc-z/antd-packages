@@ -3,7 +3,7 @@
  * desc: 可以同时展开多个面板，这个例子默认展开了第一个。
  */
 
-import { Collapse } from 'antd'
+import { Collapse } from 'antd-packages'
 import React from 'react'
 
 const { Panel } = Collapse

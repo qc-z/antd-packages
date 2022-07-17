@@ -3,7 +3,7 @@
  * desc: 通过`Modal.useModal`创建支持读取context的`contextHolder`。
  */
 
-import { Button, Modal, Space } from 'antd'
+import { Button, Modal, Space } from 'antd-packages'
 import React, { createContext } from 'react'
 
 const ReachableContext = createContext<

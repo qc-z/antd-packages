@@ -8,7 +8,7 @@ import {
   Divider,
   List,
   Skeleton
-} from 'antd'
+} from 'antd-packages'
 import React, { useEffect, useState } from 'react'
 import InfiniteScroll from 'react-infinite-scroll-component'
 

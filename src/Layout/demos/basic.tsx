@@ -3,7 +3,7 @@
  * desc: 典型的页面布局。
  */
 
-import { Layout } from 'antd'
+import { Layout } from 'antd-packages'
 import React from 'react'
 
 const { Header, Footer, Sider, Content } = Layout

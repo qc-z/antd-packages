@@ -3,7 +3,7 @@
  * desc: 可口的图标让信息类型更加醒目。
  */
 
-import { Alert } from 'antd'
+import { Alert } from 'antd-packages'
 import React from 'react'
 
 const App: React.FC = () => (

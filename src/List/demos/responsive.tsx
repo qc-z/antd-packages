@@ -3,7 +3,7 @@
  * desc: 响应式的栅格列表。尺寸与[LayoutGrid](/components/grid/#Col)保持一致。
  */
 
-import { Card, List } from 'antd'
+import { Card, List } from 'antd-packages'
 import React from 'react'
 
 const data = [

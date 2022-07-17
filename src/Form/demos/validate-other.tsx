@@ -20,7 +20,7 @@ import {
   Slider,
   Switch,
   Upload
-} from 'antd'
+} from 'antd-packages'
 import React from 'react'
 
 const { Option } = Select

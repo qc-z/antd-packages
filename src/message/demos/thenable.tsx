@@ -3,7 +3,7 @@
  * desc: 可以通过then接口在关闭后运行callback。以上用例将在每个message将要结束时通过then显示新的message。
  */
 
-import { Button, message } from 'antd'
+import { Button, message } from 'antd-packages'
 import React from 'react'
 
 const success = () => {

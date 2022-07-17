@@ -8,7 +8,7 @@ import {
   Dropdown,
   Menu,
   Space
-} from 'antd'
+} from 'antd-packages'
 import React from 'react'
 
 const menu = (

@@ -1,4 +1,5 @@
 import Tree from './tree'
-export * from './index.d'
+
+export { TreeProps } from './tree'
 
 export default Tree

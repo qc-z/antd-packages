@@ -3,7 +3,7 @@
  * desc: 可以展示一个箭头。
  */
 
-import { Button, Dropdown, Menu } from 'antd'
+import { Button, Dropdown, Menu } from 'antd-packages'
 import React from 'react'
 
 const menu = (

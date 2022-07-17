@@ -3,7 +3,7 @@
  * desc: 不同大小的级联选择器。
  */
 
-import { Cascader } from 'antd'
+import { Cascader } from 'antd-packages'
 import React from 'react'
 
 interface Option {

@@ -3,7 +3,7 @@
  * desc: 一般用于固定顶部导航，方便页面切换。
  */
 
-import { Breadcrumb, Layout, Menu } from 'antd'
+import { Breadcrumb, Layout, Menu } from 'antd-packages'
 import React from 'react'
 
 const { Header, Content, Footer } = Layout

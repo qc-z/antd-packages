@@ -3,8 +3,8 @@
  * desc: 简单的表格，最后一列是各种操作。
  */
 
-import { Space, Table, Tag } from 'antd'
-import type { ColumnsType } from 'antd/lib/table'
+import { Space, Table, Tag } from 'antd-packages'
+import type { ColumnsType } from 'antd-packages/lib/table'
 import React from 'react'
 
 interface DataType {

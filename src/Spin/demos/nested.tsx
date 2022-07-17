@@ -3,7 +3,7 @@
  * desc: 可以直接把内容内嵌到`Spin`中，将现有容器变为加载状态。
  */
 
-import { Alert, Spin, Switch } from 'antd'
+import { Alert, Spin, Switch } from 'antd-packages'
 import React, { useState } from 'react'
 
 const App: React.FC = () => {

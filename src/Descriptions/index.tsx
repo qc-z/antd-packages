@@ -1,4 +1,5 @@
 import Descriptions from './descriptions'
-export * from './index.d'
+
+export { DescriptionsProps } from './descriptions'
 
 export default Descriptions

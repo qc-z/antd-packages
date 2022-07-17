@@ -4,8 +4,8 @@
  */
 
 import { UploadOutlined } from '@ant-design/icons'
-import { Button, Upload } from 'antd'
-import type { UploadFile } from 'antd/es/upload/interface'
+import { Button, Upload } from 'antd-packages'
+import type { UploadFile } from 'antd-packages/es/upload/interface'
 import React from 'react'
 
 const fileList: UploadFile[] = [

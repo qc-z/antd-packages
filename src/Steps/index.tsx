@@ -1,4 +1,5 @@
 import Steps from './steps'
-export * from './index.d'
+
+export { StepsProps } from './steps'
 
 export default Steps

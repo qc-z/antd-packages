@@ -3,7 +3,7 @@
  * desc: 在抽屉内打开新的抽屉，用以解决多分支任务的复杂状况。
  */
 
-import { Button, Drawer } from 'antd'
+import { Button, Drawer } from 'antd-packages'
 import React, { useState } from 'react'
 
 const App: React.FC = () => {

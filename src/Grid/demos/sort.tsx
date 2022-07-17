@@ -2,9 +2,9 @@
 /**
   * title: 栅格排序
   * desc: 列排序。通过使用`push`和`pull`类就可以很容易的改变列（column）的顺序。
-  */ 
+  */
 
-import { Col, Row } from 'antd';
+import { Col, Row } from 'antd-packages';
 import React from 'react';
 
 const App: React.FC = () => (

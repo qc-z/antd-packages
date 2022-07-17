@@ -7,7 +7,7 @@ import {
   DownOutlined,
   UserOutlined
 } from '@ant-design/icons'
-import type { MenuProps } from 'antd'
+import type { MenuProps } from 'antd-packages'
 import {
   Button,
   Dropdown,
@@ -15,7 +15,7 @@ import {
   message,
   Space,
   Tooltip
-} from 'antd'
+} from 'antd-packages'
 import React from 'react'
 
 const handleButtonClick = (

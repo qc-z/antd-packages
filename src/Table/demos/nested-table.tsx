@@ -4,14 +4,14 @@
  */
 
 import { DownOutlined } from '@ant-design/icons'
-import type { TableColumnsType } from 'antd'
+import type { TableColumnsType } from 'antd-packages'
 import {
   Badge,
   Dropdown,
   Menu,
   Space,
   Table
-} from 'antd'
+} from 'antd-packages'
 import React from 'react'
 
 interface DataType {

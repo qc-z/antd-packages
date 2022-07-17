@@ -3,7 +3,7 @@
  * desc: 最简单的占位效果。
  */
 
-import { Skeleton } from 'antd'
+import { Skeleton } from 'antd-packages'
 import React from 'react'
 
 const App: React.FC = () => <Skeleton />

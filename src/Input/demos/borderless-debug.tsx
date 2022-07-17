@@ -3,7 +3,7 @@
  * desc: Buggy!
  */
 
-import { Input } from 'antd'
+import { Input } from 'antd-packages'
 import React from 'react'
 
 const { TextArea } = Input

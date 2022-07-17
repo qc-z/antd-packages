@@ -3,7 +3,7 @@
  * desc: 评论可以嵌套。
  */
 
-import { Avatar, Comment } from 'antd'
+import { Avatar, Comment } from 'antd-packages'
 import React from 'react'
 
 const ExampleComment: React.FC<{

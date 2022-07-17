@@ -3,7 +3,7 @@
  * desc: 一个简单的loading状态。
  */
 
-import { Spin } from 'antd'
+import { Spin } from 'antd-packages'
 import React from 'react'
 
 const App: React.FC = () => <Spin />

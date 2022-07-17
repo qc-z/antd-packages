@@ -3,7 +3,7 @@
  * desc: 第一个对话框。
  */
 
-import { Button, Modal } from 'antd'
+import { Button, Modal } from 'antd-packages'
 import React, { useState } from 'react'
 
 const App: React.FC = () => {

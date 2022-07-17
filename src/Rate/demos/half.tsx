@@ -3,7 +3,7 @@
  * desc: 支持选中半星。
  */
 
-import { Rate } from 'antd'
+import { Rate } from 'antd-packages'
 import React from 'react'
 
 const App: React.FC = () => (

@@ -3,8 +3,8 @@
  * desc: 为点状步骤条增加自定义展示。
  */
 
-import type { StepsProps } from 'antd'
-import { Popover, Steps } from 'antd'
+import type { StepsProps } from 'antd-packages'
+import { Popover, Steps } from 'antd-packages'
 import React from 'react'
 
 const { Step } = Steps

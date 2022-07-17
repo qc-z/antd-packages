@@ -8,15 +8,15 @@ import {
   Table,
   Tag,
   Transfer
-} from 'antd'
+} from 'antd-packages'
 import type {
   ColumnsType,
   TableRowSelection
-} from 'antd/es/table/interface'
+} from 'antd-packages/es/table/interface'
 import type {
   TransferItem,
   TransferProps
-} from 'antd/es/transfer'
+} from 'antd-packages/es/transfer'
 import difference from 'lodash/difference'
 import React, { useState } from 'react'
 
@@ -62,34 +62,34 @@ const TableTransfer = ({
           : rightColumns
 
       const rowSelection: TableRowSelection<TransferItem> =
-        {
-          getCheckboxProps: (item) => ({
-            disabled:
-              listDisabled || item.disabled
-          }),
-          onSelectAll(selected, selectedRows) {
-            const treeSelectedKeys = selectedRows
-              .filter((item) => !item.disabled)
-              .map(({ key }) => key)
-            const diffKeys = selected
-              ? difference(
-                  treeSelectedKeys,
-                  listSelectedKeys
-                )
-              : difference(
-                  listSelectedKeys,
-                  treeSelectedKeys
-                )
-            onItemSelectAll(
-              diffKeys as string[],
-              selected
+      {
+        getCheckboxProps: (item) => ({
+          disabled:
+            listDisabled || item.disabled
+        }),
+        onSelectAll(selected, selectedRows) {
+          const treeSelectedKeys = selectedRows
+            .filter((item) => !item.disabled)
+            .map(({ key }) => key)
+          const diffKeys = selected
+            ? difference(
+              treeSelectedKeys,
+              listSelectedKeys
             )
-          },
-          onSelect({ key }, selected) {
-            onItemSelect(key as string, selected)
-          },
-          selectedRowKeys: listSelectedKeys
-        }
+            : difference(
+              listSelectedKeys,
+              treeSelectedKeys
+            )
+          onItemSelectAll(
+            diffKeys as string[],
+            selected
+          )
+        },
+        onSelect({ key }, selected) {
+          onItemSelect(key as string, selected)
+        },
+        selectedRowKeys: listSelectedKeys
+      }
 
       return (
         <Table
@@ -158,11 +158,11 @@ const leftTableColumns: ColumnsType<DataType> = [
 const rightTableColumns: ColumnsType<
   Pick<DataType, 'title'>
 > = [
-  {
-    dataIndex: 'title',
-    title: 'Name'
-  }
-]
+    {
+      dataIndex: 'title',
+      title: 'Name'
+    }
+  ]
 
 const App: React.FC = () => {
   const [targetKeys, setTargetKeys] = useState<
@@ -196,7 +196,7 @@ const App: React.FC = () => {
         onChange={onChange}
         filterOption={(inputValue, item) =>
           item.title!.indexOf(inputValue) !==
-            -1 ||
+          -1 ||
           item.tag.indexOf(inputValue) !== -1
         }
         leftColumns={leftTableColumns}

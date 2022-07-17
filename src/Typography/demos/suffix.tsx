@@ -3,7 +3,7 @@
  * desc: 添加后缀的省略。
  */
 
-import { Slider, Typography } from 'antd'
+import { Slider, Typography } from 'antd-packages'
 import React, { useState } from 'react'
 
 const { Paragraph } = Typography

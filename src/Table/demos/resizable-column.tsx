@@ -3,11 +3,11 @@
  * desc: 集成[react-resizable](https://github.com/STRML/react-resizable)来实现可伸缩列。如果有排序需要，可以通过[额外标记](https://codesandbox.io/s/zrj8xvyzxx)阻止触发排序。
  */
 
-import { Table } from 'antd'
+import { Table } from 'antd-packages'
 import type {
   ColumnsType,
   ColumnType
-} from 'antd/lib/table'
+} from 'antd-packages/lib/table'
 import React, { useState } from 'react'
 import type { ResizeCallbackData } from 'react-resizable'
 import { Resizable } from 'react-resizable'
@@ -114,17 +114,17 @@ const App: React.FC = () => {
 
   const handleResize =
     (index: number) =>
-    (
-      _: React.SyntheticEvent<Element>,
-      { size }: ResizeCallbackData
-    ) => {
-      const newColumns = [...columns]
-      newColumns[index] = {
-        ...newColumns[index],
-        width: size.width
+      (
+        _: React.SyntheticEvent<Element>,
+        { size }: ResizeCallbackData
+      ) => {
+        const newColumns = [...columns]
+        newColumns[index] = {
+          ...newColumns[index],
+          width: size.width
+        }
+        setColumns(newColumns)
       }
-      setColumns(newColumns)
-    }
 
   const mergeColumns: ColumnsType<DataType> =
     columns.map((col, index) => ({

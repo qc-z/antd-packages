@@ -3,7 +3,7 @@
  * desc: 使用`centered`或类似`style.top`的样式来设置对话框位置。
  */
 
-import { Button, Modal } from 'antd'
+import { Button, Modal } from 'antd-packages'
 import React, { useState } from 'react'
 
 const App: React.FC = () => {

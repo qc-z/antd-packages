@@ -4,23 +4,23 @@
  */
 
 import { DownOutlined } from '@ant-design/icons'
-import type { RadioChangeEvent } from 'antd'
+import type { RadioChangeEvent } from 'antd-packages'
 import {
   Form,
   Radio,
   Space,
   Switch,
   Table
-} from 'antd'
-import type { SizeType } from 'antd/lib/config-provider/SizeContext'
+} from 'antd-packages'
+import type { SizeType } from 'antd-packages/lib/config-provider/SizeContext'
 import type {
   ColumnsType,
   TableProps
-} from 'antd/lib/table'
+} from 'antd-packages/lib/table'
 import type {
   ExpandableConfig,
   TableRowSelection
-} from 'antd/lib/table/interface'
+} from 'antd-packages/lib/table/interface'
 import React, { useState } from 'react'
 
 interface DataType {

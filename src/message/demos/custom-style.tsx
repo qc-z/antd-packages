@@ -3,7 +3,7 @@
  * desc: 使用`style`和`className`来定义样式。
  */
 
-import { Button, message } from 'antd'
+import { Button, message } from 'antd-packages'
 import React from 'react'
 
 const success = () => {

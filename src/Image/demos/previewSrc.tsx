@@ -3,7 +3,7 @@
  * desc: 可以设置不同的预览图片。
  */
 
-import { Image } from 'antd'
+import { Image } from 'antd-packages'
 import React from 'react'
 
 const App: React.FC = () => (

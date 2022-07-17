@@ -4,7 +4,7 @@
  */
 
 import { SmileOutlined } from '@ant-design/icons'
-import { Button, Result } from 'antd'
+import { Button, Result } from 'antd-packages'
 import React from 'react'
 
 const App: React.FC = () => (

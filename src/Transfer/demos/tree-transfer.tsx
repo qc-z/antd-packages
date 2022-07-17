@@ -3,12 +3,12 @@
  * desc: 使用Tree组件作为自定义渲染列表。
  */
 
-import { Transfer, Tree } from 'antd'
+import { Transfer, Tree } from 'antd-packages'
 import type {
   TransferDirection,
   TransferItem
-} from 'antd/es/transfer'
-import type { DataNode } from 'antd/es/tree'
+} from 'antd-packages/es/transfer'
+import type { DataNode } from 'antd-packages/es/tree'
 import React, { useState } from 'react'
 
 interface TreeTransferProps {

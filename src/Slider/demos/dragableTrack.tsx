@@ -3,7 +3,7 @@
  * desc: 可以设置`range.draggableTrack`，使得范围刻度整体可拖拽。
  */
 
-import { Slider } from 'antd'
+import { Slider } from 'antd-packages'
 import React from 'react'
 
 const App: React.FC = () => (

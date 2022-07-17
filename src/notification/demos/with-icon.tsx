@@ -3,7 +3,7 @@
  * desc: 通知提醒框左侧有图标。
  */
 
-import { Button, notification, Space } from 'antd'
+import { Button, notification, Space } from 'antd-packages'
 import React from 'react'
 
 type NotificationType =

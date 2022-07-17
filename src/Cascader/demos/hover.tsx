@@ -3,7 +3,7 @@
  * desc: 通过移入展开下级菜单，点击完成选择。
  */
 
-import { Cascader } from 'antd'
+import { Cascader } from 'antd-packages'
 import React from 'react'
 
 interface Option {

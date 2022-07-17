@@ -3,7 +3,7 @@
  * desc: 内置不同样式的文本以及超链接组件。
  */
 
-import { Space, Typography } from 'antd'
+import { Space, Typography } from 'antd-packages'
 import React from 'react'
 
 const { Text, Link } = Typography

@@ -3,7 +3,7 @@
  * desc: 用于`onSearch`的时候展示`loading`。
  */
 
-import { Input } from 'antd'
+import { Input } from 'antd-packages'
 import React from 'react'
 
 const { Search } = Input

@@ -2,9 +2,9 @@
 /**
   * title: 响应式布局
   * desc: 参照Bootstrap的[响应式设计](http://getbootstrap.com/css/#grid-media-queries)，预设六个响应尺寸：`xs``sm``md``lg``xl``xxl`。
-  */ 
+  */
 
-import { Col, Row } from 'antd';
+import { Col, Row } from 'antd-packages';
 import React from 'react';
 
 const App: React.FC = () => (

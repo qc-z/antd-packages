@@ -8,9 +8,9 @@ import {
   Drawer,
   Radio,
   Space
-} from 'antd'
-import type { DrawerProps } from 'antd/es/drawer'
-import type { RadioChangeEvent } from 'antd/es/radio'
+} from 'antd-packages'
+import type { DrawerProps } from 'antd-packages/es/drawer'
+import type { RadioChangeEvent } from 'antd-packages/es/radio'
 import React, { useState } from 'react'
 
 const App: React.FC = () => {

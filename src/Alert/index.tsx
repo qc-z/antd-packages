@@ -1,4 +1,5 @@
 import Alert from './alert'
-export * from './index.d'
+
+export { AlertProps } from './alert'
 
 export default Alert

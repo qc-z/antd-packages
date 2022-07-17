@@ -3,7 +3,7 @@
  * desc: 简单的翻页。
  */
 
-import { Pagination } from 'antd'
+import { Pagination } from 'antd-packages'
 import React from 'react'
 
 const App: React.FC = () => (

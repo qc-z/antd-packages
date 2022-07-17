@@ -3,7 +3,7 @@
  * desc: 标准的进度条。`type="circle|dashboard"`时不支持分段颜色。
  */
 
-import { Progress, Tooltip } from 'antd'
+import { Progress, Tooltip } from 'antd-packages'
 import React from 'react'
 
 const App: React.FC = () => (

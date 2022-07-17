@@ -3,7 +3,7 @@
  * desc: 面包屑支持下拉菜单。
  */
 
-import { Breadcrumb, Menu } from 'antd'
+import { Breadcrumb, Menu } from 'antd-packages'
 import React from 'react'
 
 const menu = (

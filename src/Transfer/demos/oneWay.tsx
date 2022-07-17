@@ -3,8 +3,8 @@
  * desc: 通过`oneWay`将Transfer转为单向样式。
  */
 
-import { Switch, Transfer } from 'antd'
-import type { TransferDirection } from 'antd/es/transfer'
+import { Switch, Transfer } from 'antd-packages'
+import type { TransferDirection } from 'antd-packages/es/transfer'
 import React, { useState } from 'react'
 
 interface RecordType {

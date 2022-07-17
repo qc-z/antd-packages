@@ -3,7 +3,7 @@
  * desc: 基本的时间轴。
  */
 
-import { Timeline } from 'antd'
+import { Timeline } from 'antd-packages'
 import React from 'react'
 
 const App: React.FC = () => (

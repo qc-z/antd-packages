@@ -1,4 +1,5 @@
 import Typography from './typography'
-export * from './index.d'
+
+export { TypographyProps } from './typography'
 
 export default Typography

@@ -413,29 +413,61 @@ function fixFolder() {
         `src/${name}/${name.toLowerCase()}.tsx`
       ),
       `import { ${name} } from 'antd'\n
+import { ${name}Props as My${name}Props } from 'antd/lib/${finallyNames[name]}'\n
+export * from 'antd/lib/${finallyNames[name]}'\n
+export type ${name}Props = My${name}Props\n
 export default ${name}`,
       'utf-8'
     )
-    fs.writeFileSync(
-      path.join(`src/${[name]}/index.d.ts`),
-      `import { ${name}Props as My${name}Props } from 'antd/lib/${name.toLowerCase()}'\n
-export type ${name}Props = My${name}Props`,
-      'utf-8'
-    )
+    //     fs.writeFileSync(
+    //       path.join(
+    //         `src/${[name]}/${finallyNames[name]}.d.ts`
+    //       ),
+    //       `import { ${name}Props as My${name}Props } from 'antd/lib/${finallyNames[name]}'\n
+    // export * from 'antd/lib/${finallyNames[name]}'\n
+    // export type ${name}Props = My${name}Props`,
+    //       'utf-8'
+    //     )
 
     fs.writeFileSync(
       path.join(`src/${[name]}/index.tsx`),
-      `import ${name} from './${name.toLowerCase()}'
-export * from './index.d'\n
+      `import ${name} from './${name.toLowerCase()}'\n
+export { ${name}Props } from './${name.toLowerCase()}'\n
 export default ${name}`,
       'utf-8'
     )
+    //     fs.writeFileSync(
+    //       path.join(`src/${[name]}/index.d.ts`),
+    //       `import ${name} from './${name.toLowerCase()}'\n
+    // export * from './${name.toLowerCase()}.d'\n
+    // export default ${name}`,
+    //       'utf-8'
+    //     )
     // fs.unlinkSync(path.join(`src/${[name]}/${[name]}.tsx`))
-    // fs.unlinkSync(path.join(`src/${[name]}/${[name]}.d.ts`))
+    fs.existsSync(
+      `src/${[name]}/${finallyNames[name]}.d.ts`
+    ) &&
+      fs.unlinkSync(
+        path.join(
+          `src/${[name]}/${
+            finallyNames[name]
+          }.d.ts`
+        )
+      )
+    // fs.unlinkSync(
+    //   path.join(`src/${[name]}/${name.toLowerCase()}.d.ts`)
+    // )
     // fs.unlinkSync(path.join(`src/${[name]}/index.tsx`))
   }
 }
-
+function renameFolder() {
+  for (const name in finallyNames) {
+    fs.renameSync(
+      `src/${name}`,
+      `src/${finallyNames[name]}`
+    )
+  }
+}
 // 生成基本组件结构
 // genComponents()
 
@@ -458,4 +490,7 @@ export default ${name}`,
 
 // 重新组织目录结构
 
-fixFolder()
+// fixFolder()
+
+// 文件夹改名字
+renameFolder()

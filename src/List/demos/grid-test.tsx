@@ -3,7 +3,7 @@
  * desc: List`grid`在各种情况下的样式表现，如Fragment和封装了List.Item.
  */
 
-import { Card, List } from 'antd'
+import { Card, List } from 'antd-packages'
 import React from 'react'
 
 const data = [

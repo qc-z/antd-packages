@@ -3,8 +3,8 @@
  * desc: 设置`column.ellipsis`可以让单元格内容根据宽度自动省略。>列头缩略暂不支持和排序筛选一起使用。
  */
 
-import { Table } from 'antd'
-import type { ColumnsType } from 'antd/lib/table'
+import { Table } from 'antd-packages'
+import type { ColumnsType } from 'antd-packages/lib/table'
 import React from 'react'
 
 interface DataType {

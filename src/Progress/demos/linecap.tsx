@@ -3,7 +3,7 @@
  * desc: 通过设定`strokeLinecap="butt"`可以调整进度条边缘的形状为方形，详见[stroke-linecap](https://developer.mozilla.org/docs/Web/SVG/Attribute/stroke-linecap)。
  */
 
-import { Progress } from 'antd'
+import { Progress } from 'antd-packages'
 import React from 'react'
 
 const App: React.FC = () => (

@@ -3,7 +3,7 @@
  * desc: 友好的[React错误处理](https://reactjs.org/blog/2017/07/26/error-handling-in-react-16.html)包裹组件。
  */
 
-import { Alert, Button } from 'antd'
+import { Alert, Button } from 'antd-packages'
 import React, { useState } from 'react'
 
 const { ErrorBoundary } = Alert

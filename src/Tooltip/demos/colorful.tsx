@@ -3,7 +3,7 @@
  * desc: 我们添加了多种预设色彩的文字提示样式，用作不同场景使用。
  */
 
-import { Button, Divider, Tooltip } from 'antd'
+import { Button, Divider, Tooltip } from 'antd-packages'
 import React from 'react'
 
 const colors = [

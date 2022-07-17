@@ -3,8 +3,8 @@
  * desc: 请优先使用`ref`！
  */
 
-import type { InputRef } from 'antd'
-import { Button, Form, Input } from 'antd'
+import type { InputRef } from 'antd-packages'
+import { Button, Form, Input } from 'antd-packages'
 import React from 'react'
 
 const App: React.FC = () => {

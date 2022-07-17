@@ -1,4 +1,5 @@
 import Popconfirm from './popconfirm'
-export * from './index.d'
+
+export { PopconfirmProps } from './popconfirm'
 
 export default Popconfirm

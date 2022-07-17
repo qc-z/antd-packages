@@ -3,7 +3,7 @@
  * desc: 垂直的列表。
  */
 
-import { Descriptions } from 'antd'
+import { Descriptions } from 'antd-packages'
 import React from 'react'
 
 const App: React.FC = () => (

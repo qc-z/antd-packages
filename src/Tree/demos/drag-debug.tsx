@@ -4,7 +4,7 @@
  */
 
 import React from 'react'
-import { Tree, Switch } from 'antd'
+import { Tree, Switch } from 'antd-packages'
 import { CarryOutOutlined } from '@ant-design/icons'
 
 const x = 3

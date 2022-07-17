@@ -1,4 +1,5 @@
 import Pagination from './pagination'
-export * from './index.d'
+
+export { PaginationProps } from './pagination'
 
 export default Pagination

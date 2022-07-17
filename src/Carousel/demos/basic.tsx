@@ -3,7 +3,7 @@
  * desc: 最简单的用法。
  */
 
-import { Carousel } from 'antd'
+import { Carousel } from 'antd-packages'
 import React from 'react'
 
 const contentStyle: React.CSSProperties = {

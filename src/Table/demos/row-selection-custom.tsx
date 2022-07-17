@@ -3,9 +3,9 @@
  * desc: 通过`rowSelection.selections`自定义选择项，默认不显示下拉选项，设为`true`时显示默认选择项。
  */
 
-import { Table } from 'antd'
-import type { ColumnsType } from 'antd/lib/table'
-import type { TableRowSelection } from 'antd/lib/table/interface'
+import { Table } from 'antd-packages'
+import type { ColumnsType } from 'antd-packages/lib/table'
+import type { TableRowSelection } from 'antd-packages/lib/table/interface'
 import React, { useState } from 'react'
 
 interface DataType {
@@ -55,49 +55,49 @@ const App: React.FC = () => {
   }
 
   const rowSelection: TableRowSelection<DataType> =
-    {
-      selectedRowKeys,
-      onChange: onSelectChange,
-      selections: [
-        Table.SELECTION_ALL,
-        Table.SELECTION_INVERT,
-        Table.SELECTION_NONE,
-        {
-          key: 'odd',
-          text: 'Select Odd Row',
-          onSelect: (changableRowKeys) => {
-            let newSelectedRowKeys = []
-            newSelectedRowKeys =
-              changableRowKeys.filter(
-                (_, index) => {
-                  if (index % 2 !== 0) {
-                    return false
-                  }
-                  return true
-                }
-              )
-            setSelectedRowKeys(newSelectedRowKeys)
-          }
-        },
-        {
-          key: 'even',
-          text: 'Select Even Row',
-          onSelect: (changableRowKeys) => {
-            let newSelectedRowKeys = []
-            newSelectedRowKeys =
-              changableRowKeys.filter(
-                (_, index) => {
-                  if (index % 2 !== 0) {
-                    return true
-                  }
+  {
+    selectedRowKeys,
+    onChange: onSelectChange,
+    selections: [
+      Table.SELECTION_ALL,
+      Table.SELECTION_INVERT,
+      Table.SELECTION_NONE,
+      {
+        key: 'odd',
+        text: 'Select Odd Row',
+        onSelect: (changableRowKeys) => {
+          let newSelectedRowKeys = []
+          newSelectedRowKeys =
+            changableRowKeys.filter(
+              (_, index) => {
+                if (index % 2 !== 0) {
                   return false
                 }
-              )
-            setSelectedRowKeys(newSelectedRowKeys)
-          }
+                return true
+              }
+            )
+          setSelectedRowKeys(newSelectedRowKeys)
         }
-      ]
-    }
+      },
+      {
+        key: 'even',
+        text: 'Select Even Row',
+        onSelect: (changableRowKeys) => {
+          let newSelectedRowKeys = []
+          newSelectedRowKeys =
+            changableRowKeys.filter(
+              (_, index) => {
+                if (index % 2 !== 0) {
+                  return true
+                }
+                return false
+              }
+            )
+          setSelectedRowKeys(newSelectedRowKeys)
+        }
+      }
+    ]
+  }
 
   return (
     <Table

@@ -3,7 +3,7 @@
  * desc: 页面顶部通告形式，默认有图标且`type`为'warning'。
  */
 
-import { Alert } from 'antd'
+import { Alert } from 'antd-packages'
 import React from 'react'
 
 const App: React.FC = () => (

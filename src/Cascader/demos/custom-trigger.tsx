@@ -3,7 +3,7 @@
  * desc: 切换按钮和结果分开。
  */
 
-import { Cascader } from 'antd'
+import { Cascader } from 'antd-packages'
 import React, { useState } from 'react'
 
 interface Option {

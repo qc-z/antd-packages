@@ -8,7 +8,7 @@ import {
   MehOutlined,
   SmileOutlined
 } from '@ant-design/icons'
-import { Rate } from 'antd'
+import { Rate } from 'antd-packages'
 import React from 'react'
 
 const customIcons: Record<

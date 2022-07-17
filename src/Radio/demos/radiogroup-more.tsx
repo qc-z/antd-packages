@@ -3,8 +3,8 @@
  * desc: 垂直的Radio.Group，配合更多输入框选项。
  */
 
-import type { RadioChangeEvent } from 'antd'
-import { Input, Radio, Space } from 'antd'
+import type { RadioChangeEvent } from 'antd-packages'
+import { Input, Radio, Space } from 'antd-packages'
 import React, { useState } from 'react'
 
 const App: React.FC = () => {

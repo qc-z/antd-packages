@@ -1,14 +1,9 @@
 import { Button } from 'antd'
-import type { ButtonProps } from './index.d'
-export { ButtonProps } from './index.d'
 
-const MyButton = (props: ButtonProps) => {
-  const { children, ...restProps } = props
+import { ButtonProps as MyButtonProps } from 'antd/lib/button'
 
-  return (
-    <Button {...restProps} className="my-button">
-      {children}
-    </Button>
-  )
-}
-export default MyButton
+export * from 'antd/lib/button'
+
+export type ButtonProps = MyButtonProps
+
+export default Button

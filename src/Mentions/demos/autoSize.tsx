@@ -3,7 +3,7 @@
  * desc: 自适应内容高度。
  */
 
-import { Mentions } from 'antd'
+import { Mentions } from 'antd-packages'
 import React from 'react'
 
 const { Option } = Mentions

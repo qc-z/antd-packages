@@ -3,7 +3,7 @@
  * desc: 可以通过唯一的key来更新内容。
  */
 
-import { Button, notification } from 'antd'
+import { Button, notification } from 'antd-packages'
 import React from 'react'
 
 const key = 'updatable'

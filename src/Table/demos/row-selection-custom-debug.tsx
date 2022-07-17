@@ -3,9 +3,9 @@
  * desc: 自定义选项分组。
  */
 
-import { Table } from 'antd'
-import type { ColumnsType } from 'antd/lib/table'
-import type { TableRowSelection } from 'antd/lib/table/interface'
+import { Table } from 'antd-packages'
+import type { ColumnsType } from 'antd-packages/lib/table'
+import type { TableRowSelection } from 'antd-packages/lib/table/interface'
 import React from 'react'
 
 interface DataType {
@@ -33,23 +33,23 @@ for (let i = 0; i < 46; i++) {
 
 const App: React.FC = () => {
   const rowSelection: TableRowSelection<DataType> =
-    {
-      renderCell: (
-        checked,
-        _record,
-        index,
-        node
-      ) => ({
-        props: {
-          rowSpan: index % 2 === 0 ? 2 : 0
-        },
-        children: (
-          <>
-            {String(checked)}: {node}
-          </>
-        )
-      })
-    }
+  {
+    renderCell: (
+      checked,
+      _record,
+      index,
+      node
+    ) => ({
+      props: {
+        rowSpan: index % 2 === 0 ? 2 : 0
+      },
+      children: (
+        <>
+          {String(checked)}: {node}
+        </>
+      )
+    })
+  }
   return (
     <Table
       rowSelection={rowSelection}

@@ -3,7 +3,7 @@
  * desc: 试下复制`露西,杰克`并粘贴到输入框里。只在tags和multiple模式下可用。
  */
 
-import { Select } from 'antd'
+import { Select } from 'antd-packages'
 import React from 'react'
 
 const { Option } = Select

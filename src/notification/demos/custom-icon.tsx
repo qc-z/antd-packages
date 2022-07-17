@@ -4,7 +4,7 @@
  */
 
 import { SmileOutlined } from '@ant-design/icons'
-import { Button, notification } from 'antd'
+import { Button, notification } from 'antd-packages'
 import React from 'react'
 
 const openNotification = () => {

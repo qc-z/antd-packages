@@ -3,13 +3,13 @@
  * desc: 配合[antd-img-crop](https://github.com/nanxiaobei/antd-img-crop)实现上传前裁切图片。
  */
 
-import { Upload } from 'antd'
+import { Upload } from 'antd-packages'
 import ImgCrop from 'antd-img-crop'
 import type {
   RcFile,
   UploadFile,
   UploadProps
-} from 'antd/es/upload/interface'
+} from 'antd-packages/es/upload/interface'
 import React, { useState } from 'react'
 
 const App: React.FC = () => {

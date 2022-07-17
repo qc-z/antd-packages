@@ -3,7 +3,7 @@
  * desc: 允许自定义选择标签的样式。
  */
 
-import { Select, Tag } from 'antd'
+import { Select, Tag } from 'antd-packages'
 import type { CustomTagProps } from 'rc-select/lib/BaseSelect'
 import React from 'react'
 

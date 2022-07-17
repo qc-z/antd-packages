@@ -3,7 +3,7 @@
  * desc: 显示关闭按钮，点击可关闭警告提示。
  */
 
-import { Alert } from 'antd'
+import { Alert } from 'antd-packages'
 import React from 'react'
 
 const onClose = (

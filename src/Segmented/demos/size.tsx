@@ -3,7 +3,7 @@
  * desc: 我们为`<Segmented/>`组件定义了三种尺寸（大、默认、小），高度分别为`40px`、`32px`和`24px`。
  */
 
-import { Segmented } from 'antd'
+import { Segmented } from 'antd-packages'
 
 export default () => (
   <>

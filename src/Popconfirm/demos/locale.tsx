@@ -3,7 +3,7 @@
  * desc: 使用`okText`和`cancelText`自定义按钮文字。
  */
 
-import { Popconfirm } from 'antd'
+import { Popconfirm } from 'antd-packages'
 import React from 'react'
 
 const App: React.FC = () => (

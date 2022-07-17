@@ -3,7 +3,7 @@
  * desc: 点击确定后异步关闭Popconfirm，例如提交表单。
  */
 
-import { Button, Popconfirm } from 'antd'
+import { Button, Popconfirm } from 'antd-packages'
 import React from 'react'
 
 const App: React.FC = () => {

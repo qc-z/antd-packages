@@ -3,7 +3,7 @@
  * desc: `block`属性使其适合父元素宽度。
  */
 
-import { Segmented } from 'antd'
+import { Segmented } from 'antd-packages'
 
 export default () => (
   <Segmented

@@ -3,8 +3,8 @@
  * desc: 一个带有远程搜索，防抖控制，请求时序控制，加载状态的多选示例。
  */
 
-import { Select, Spin } from 'antd'
-import type { SelectProps } from 'antd/es/select'
+import { Select, Spin } from 'antd-packages'
+import type { SelectProps } from 'antd-packages/es/select'
 import debounce from 'lodash/debounce'
 import React, {
   useMemo,
@@ -14,9 +14,9 @@ import React, {
 
 export interface DebounceSelectProps<
   ValueType = any
-> extends Omit<
-    SelectProps<ValueType | ValueType[]>,
-    'options' | 'children'
+  > extends Omit<
+  SelectProps<ValueType | ValueType[]>,
+  'options' | 'children'
   > {
   fetchOptions: (
     search: string

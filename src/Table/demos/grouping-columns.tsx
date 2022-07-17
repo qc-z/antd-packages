@@ -3,8 +3,8 @@
  * desc: `columns[n]`可以内嵌`children`，以渲染分组表头。
  */
 
-import { Table } from 'antd'
-import type { ColumnsType } from 'antd/lib/table'
+import { Table } from 'antd-packages'
+import type { ColumnsType } from 'antd-packages/lib/table'
 import React from 'react'
 
 interface DataType {

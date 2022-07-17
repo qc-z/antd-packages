@@ -3,7 +3,7 @@
  * desc: 另一种样式的页签，不提供对应的垂直样式。
  */
 
-import { Tabs } from 'antd'
+import { Tabs } from 'antd-packages'
 import React from 'react'
 
 const { TabPane } = Tabs

@@ -3,7 +3,7 @@
  * desc: 默认情况下`onChange`里只能拿到`value`，如果需要拿到选中的节点文本`label`，可以使用`labelInValue`属性。选中项的`label`会被包装到`value`中传递给`onChange`等函数，此时`value`是一个对象。
  */
 
-import { Select } from 'antd'
+import { Select } from 'antd-packages'
 import React from 'react'
 
 const { Option } = Select

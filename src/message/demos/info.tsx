@@ -3,7 +3,7 @@
  * desc: 信息提醒反馈。
  */
 
-import { Button, message } from 'antd'
+import { Button, message } from 'antd-packages'
 import React from 'react'
 
 const info = () => {

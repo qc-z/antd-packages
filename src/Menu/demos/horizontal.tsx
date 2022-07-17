@@ -8,8 +8,8 @@ import {
   MailOutlined,
   SettingOutlined
 } from '@ant-design/icons'
-import type { MenuProps } from 'antd'
-import { Menu } from 'antd'
+import type { MenuProps } from 'antd-packages'
+import { Menu } from 'antd-packages'
 import React, { useState } from 'react'
 
 const items: MenuProps['items'] = [

@@ -9,7 +9,7 @@ import {
   Input,
   message,
   Space
-} from 'antd'
+} from 'antd-packages'
 import React from 'react'
 
 const App: React.FC = () => {

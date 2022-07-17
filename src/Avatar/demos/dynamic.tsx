@@ -3,7 +3,7 @@
  * desc: 对于字符型的头像，当字符串较长时，字体大小可以根据头像宽度自动调整。也可使用`gap`来设置字符距离左右两侧边界单位像素。
  */
 
-import { Avatar, Button } from 'antd'
+import { Avatar, Button } from 'antd-packages'
 import React, { useState } from 'react'
 
 const UserList = ['U', 'Lucy', 'Tom', 'Edward']

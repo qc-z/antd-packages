@@ -3,7 +3,7 @@
  * desc: 位置有12个方向。
  */
 
-import { Button, Tooltip } from 'antd'
+import { Button, Tooltip } from 'antd-packages'
 import React from 'react'
 
 const text = <span>prompt text</span>

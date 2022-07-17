@@ -3,7 +3,7 @@
  * desc: 延迟显示loading效果。当spinning状态在`delay`时间内结束，则不显示loading状态。
  */
 
-import { Alert, Spin, Switch } from 'antd'
+import { Alert, Spin, Switch } from 'antd-packages'
 import React, { useState } from 'react'
 
 const App: React.FC = () => {

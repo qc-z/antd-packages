@@ -4,7 +4,7 @@
  */
 
 import { SettingOutlined } from '@ant-design/icons'
-import { Collapse, Select } from 'antd'
+import { Collapse, Select } from 'antd-packages'
 import React, { useState } from 'react'
 
 const { Panel } = Collapse

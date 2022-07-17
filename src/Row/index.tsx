@@ -1,4 +1,5 @@
 import Row from './row'
-export * from './index.d'
+
+export { RowProps } from './row'
 
 export default Row

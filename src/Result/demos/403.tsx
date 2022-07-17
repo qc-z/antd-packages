@@ -3,7 +3,7 @@
  * desc: 你没有此页面的访问权限。
  */
 
-import { Button, Result } from 'antd'
+import { Button, Result } from 'antd-packages'
 import React from 'react'
 
 const App: React.FC = () => (

@@ -3,7 +3,7 @@
  * desc: 默认选中第一项。
  */
 
-import { Select, Tabs } from 'antd'
+import { Select, Tabs } from 'antd-packages'
 import React, { useState } from 'react'
 
 const { TabPane } = Tabs

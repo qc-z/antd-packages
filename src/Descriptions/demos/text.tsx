@@ -3,7 +3,7 @@
  * desc: 带边框和背景颜色列表。
  */
 
-import { Badge, Descriptions, Table } from 'antd'
+import { Badge, Descriptions, Table } from 'antd-packages'
 import React from 'react'
 
 const dataSource = [

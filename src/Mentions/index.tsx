@@ -1,4 +1,5 @@
 import Mentions from './mentions'
-export * from './index.d'
+
+export { MentionsProps } from './mentions'
 
 export default Mentions

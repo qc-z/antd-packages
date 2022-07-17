@@ -3,8 +3,8 @@
  * desc: 简单的checkbox。
  */
 
-import { Checkbox } from 'antd'
-import type { CheckboxChangeEvent } from 'antd/es/checkbox'
+import { Checkbox } from 'antd-packages'
+import type { CheckboxChangeEvent } from 'antd-packages/es/checkbox'
 import React from 'react'
 
 const onChange = (e: CheckboxChangeEvent) => {

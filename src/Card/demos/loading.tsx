@@ -13,7 +13,7 @@ import {
   Card,
   Skeleton,
   Switch
-} from 'antd'
+} from 'antd-packages'
 import React, { useState } from 'react'
 
 const { Meta } = Card

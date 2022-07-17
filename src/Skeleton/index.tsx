@@ -1,4 +1,5 @@
 import Skeleton from './skeleton'
-export * from './index.d'
+
+export { SkeletonProps } from './skeleton'
 
 export default Skeleton

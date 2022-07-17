@@ -7,7 +7,7 @@ import {
   MinusCircleOutlined,
   PlusOutlined
 } from '@ant-design/icons'
-import { Button, Form, Input, Space } from 'antd'
+import { Button, Form, Input, Space } from 'antd-packages'
 import React from 'react'
 
 const App: React.FC = () => {

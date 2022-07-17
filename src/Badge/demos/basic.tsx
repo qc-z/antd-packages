@@ -4,7 +4,7 @@
  */
 
 import { ClockCircleOutlined } from '@ant-design/icons'
-import { Avatar, Badge } from 'antd'
+import { Avatar, Badge } from 'antd-packages'
 import React from 'react'
 
 const App: React.FC = () => (

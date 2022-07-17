@@ -10,7 +10,7 @@ import {
   Form,
   Input,
   List
-} from 'antd'
+} from 'antd-packages'
 import moment from 'moment'
 import React, { useState } from 'react'
 

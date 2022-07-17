@@ -3,7 +3,7 @@
  * desc: 受控模式，例如配合Form使用。
  */
 
-import { Button, Form, Mentions } from 'antd'
+import { Button, Form, Mentions } from 'antd-packages'
 import React from 'react'
 
 const { Option, getMentions } = Mentions

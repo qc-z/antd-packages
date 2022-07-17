@@ -3,7 +3,7 @@
  * desc: 隐藏下拉列表中已选择的选项。
  */
 
-import { Select } from 'antd'
+import { Select } from 'antd-packages'
 import React, { useState } from 'react'
 
 const OPTIONS = [

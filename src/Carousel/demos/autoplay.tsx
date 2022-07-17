@@ -3,7 +3,7 @@
  * desc: 定时切换下一张。
  */
 
-import { Carousel } from 'antd'
+import { Carousel } from 'antd-packages'
 import React from 'react'
 
 const contentStyle: React.CSSProperties = {

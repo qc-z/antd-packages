@@ -1,4 +1,5 @@
 import Collapse from './collapse'
-export * from './index.d'
+
+export { CollapseProps } from './collapse'
 
 export default Collapse

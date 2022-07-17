@@ -3,8 +3,8 @@
  * desc: 最基本的用法，展示了`dataSource`、`targetKeys`、每行的渲染函数`render`以及回调函数`onChange``onSelectChange``onScroll`的用法。
  */
 
-import { Transfer } from 'antd'
-import type { TransferDirection } from 'antd/es/transfer'
+import { Transfer } from 'antd-packages'
+import type { TransferDirection } from 'antd-packages/es/transfer'
 import React, { useState } from 'react'
 
 interface RecordType {

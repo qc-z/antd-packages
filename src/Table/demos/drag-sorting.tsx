@@ -3,8 +3,8 @@
  * desc: 使用自定义元素，我们可以集成[react-dnd](https://github.com/react-dnd/react-dnd)来实现拖拽排序。
  */
 
-import { Table } from 'antd'
-import type { ColumnsType } from 'antd/lib/table'
+import { Table } from 'antd-packages'
+import type { ColumnsType } from 'antd-packages/lib/table'
 import update from 'immutability-helper'
 import React, {
   useCallback,
@@ -77,9 +77,8 @@ const DraggableBodyRow = ({
   return (
     <tr
       ref={ref}
-      className={`${className}${
-        isOver ? dropClassName : ''
-      }`}
+      className={`${className}${isOver ? dropClassName : ''
+        }`}
       style={{ cursor: 'move', ...style }}
       {...restProps}
     />

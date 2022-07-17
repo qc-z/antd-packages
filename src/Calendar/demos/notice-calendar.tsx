@@ -3,8 +3,8 @@
  * desc: 一个复杂的应用示例，用`dateCellRender`和`monthCellRender`函数来自定义需要渲染的数据。
  */
 
-import type { BadgeProps } from 'antd'
-import { Badge, Calendar } from 'antd'
+import type { BadgeProps } from 'antd-packages'
+import { Badge, Calendar } from 'antd-packages'
 import type { Moment } from 'moment'
 import React from 'react'
 

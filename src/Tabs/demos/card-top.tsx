@@ -3,7 +3,7 @@
  * desc: 用于容器顶部，需要一点额外的样式覆盖。
  */
 
-import { Tabs } from 'antd'
+import { Tabs } from 'antd-packages'
 import React from 'react'
 
 const { TabPane } = Tabs

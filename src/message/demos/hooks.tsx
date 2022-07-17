@@ -3,7 +3,7 @@
  * desc: 通过`message.useMessage`创建支持读取context的`contextHolder`。
  */
 
-import { Button, message } from 'antd'
+import { Button, message } from 'antd-packages'
 import React from 'react'
 
 const Context = React.createContext({

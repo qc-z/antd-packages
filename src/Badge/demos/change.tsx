@@ -14,7 +14,7 @@ import {
   Button,
   Divider,
   Switch
-} from 'antd'
+} from 'antd-packages'
 import React, { useState } from 'react'
 
 const ButtonGroup = Button.Group

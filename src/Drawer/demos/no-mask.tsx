@@ -3,7 +3,7 @@
  * desc: 通过`mask={false}`去掉遮罩。
  */
 
-import { Button, Drawer } from 'antd'
+import { Button, Drawer } from 'antd-packages'
 import React, { useState } from 'react'
 
 const App: React.FC = () => {

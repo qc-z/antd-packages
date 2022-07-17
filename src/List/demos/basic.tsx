@@ -3,7 +3,7 @@
  * desc: 基础列表。
  */
 
-import { Avatar, List } from 'antd'
+import { Avatar, List } from 'antd-packages'
 import React from 'react'
 
 const data = [

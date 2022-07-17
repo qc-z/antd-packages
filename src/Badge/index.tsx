@@ -1,4 +1,5 @@
 import Badge from './badge'
-export * from './index.d'
+
+export { BadgeProps } from './badge'
 
 export default Badge

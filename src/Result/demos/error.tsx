@@ -4,7 +4,7 @@
  */
 
 import { CloseCircleOutlined } from '@ant-design/icons'
-import { Button, Result, Typography } from 'antd'
+import { Button, Result, Typography } from 'antd-packages'
 import React from 'react'
 
 const { Paragraph, Text } = Typography

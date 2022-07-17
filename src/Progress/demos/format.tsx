@@ -3,7 +3,7 @@
  * desc: `format`属性指定格式。
  */
 
-import { Progress } from 'antd'
+import { Progress } from 'antd-packages'
 import React from 'react'
 
 const App: React.FC = () => (

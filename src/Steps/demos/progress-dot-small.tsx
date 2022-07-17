@@ -3,7 +3,7 @@
  * desc: 包含步骤点的进度条。
  */
 
-import { Divider, Steps } from 'antd'
+import { Divider, Steps } from 'antd-packages'
 import React from 'react'
 
 const { Step } = Steps

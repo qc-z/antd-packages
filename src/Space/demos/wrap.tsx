@@ -3,7 +3,7 @@
  * desc: 自动换行。
  */
 
-import { Button, Space } from 'antd'
+import { Button, Space } from 'antd-packages'
 import React from 'react'
 
 const App: React.FC = () => (

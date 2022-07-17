@@ -3,7 +3,7 @@
  * desc: 最简单的用法，浮层的大小由内容区域决定。
  */
 
-import { Button, Popover } from 'antd'
+import { Button, Popover } from 'antd-packages'
 import React from 'react'
 
 const content = (

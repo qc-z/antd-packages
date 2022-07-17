@@ -3,7 +3,7 @@
  * desc: 设置对齐模式。
  */
 
-import { Button, Space } from 'antd'
+import { Button, Space } from 'antd-packages'
 import React from 'react'
 
 const App: React.FC = () => (

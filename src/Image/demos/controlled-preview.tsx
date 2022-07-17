@@ -3,7 +3,7 @@
  * desc: 可以使预览受控。
  */
 
-import { Button, Image } from 'antd'
+import { Button, Image } from 'antd-packages'
 import React, { useState } from 'react'
 
 const App: React.FC = () => {

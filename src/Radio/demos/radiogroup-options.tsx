@@ -3,8 +3,8 @@
  * desc: 通过配置`options`参数来渲染单选框。也可通过`optionType`参数来设置Radio类型。
  */
 
-import type { RadioChangeEvent } from 'antd'
-import { Radio } from 'antd'
+import type { RadioChangeEvent } from 'antd-packages'
+import { Radio } from 'antd-packages'
 import React, { useState } from 'react'
 
 const plainOptions = ['Apple', 'Pear', 'Orange']

@@ -3,7 +3,7 @@
  * desc: 大中小三种组合，可以和表单输入框进行对应配合。
  */
 
-import { Radio } from 'antd'
+import { Radio } from 'antd-packages'
 import React from 'react'
 
 const App: React.FC = () => (

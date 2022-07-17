@@ -3,7 +3,7 @@
  * desc: 使用`plain`可以设置为更轻量的分割文字样式。
  */
 
-import { Divider } from 'antd'
+import { Divider } from 'antd-packages'
 import React from 'react'
 
 const App: React.FC = () => (

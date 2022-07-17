@@ -3,7 +3,7 @@
  * desc: 可以判断是否需要弹出。
  */
 
-import { message, Popconfirm, Switch } from 'antd'
+import { message, Popconfirm, Switch } from 'antd-packages'
 import React, { useState } from 'react'
 
 const App: React.FC = () => {

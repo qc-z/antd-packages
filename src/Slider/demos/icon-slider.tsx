@@ -7,7 +7,7 @@ import {
   FrownOutlined,
   SmileOutlined
 } from '@ant-design/icons'
-import { Slider } from 'antd'
+import { Slider } from 'antd-packages'
 import React, { useState } from 'react'
 
 interface IconSliderProps {

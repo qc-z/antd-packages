@@ -3,7 +3,7 @@
  * desc: 禁用某一项。
  */
 
-import { Tabs } from 'antd'
+import { Tabs } from 'antd-packages'
 import React from 'react'
 
 const { TabPane } = Tabs

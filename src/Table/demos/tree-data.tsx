@@ -3,9 +3,9 @@
  * desc: 表格支持树形数据的展示，当数据中有`children`字段时会自动展示为树形表格，如果不需要或配置为其他字段可以用`childrenColumnName`进行配置。可以通过设置`indentSize`以控制每一层的缩进宽度。
  */
 
-import { Space, Switch, Table } from 'antd'
-import type { ColumnsType } from 'antd/lib/table'
-import type { TableRowSelection } from 'antd/lib/table/interface'
+import { Space, Switch, Table } from 'antd-packages'
+import type { ColumnsType } from 'antd-packages/lib/table'
+import type { TableRowSelection } from 'antd-packages/lib/table/interface'
 import React, { useState } from 'react'
 
 interface DataType {
@@ -103,33 +103,33 @@ const data: DataType[] = [
 
 // rowSelection objects indicates the need for row selection
 const rowSelection: TableRowSelection<DataType> =
-  {
-    onChange: (selectedRowKeys, selectedRows) => {
-      console.log(
-        `selectedRowKeys: ${selectedRowKeys}`,
-        'selectedRows: ',
-        selectedRows
-      )
-    },
-    onSelect: (
-      record,
-      selected,
+{
+  onChange: (selectedRowKeys, selectedRows) => {
+    console.log(
+      `selectedRowKeys: ${selectedRowKeys}`,
+      'selectedRows: ',
       selectedRows
-    ) => {
-      console.log(record, selected, selectedRows)
-    },
-    onSelectAll: (
+    )
+  },
+  onSelect: (
+    record,
+    selected,
+    selectedRows
+  ) => {
+    console.log(record, selected, selectedRows)
+  },
+  onSelectAll: (
+    selected,
+    selectedRows,
+    changeRows
+  ) => {
+    console.log(
       selected,
       selectedRows,
       changeRows
-    ) => {
-      console.log(
-        selected,
-        selectedRows,
-        changeRows
-      )
-    }
+    )
   }
+}
 
 const App: React.FC = () => {
   const [checkStrictly, setCheckStrictly] =

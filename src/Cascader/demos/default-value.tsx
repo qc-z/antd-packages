@@ -3,7 +3,7 @@
  * desc: 默认值通过数组的方式指定。
  */
 
-import { Cascader } from 'antd'
+import { Cascader } from 'antd-packages'
 import React from 'react'
 
 interface Option {

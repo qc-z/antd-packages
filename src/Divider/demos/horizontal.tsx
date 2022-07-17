@@ -3,7 +3,7 @@
  * desc: 默认为水平分割线，可在中间加入文字。
  */
 
-import { Divider } from 'antd'
+import { Divider } from 'antd-packages'
 import React from 'react'
 
 const App: React.FC = () => (

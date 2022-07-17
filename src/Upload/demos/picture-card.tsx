@@ -4,12 +4,12 @@
  */
 
 import { PlusOutlined } from '@ant-design/icons'
-import { Modal, Upload } from 'antd'
+import { Modal, Upload } from 'antd-packages'
 import type {
   RcFile,
   UploadProps
-} from 'antd/es/upload'
-import type { UploadFile } from 'antd/es/upload/interface'
+} from 'antd-packages/es/upload'
+import type { UploadFile } from 'antd-packages/es/upload/interface'
 import React, { useState } from 'react'
 
 const getBase64 = (
@@ -89,9 +89,9 @@ const App: React.FC = () => {
     setPreviewVisible(true)
     setPreviewTitle(
       file.name ||
-        file.url!.substring(
-          file.url!.lastIndexOf('/') + 1
-        )
+      file.url!.substring(
+        file.url!.lastIndexOf('/') + 1
+      )
     )
   }
 

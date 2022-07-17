@@ -3,8 +3,8 @@
  * desc: Buggy!
  */
 
-import type { StepsProps } from 'antd'
-import { Button, Steps } from 'antd'
+import type { StepsProps } from 'antd-packages'
+import { Button, Steps } from 'antd-packages'
 import React, { useState } from 'react'
 
 const { Step } = Steps

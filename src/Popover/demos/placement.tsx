@@ -3,7 +3,7 @@
  * desc: 位置有十二个方向。
  */
 
-import { Button, Popover } from 'antd'
+import { Button, Popover } from 'antd-packages'
 import React from 'react'
 
 const text = <span>Title</span>

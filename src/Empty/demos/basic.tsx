@@ -3,7 +3,7 @@
  * desc: 简单的展示。
  */
 
-import { Empty } from 'antd'
+import { Empty } from 'antd-packages'
 
 const App: React.FC = () => <Empty />
 

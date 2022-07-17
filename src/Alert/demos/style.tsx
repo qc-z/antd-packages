@@ -3,7 +3,7 @@
  * desc: 共有四种样式`success`、`info`、`warning`、`error`。
  */
 
-import { Alert } from 'antd'
+import { Alert } from 'antd-packages'
 import React from 'react'
 
 const App: React.FC = () => (

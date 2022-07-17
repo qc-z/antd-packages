@@ -3,7 +3,7 @@
  * desc: 你可以通过`showArrow={false}`隐藏`CollapsePanel`组件的箭头图标。
  */
 
-import { Collapse } from 'antd'
+import { Collapse } from 'antd-packages'
 import React from 'react'
 
 const { Panel } = Collapse

@@ -3,7 +3,7 @@
  * desc: 迷你版的步骤条，通过设置`<Stepssize="small">`启用.
  */
 
-import { Steps } from 'antd'
+import { Steps } from 'antd-packages'
 import React from 'react'
 
 const { Step } = Steps

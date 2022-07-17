@@ -3,8 +3,8 @@
  * desc: 改变每页显示条目数。
  */
 
-import type { PaginationProps } from 'antd'
-import { Pagination } from 'antd'
+import type { PaginationProps } from 'antd-packages'
+import { Pagination } from 'antd-packages'
 import React from 'react'
 
 const onShowSizeChange: PaginationProps['onShowSizeChange'] =

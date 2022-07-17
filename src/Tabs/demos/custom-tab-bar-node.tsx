@@ -3,8 +3,8 @@
  * desc: 使用`react-dnd@15+`实现标签可拖拽。
  */
 
-import type { TabsProps } from 'antd'
-import { Tabs } from 'antd'
+import type { TabsProps } from 'antd-packages'
+import { Tabs } from 'antd-packages'
 import React, { useRef, useState } from 'react'
 import {
   DndProvider,

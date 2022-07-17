@@ -3,7 +3,7 @@
  * desc: 相邻组件垂直间距。
  */
 
-import { Card, Space } from 'antd'
+import { Card, Space } from 'antd-packages'
 import React from 'react'
 
 const App: React.FC = () => (

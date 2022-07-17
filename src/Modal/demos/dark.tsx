@@ -22,7 +22,7 @@ import {
   Switch,
   Typography,
   Dropdown
-} from 'antd'
+} from 'antd-packages'
 import moment from 'moment'
 import difference from 'lodash/difference'
 import {

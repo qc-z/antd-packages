@@ -3,7 +3,7 @@
  * desc: 内部反色标签
  */
 
-import { Divider, Tag } from 'antd'
+import { Divider, Tag } from 'antd-packages'
 import React from 'react'
 
 const App: React.FC = () => (

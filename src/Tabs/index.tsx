@@ -1,4 +1,5 @@
 import Tabs from './tabs'
-export * from './index.d'
+
+export { TabsProps } from './tabs'
 
 export default Tabs

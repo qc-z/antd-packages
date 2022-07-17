@@ -3,7 +3,7 @@
  * desc: 点击锚点不记录历史。
  */
 
-import { Anchor } from 'antd'
+import { Anchor } from 'antd-packages'
 import React from 'react'
 
 const { Link } = Anchor

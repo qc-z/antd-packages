@@ -3,8 +3,8 @@
  * desc: 选择后进行操作，完成后清空选择，通过`rowSelection.selectedRowKeys`来控制选中项。
  */
 
-import { Button, Table } from 'antd'
-import type { ColumnsType } from 'antd/lib/table'
+import { Button, Table } from 'antd-packages'
+import type { ColumnsType } from 'antd-packages/lib/table'
 import React, { useState } from 'react'
 
 interface DataType {

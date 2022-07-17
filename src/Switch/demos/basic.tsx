@@ -3,7 +3,7 @@
  * desc: 最简单的用法。
  */
 
-import { Switch } from 'antd'
+import { Switch } from 'antd-packages'
 import React from 'react'
 
 const onChange = (checked: boolean) => {

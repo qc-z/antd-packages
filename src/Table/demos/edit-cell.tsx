@@ -3,15 +3,15 @@
  * desc: 带单元格编辑功能的表格。当配合`shouldCellUpdate`使用时请注意[闭包问题](https://github.com/ant-design/ant-design/issues/29243)。
  */
 
-import type { InputRef } from 'antd'
+import type { InputRef } from 'antd-packages'
 import {
   Button,
   Form,
   Input,
   Popconfirm,
   Table
-} from 'antd'
-import type { FormInstance } from 'antd/lib/form'
+} from 'antd-packages'
+import type { FormInstance } from 'antd-packages/lib/form'
 import React, {
   useContext,
   useEffect,
@@ -69,67 +69,67 @@ const EditableCell: React.FC<
   handleSave,
   ...restProps
 }) => {
-  const [editing, setEditing] = useState(false)
-  const inputRef = useRef<InputRef>(null)
-  const form = useContext(EditableContext)!
+    const [editing, setEditing] = useState(false)
+    const inputRef = useRef<InputRef>(null)
+    const form = useContext(EditableContext)!
 
-  useEffect(() => {
-    if (editing) {
-      inputRef.current!.focus()
+    useEffect(() => {
+      if (editing) {
+        inputRef.current!.focus()
+      }
+    }, [editing])
+
+    const toggleEdit = () => {
+      setEditing(!editing)
+      form.setFieldsValue({
+        [dataIndex]: record[dataIndex]
+      })
     }
-  }, [editing])
 
-  const toggleEdit = () => {
-    setEditing(!editing)
-    form.setFieldsValue({
-      [dataIndex]: record[dataIndex]
-    })
-  }
+    const save = async () => {
+      try {
+        const values = await form.validateFields()
 
-  const save = async () => {
-    try {
-      const values = await form.validateFields()
-
-      toggleEdit()
-      handleSave({ ...record, ...values })
-    } catch (errInfo) {
-      console.log('Save failed:', errInfo)
+        toggleEdit()
+        handleSave({ ...record, ...values })
+      } catch (errInfo) {
+        console.log('Save failed:', errInfo)
+      }
     }
+
+    let childNode = children
+
+    if (editable) {
+      childNode = editing ? (
+        <Form.Item
+          style={{ margin: 0 }}
+          name={dataIndex}
+          rules={[
+            {
+              required: true,
+              message: `${title} is required.`
+            }
+          ]}
+        >
+          <Input
+            ref={inputRef}
+            onPressEnter={save}
+            onBlur={save}
+          />
+        </Form.Item>
+      ) : (
+        <div
+          className="editable-cell-value-wrap"
+          style={{ paddingRight: 24 }}
+          onClick={toggleEdit}
+        >
+          {children}
+        </div>
+      )
+    }
+
+    return <td {...restProps}>{childNode}</td>
   }
-
-  let childNode = children
-
-  if (editable) {
-    childNode = editing ? (
-      <Form.Item
-        style={{ margin: 0 }}
-        name={dataIndex}
-        rules={[
-          {
-            required: true,
-            message: `${title} is required.`
-          }
-        ]}
-      >
-        <Input
-          ref={inputRef}
-          onPressEnter={save}
-          onBlur={save}
-        />
-      </Form.Item>
-    ) : (
-      <div
-        className="editable-cell-value-wrap"
-        style={{ paddingRight: 24 }}
-        onClick={toggleEdit}
-      >
-        {children}
-      </div>
-    )
-  }
-
-  return <td {...restProps}>{childNode}</td>
-}
 
 type EditableTableProps = Parameters<
   typeof Table
@@ -178,36 +178,36 @@ const App: React.FC = () => {
     editable?: boolean
     dataIndex: string
   })[] = [
-    {
-      title: 'name',
-      dataIndex: 'name',
-      width: '30%',
-      editable: true
-    },
-    {
-      title: 'age',
-      dataIndex: 'age'
-    },
-    {
-      title: 'address',
-      dataIndex: 'address'
-    },
-    {
-      title: 'operation',
-      dataIndex: 'operation',
-      render: (_, record: { key: React.Key }) =>
-        dataSource.length >= 1 ? (
-          <Popconfirm
-            title="Sure to delete?"
-            onConfirm={() =>
-              handleDelete(record.key)
-            }
-          >
-            <a>Delete</a>
-          </Popconfirm>
-        ) : null
-    }
-  ]
+      {
+        title: 'name',
+        dataIndex: 'name',
+        width: '30%',
+        editable: true
+      },
+      {
+        title: 'age',
+        dataIndex: 'age'
+      },
+      {
+        title: 'address',
+        dataIndex: 'address'
+      },
+      {
+        title: 'operation',
+        dataIndex: 'operation',
+        render: (_, record: { key: React.Key }) =>
+          dataSource.length >= 1 ? (
+            <Popconfirm
+              title="Sure to delete?"
+              onConfirm={() =>
+                handleDelete(record.key)
+              }
+            >
+              <a>Delete</a>
+            </Popconfirm>
+          ) : null
+      }
+    ]
 
   const handleAdd = () => {
     const newData: DataType = {

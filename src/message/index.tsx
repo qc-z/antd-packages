@@ -1,4 +1,5 @@
 import message from './message'
-export * from './index.d'
+
+export { messageProps } from './message'
 
 export default message

@@ -4,8 +4,8 @@
  */
 
 import { PlusOutlined } from '@ant-design/icons'
-import type { InputRef } from 'antd'
-import { Input, Tag, Tooltip } from 'antd'
+import type { InputRef } from 'antd-packages'
+import { Input, Tag, Tooltip } from 'antd-packages'
 import React, {
   useEffect,
   useRef,

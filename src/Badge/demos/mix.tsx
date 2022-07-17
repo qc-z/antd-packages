@@ -3,7 +3,7 @@
  * desc: 测试`count``stauts``color``dot`共用的情况。
  */
 
-import { Avatar, Badge } from 'antd'
+import { Avatar, Badge } from 'antd-packages'
 import React from 'react'
 
 const App: React.FC = () => (

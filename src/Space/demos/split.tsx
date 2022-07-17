@@ -3,7 +3,7 @@
  * desc: 相邻组件分隔符。
  */
 
-import { Divider, Space, Typography } from 'antd'
+import { Divider, Space, Typography } from 'antd-packages'
 import React from 'react'
 
 const App: React.FC = () => (

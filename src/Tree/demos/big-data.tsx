@@ -3,8 +3,8 @@
  * desc: 大数据展示。
  */
 
-import { Tree } from 'antd'
-import type { DataNode } from 'antd/lib/tree'
+import { Tree } from 'antd-packages'
+import type { DataNode } from 'antd-packages/lib/tree'
 import React from 'react'
 
 const treeData: DataNode[] = []

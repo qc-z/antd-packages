@@ -3,8 +3,8 @@
  * desc: 测试Steps嵌套Steps的样式。
  */
 
-import type { StepsProps } from 'antd'
-import { Card, Radio, Steps } from 'antd'
+import type { StepsProps } from 'antd-packages'
+import { Card, Radio, Steps } from 'antd-packages'
 import React, { useState } from 'react'
 
 const { Step } = Steps

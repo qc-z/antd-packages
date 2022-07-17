@@ -3,11 +3,11 @@
  * desc: `column.sorter`支持`multiple`字段以配置多列排序优先级。通过`sorter.compare`配置排序逻辑，你可以通过不设置该函数只启动多列排序的交互形式。
  */
 
-import { Table } from 'antd'
+import { Table } from 'antd-packages'
 import type {
   ColumnsType,
   TableProps
-} from 'antd/lib/table'
+} from 'antd-packages/lib/table'
 import React from 'react'
 
 interface DataType {

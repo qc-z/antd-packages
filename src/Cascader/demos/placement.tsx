@@ -3,8 +3,8 @@
  * desc: 可以通过`placement`手动指定弹出的位置。
  */
 
-import type { RadioChangeEvent } from 'antd'
-import { Cascader, Radio } from 'antd'
+import type { RadioChangeEvent } from 'antd-packages'
+import { Cascader, Radio } from 'antd-packages'
 import React, { useState } from 'react'
 
 interface Option {

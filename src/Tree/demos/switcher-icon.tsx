@@ -4,11 +4,11 @@
  */
 
 import { DownOutlined } from '@ant-design/icons'
-import { Tree } from 'antd'
+import { Tree } from 'antd-packages'
 import type {
   DataNode,
   TreeProps
-} from 'antd/lib/tree'
+} from 'antd-packages/lib/tree'
 import React from 'react'
 
 const treeData: DataNode[] = [

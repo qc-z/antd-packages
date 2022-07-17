@@ -3,8 +3,8 @@
  * desc: 按钮样式的单选组合。
  */
 
-import type { RadioChangeEvent } from 'antd'
-import { Radio } from 'antd'
+import type { RadioChangeEvent } from 'antd-packages'
+import { Radio } from 'antd-packages'
 import React from 'react'
 
 const onChange = (e: RadioChangeEvent) => {

@@ -3,7 +3,7 @@
  * desc: 设置鼠标放在状态点上时显示的文字。
  */
 
-import { Avatar, Badge } from 'antd'
+import { Avatar, Badge } from 'antd-packages'
 import React from 'react'
 
 const App: React.FC = () => (

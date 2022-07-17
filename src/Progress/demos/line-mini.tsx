@@ -3,7 +3,7 @@
  * desc: 适合放在较狭窄的区域内。
  */
 
-import { Progress } from 'antd'
+import { Progress } from 'antd-packages'
 import React from 'react'
 
 const App: React.FC = () => (

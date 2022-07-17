@@ -3,7 +3,7 @@
  * desc: 设置`onChange`后，Steps变为可点击状态。
  */
 
-import { Divider, Steps } from 'antd'
+import { Divider, Steps } from 'antd-packages'
 import React, { useState } from 'react'
 
 const { Step } = Steps

@@ -3,7 +3,7 @@
  * desc: 测试Badge的样式。
  */
 
-import { Badge, Radio } from 'antd'
+import { Badge, Radio } from 'antd-packages'
 import React from 'react'
 
 const App: React.FC = () => (

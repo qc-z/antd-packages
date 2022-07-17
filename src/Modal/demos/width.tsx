@@ -3,7 +3,7 @@
  * desc: 使用`width`来设置模态对话框的宽度。
  */
 
-import { Button, Modal } from 'antd'
+import { Button, Modal } from 'antd-packages'
 import React, { useState } from 'react'
 
 const App: React.FC = () => {

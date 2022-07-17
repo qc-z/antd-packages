@@ -3,7 +3,7 @@
  * desc: 手动更新和关闭`Modal.method`方式创建的对话框。
  */
 
-import { Button, Modal } from 'antd'
+import { Button, Modal } from 'antd-packages'
 import React from 'react'
 
 const countDown = () => {

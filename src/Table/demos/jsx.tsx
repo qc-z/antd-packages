@@ -3,7 +3,7 @@
  * desc: 使用JSX风格的API（2.5.0以后引入）>这个只是一个描述`columns`的语法糖，所以你不能用其他组件去包裹`Column`和`ColumnGroup`。
  */
 
-import { Space, Table, Tag } from 'antd'
+import { Space, Table, Tag } from 'antd-packages'
 import React from 'react'
 
 const { Column, ColumnGroup } = Table

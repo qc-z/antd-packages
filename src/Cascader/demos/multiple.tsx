@@ -3,7 +3,7 @@
  * desc: 一次性选择多个选项。
  */
 
-import { Cascader } from 'antd'
+import { Cascader } from 'antd-packages'
 import React from 'react'
 
 interface Option {

@@ -3,7 +3,7 @@
  * desc: 渲染在当前dom里。自定义容器，查看`getContainer`。
  */
 
-import { Button, Drawer } from 'antd'
+import { Button, Drawer } from 'antd-packages'
 import React, { useState } from 'react'
 
 const App: React.FC = () => {

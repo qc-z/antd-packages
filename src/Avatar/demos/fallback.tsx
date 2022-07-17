@@ -3,7 +3,7 @@
  * desc: 图片不存在时，如果`src`本身是个ReactElement，会尝试回退到`src`，否则尝试回退到`icon`，最后回退到显示`children`。
  */
 
-import { Avatar } from 'antd'
+import { Avatar } from 'antd-packages'
 import React from 'react'
 
 const App: React.FC = () => (

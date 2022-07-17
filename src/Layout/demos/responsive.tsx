@@ -8,7 +8,7 @@ import {
   UserOutlined,
   VideoCameraOutlined
 } from '@ant-design/icons'
-import { Layout, Menu } from 'antd'
+import { Layout, Menu } from 'antd-packages'
 import React from 'react'
 
 const { Header, Content, Footer, Sider } = Layout

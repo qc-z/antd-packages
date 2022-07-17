@@ -4,7 +4,7 @@
  */
 
 import { ExclamationCircleOutlined } from '@ant-design/icons'
-import { Button, Modal, Space } from 'antd'
+import { Button, Modal, Space } from 'antd-packages'
 import React from 'react'
 
 const { confirm } = Modal

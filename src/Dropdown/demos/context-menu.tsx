@@ -3,7 +3,7 @@
  * desc: 默认是移入触发菜单，可以点击鼠标右键触发。
  */
 
-import { Dropdown, Menu } from 'antd'
+import { Dropdown, Menu } from 'antd-packages'
 import React from 'react'
 
 const menu = (

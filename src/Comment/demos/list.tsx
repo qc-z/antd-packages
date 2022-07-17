@@ -3,7 +3,7 @@
  * desc: 配合List组件展现评论列表。
  */
 
-import { Comment, List, Tooltip } from 'antd'
+import { Comment, List, Tooltip } from 'antd-packages'
 import moment from 'moment'
 import React from 'react'
 

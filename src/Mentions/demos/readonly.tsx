@@ -3,7 +3,7 @@
  * desc: 通过`disabled`属性设置是否生效。通过`readOnly`属性设置是否只读。
  */
 
-import { Mentions } from 'antd'
+import { Mentions } from 'antd-packages'
 import React from 'react'
 
 const { Option } = Mentions

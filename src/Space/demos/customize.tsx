@@ -3,7 +3,7 @@
  * desc: 自定义间距大小。
  */
 
-import { Button, Slider, Space } from 'antd'
+import { Button, Slider, Space } from 'antd-packages'
 import React, { useState } from 'react'
 
 const App: React.FC = () => {

@@ -3,8 +3,8 @@
  * desc: 自定义尺寸，适应在各种容器中展示。
  */
 
-import type { RadioChangeEvent } from 'antd'
-import { Button, Descriptions, Radio } from 'antd'
+import type { RadioChangeEvent } from 'antd-packages'
+import { Button, Descriptions, Radio } from 'antd-packages'
 import React, { useState } from 'react'
 
 const App: React.FC = () => {

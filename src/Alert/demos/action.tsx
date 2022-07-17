@@ -3,7 +3,7 @@
  * desc: 可以在右上角自定义操作项。
  */
 
-import { Alert, Button, Space } from 'antd'
+import { Alert, Button, Space } from 'antd-packages'
 import React from 'react'
 
 const App: React.FC = () => (
