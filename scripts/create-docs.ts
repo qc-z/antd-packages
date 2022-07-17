@@ -556,7 +556,7 @@ function renameFolder() {
 
 // 重新组织目录结构
 
-fixFolder()
+// fixFolder()
 
 // 文件夹改名字
 // renameFolder()

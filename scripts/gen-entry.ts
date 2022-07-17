@@ -133,9 +133,11 @@ export async function parseComponentExports() {
     const name = path.basename(comp)
 
     // str += `export { default as ${name} } from './${name}'\n`
-    str += `export { default as ${findKey(
-      name
-    )} } from './${name}'\n`
+    str += `export { default as ${
+      name === 'mentions'
+        ? 'Mentions'
+        : findKey(name)
+    } } from './${name}'\n`
     if (name === 'slider') {
       str += `export type { SliderSingleProps } from './${name}'\n`
     } else if (!excludes.includes(name)) {
