@@ -1,5 +1,5 @@
-import AutoComplete from './autocomplete'
+import AutoComplete from './auto-complete'
 
-export { AutoCompleteProps } from './autocomplete'
+export { AutoCompleteProps } from './auto-complete'
 
 export default AutoComplete

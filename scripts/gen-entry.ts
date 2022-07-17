@@ -79,6 +79,9 @@ const finallyNames = {
 }
 function findKey(key: string) {
   for (const name in finallyNames) {
+    if (key === 'mentions') {
+      return 'Mention'
+    }
     if (
       finallyNames[
         name as keyof typeof finallyNames
@@ -112,7 +115,6 @@ const componentEntrys = klawSync(PACKAGES_PATH, {
   )
 
 let str = ''
-let type = ''
 let style = ''
 
 export async function parseComponentExports() {
@@ -121,25 +123,27 @@ export async function parseComponentExports() {
   /**
    * 遍历组件
    */
-  const excludes = ['grid', 'notification']
+  const excludes = [
+    'grid',
+    'notification',
+    'message'
+  ]
   for (const comp of componentEntrys) {
     componentNames.push(path.basename(comp))
     const name = path.basename(comp)
+
     // str += `export { default as ${name} } from './${name}'\n`
     str += `export { default as ${findKey(
       name
     )} } from './${name}'\n`
-    if (!excludes.includes(name)) {
+    if (name === 'slider') {
+      str += `export type { SliderSingleProps } from './${name}'\n`
+    } else if (!excludes.includes(name)) {
       str += `export type { ${findKey(
         name
       )}Props } from './${name}'\n`
     }
-    type += `export { default as ${findKey(
-      name
-    )} } from './${name}'\n`
-    type += `export type { ${findKey(
-      name
-    )}Props } from './${name}'\n`
+
     let componentName = name.replace(
       name[0],
       name[0].toLowerCase()
@@ -154,15 +158,6 @@ export async function parseComponentExports() {
 
     style += `@import '../${name}/style/my-${componentName}.less';\n`
   }
-  // str += '\n'
-  // str += `export { ${componentNames.join(
-  //   ', '
-  // )} }\n`
-
-  // str += '\n'
-  // str += `export default { ${componentNames.join(
-  //   ', '
-  // )} }\n`
 
   return str
 }
@@ -172,7 +167,7 @@ async function writeEntry() {
     `${CWD}/src/index.ts`,
     await parseComponentExports()
   )
-  fs.writeFileSync(`${CWD}/src/index.d.ts`, type)
+  fs.writeFileSync(`${CWD}/src/index.d.ts`, str)
   fs.writeFileSync(
     `${CWD}/src/style/components.less`,
     style

@@ -1,5 +1,5 @@
-import TreeSelect from './treeselect'
+import TreeSelect from './tree-select'
 
-export { TreeSelectProps } from './treeselect'
+export { TreeSelectProps } from './tree-select'
 
 export default TreeSelect

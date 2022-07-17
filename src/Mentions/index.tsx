@@ -1,5 +1,5 @@
 import Mentions from './mentions'
 
-export { MentionsProps } from './mentions'
+export { MentionProps } from './mentions'
 
 export default Mentions

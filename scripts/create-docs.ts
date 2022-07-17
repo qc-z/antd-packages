@@ -41,72 +41,139 @@ const typeOrder = {
   模板文档: 3,
   'Template Document': 3
 }
+// const finallyNames = {
+//   Affix: 'affix',
+//   Alert: 'alert',
+//   Anchor: 'anchor',
+//   AutoComplete: 'auto-complete',
+//   Avatar: 'avatar',
+//   BackTop: 'back-top',
+//   Badge: 'badge',
+//   Breadcrumb: 'breadcrumb',
+//   Button: 'button',
+//   Calendar: 'calendar',
+//   Card: 'card',
+//   Carousel: 'carousel',
+//   Cascader: 'cascader',
+//   Checkbox: 'checkbox',
+//   Col: 'col',
+//   Collapse: 'collapse',
+//   Comment: 'comment',
+//   ConfigProvider: 'config-provider',
+//   DatePicker: 'date-picker',
+//   Descriptions: 'descriptions',
+//   Divider: 'divider',
+//   Drawer: 'drawer',
+//   Dropdown: 'dropdown',
+//   Empty: 'empty',
+//   Form: 'form',
+//   Grid: 'grid',
+//   Image: 'image',
+//   Input: 'input',
+//   InputNumber: 'input-number',
+//   Layout: 'layout',
+//   List: 'list',
+//   Mentions: 'mentions',
+//   Menu: 'menu',
+//   message: 'message',
+//   Modal: 'modal',
+//   notification: 'notification',
+//   PageHeader: 'page-header',
+//   Pagination: 'pagination',
+//   Popconfirm: 'popconfirm',
+//   Popover: 'popover',
+//   Progress: 'progress',
+//   Radio: 'radio',
+//   Rate: 'rate',
+//   Result: 'result',
+//   Row: 'row',
+//   Segmented: 'segmented',
+//   Select: 'select',
+//   Skeleton: 'skeleton',
+//   Slider: 'slider',
+//   Space: 'space',
+//   Spin: 'spin',
+//   Statistic: 'statistic',
+//   Steps: 'steps',
+//   Switch: 'switch',
+//   Table: 'table',
+//   Tabs: 'tabs',
+//   Tag: 'tag',
+//   TimePicker: 'time-picker',
+//   Timeline: 'timeline',
+//   Tooltip: 'tooltip',
+//   Transfer: 'transfer',
+//   Tree: 'tree',
+//   TreeSelect: 'tree-select',
+//   Typography: 'typography',
+//   Upload: 'upload'
+// }
 const finallyNames = {
-  Affix: 'affix',
-  Alert: 'alert',
-  Anchor: 'anchor',
-  AutoComplete: 'auto-complete',
-  Avatar: 'avatar',
-  BackTop: 'back-top',
-  Badge: 'badge',
-  Breadcrumb: 'breadcrumb',
-  Button: 'button',
-  Calendar: 'calendar',
-  Card: 'card',
-  Carousel: 'carousel',
-  Cascader: 'cascader',
-  Checkbox: 'checkbox',
-  Col: 'col',
-  Collapse: 'collapse',
-  Comment: 'comment',
-  ConfigProvider: 'config-provider',
-  DatePicker: 'date-picker',
-  Descriptions: 'descriptions',
-  Divider: 'divider',
-  Drawer: 'drawer',
-  Dropdown: 'dropdown',
-  Empty: 'empty',
-  Form: 'form',
-  Grid: 'grid',
-  Image: 'image',
-  Input: 'input',
-  InputNumber: 'input-number',
-  Layout: 'layout',
-  List: 'list',
-  Mentions: 'mentions',
-  Menu: 'menu',
+  affix: 'Affix',
+  alert: 'Alert',
+  anchor: 'Anchor',
+  'auto-complete': 'AutoComplete',
+  avatar: 'Avatar',
+  'back-top': 'BackTop',
+  badge: 'Badge',
+  breadcrumb: 'Breadcrumb',
+  button: 'Button',
+  calendar: 'Calendar',
+  card: 'Card',
+  carousel: 'Carousel',
+  cascader: 'Cascader',
+  checkbox: 'Checkbox',
+  col: 'Col',
+  collapse: 'Collapse',
+  comment: 'Comment',
+  'config-provider': 'ConfigProvider',
+  'date-picker': 'DatePicker',
+  descriptions: 'Descriptions',
+  divider: 'Divider',
+  drawer: 'Drawer',
+  dropdown: 'Dropdown',
+  empty: 'Empty',
+  form: 'Form',
+  grid: 'Grid',
+  image: 'Image',
+  input: 'Input',
+  'input-number': 'InputNumber',
+  layout: 'Layout',
+  list: 'List',
+  mentions: 'Mentions',
+  menu: 'Menu',
   message: 'message',
-  Modal: 'modal',
+  modal: 'Modal',
   notification: 'notification',
-  PageHeader: 'page-header',
-  Pagination: 'pagination',
-  Popconfirm: 'popconfirm',
-  Popover: 'popover',
-  Progress: 'progress',
-  Radio: 'radio',
-  Rate: 'rate',
-  Result: 'result',
-  Row: 'row',
-  Segmented: 'segmented',
-  Select: 'select',
-  Skeleton: 'skeleton',
-  Slider: 'slider',
-  Space: 'space',
-  Spin: 'spin',
-  Statistic: 'statistic',
-  Steps: 'steps',
-  Switch: 'switch',
-  Table: 'table',
-  Tabs: 'tabs',
-  Tag: 'tag',
-  TimePicker: 'time-picker',
-  Timeline: 'timeline',
-  Tooltip: 'tooltip',
-  Transfer: 'transfer',
-  Tree: 'tree',
-  TreeSelect: 'tree-select',
-  Typography: 'typography',
-  Upload: 'upload'
+  'page-header': 'PageHeader',
+  pagination: 'Pagination',
+  popconfirm: 'Popconfirm',
+  popover: 'Popover',
+  progress: 'Progress',
+  radio: 'Radio',
+  rate: 'Rate',
+  result: 'Result',
+  row: 'Row',
+  segmented: 'Segmented',
+  select: 'Select',
+  skeleton: 'Skeleton',
+  slider: 'Slider',
+  space: 'Space',
+  spin: 'Spin',
+  statistic: 'Statistic',
+  steps: 'Steps',
+  switch: 'Switch',
+  table: 'Table',
+  tabs: 'Tabs',
+  tag: 'Tag',
+  'time-picker': 'TimePicker',
+  timeline: 'Timeline',
+  tooltip: 'Tooltip',
+  transfer: 'Transfer',
+  tree: 'Tree',
+  'tree-select': 'TreeSelect',
+  typography: 'Typography',
+  upload: 'Upload'
 }
 
 function auto() {
@@ -409,14 +476,11 @@ function autoImportCss() {
 function fixFolder() {
   for (const name in finallyNames) {
     fs.writeFileSync(
-      path.join(
-        `src/${name}/${name.toLowerCase()}.tsx`
-      ),
-      `import { ${name} } from 'antd'\n
-import { ${name}Props as My${name}Props } from 'antd/lib/${finallyNames[name]}'\n
-export * from 'antd/lib/${finallyNames[name]}'\n
-export type ${name}Props = My${name}Props\n
-export default ${name}`,
+      path.join(`src/${name}/${name}.tsx`),
+      `import { ${finallyNames[name]} } from 'antd'\n
+export { ${finallyNames[name]}Props } from 'antd/lib/${name}'\n
+export * from 'antd/lib/${name}'\n
+export default ${finallyNames[name]}`,
       'utf-8'
     )
     //     fs.writeFileSync(
@@ -431,9 +495,9 @@ export default ${name}`,
 
     fs.writeFileSync(
       path.join(`src/${[name]}/index.tsx`),
-      `import ${name} from './${name.toLowerCase()}'\n
-export { ${name}Props } from './${name.toLowerCase()}'\n
-export default ${name}`,
+      `import ${finallyNames[name]} from './${name}'\n
+export { ${finallyNames[name]}Props } from './${name}'\n
+export default ${finallyNames[name]}`,
       'utf-8'
     )
     //     fs.writeFileSync(
@@ -444,16 +508,18 @@ export default ${name}`,
     //       'utf-8'
     //     )
     // fs.unlinkSync(path.join(`src/${[name]}/${[name]}.tsx`))
-    fs.existsSync(
-      `src/${[name]}/${finallyNames[name]}.d.ts`
-    ) &&
-      fs.unlinkSync(
-        path.join(
-          `src/${[name]}/${
-            finallyNames[name]
-          }.d.ts`
-        )
-      )
+    // fs.existsSync(
+    //   `src/${[name]}/${name
+    //     .split('-')
+    //     .join('')}.tsx`
+    // ) &&
+    //   fs.unlinkSync(
+    //     path.join(
+    //       `src/${[name]}/${name
+    //         .split('-')
+    //         .join('')}.tsx`
+    //     )
+    //   )
     // fs.unlinkSync(
     //   path.join(`src/${[name]}/${name.toLowerCase()}.d.ts`)
     // )
@@ -490,7 +556,7 @@ function renameFolder() {
 
 // 重新组织目录结构
 
-// fixFolder()
+fixFolder()
 
 // 文件夹改名字
-renameFolder()
+// renameFolder()

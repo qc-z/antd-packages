@@ -1,5 +1,5 @@
-import BackTop from './backtop'
+import BackTop from './back-top'
 
-export { BackTopProps } from './backtop'
+export { BackTopProps } from './back-top'
 
 export default BackTop

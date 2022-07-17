@@ -1,5 +1,5 @@
-import PageHeader from './pageheader'
+import PageHeader from './page-header'
 
-export { PageHeaderProps } from './pageheader'
+export { PageHeaderProps } from './page-header'
 
 export default PageHeader
