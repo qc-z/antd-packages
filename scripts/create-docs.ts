@@ -41,164 +41,88 @@ const typeOrder = {
   模板文档: 3,
   'Template Document': 3
 }
-// const finallyNames = {
-//   Affix: 'affix',
-//   Alert: 'alert',
-//   Anchor: 'anchor',
-//   AutoComplete: 'auto-complete',
-//   Avatar: 'avatar',
-//   BackTop: 'back-top',
-//   Badge: 'badge',
-//   Breadcrumb: 'breadcrumb',
-//   Button: 'button',
-//   Calendar: 'calendar',
-//   Card: 'card',
-//   Carousel: 'carousel',
-//   Cascader: 'cascader',
-//   Checkbox: 'checkbox',
-//   Col: 'col',
-//   Collapse: 'collapse',
-//   Comment: 'comment',
-//   ConfigProvider: 'config-provider',
-//   DatePicker: 'date-picker',
-//   Descriptions: 'descriptions',
-//   Divider: 'divider',
-//   Drawer: 'drawer',
-//   Dropdown: 'dropdown',
-//   Empty: 'empty',
-//   Form: 'form',
-//   Grid: 'grid',
-//   Image: 'image',
-//   Input: 'input',
-//   InputNumber: 'input-number',
-//   Layout: 'layout',
-//   List: 'list',
-//   Mentions: 'mentions',
-//   Menu: 'menu',
-//   message: 'message',
-//   Modal: 'modal',
-//   notification: 'notification',
-//   PageHeader: 'page-header',
-//   Pagination: 'pagination',
-//   Popconfirm: 'popconfirm',
-//   Popover: 'popover',
-//   Progress: 'progress',
-//   Radio: 'radio',
-//   Rate: 'rate',
-//   Result: 'result',
-//   Row: 'row',
-//   Segmented: 'segmented',
-//   Select: 'select',
-//   Skeleton: 'skeleton',
-//   Slider: 'slider',
-//   Space: 'space',
-//   Spin: 'spin',
-//   Statistic: 'statistic',
-//   Steps: 'steps',
-//   Switch: 'switch',
-//   Table: 'table',
-//   Tabs: 'tabs',
-//   Tag: 'tag',
-//   TimePicker: 'time-picker',
-//   Timeline: 'timeline',
-//   Tooltip: 'tooltip',
-//   Transfer: 'transfer',
-//   Tree: 'tree',
-//   TreeSelect: 'tree-select',
-//   Typography: 'typography',
-//   Upload: 'upload'
-// }
-const finallyNames = {
-  affix: 'Affix',
-  alert: 'Alert',
-  anchor: 'Anchor',
-  'auto-complete': 'AutoComplete',
-  avatar: 'Avatar',
-  'back-top': 'BackTop',
-  badge: 'Badge',
-  breadcrumb: 'Breadcrumb',
-  button: 'Button',
-  calendar: 'Calendar',
-  card: 'Card',
-  carousel: 'Carousel',
-  cascader: 'Cascader',
-  checkbox: 'Checkbox',
-  col: 'Col',
-  collapse: 'Collapse',
-  comment: 'Comment',
-  'config-provider': 'ConfigProvider',
-  'date-picker': 'DatePicker',
-  descriptions: 'Descriptions',
-  divider: 'Divider',
-  drawer: 'Drawer',
-  dropdown: 'Dropdown',
-  empty: 'Empty',
-  form: 'Form',
-  grid: 'Grid',
-  image: 'Image',
-  input: 'Input',
-  'input-number': 'InputNumber',
-  layout: 'Layout',
-  list: 'List',
-  mentions: 'Mentions',
-  menu: 'Menu',
-  message: 'message',
-  modal: 'Modal',
-  notification: 'notification',
-  'page-header': 'PageHeader',
-  pagination: 'Pagination',
-  popconfirm: 'Popconfirm',
-  popover: 'Popover',
-  progress: 'Progress',
-  radio: 'Radio',
-  rate: 'Rate',
-  result: 'Result',
-  row: 'Row',
-  segmented: 'Segmented',
-  select: 'Select',
-  skeleton: 'Skeleton',
-  slider: 'Slider',
-  space: 'Space',
-  spin: 'Spin',
-  statistic: 'Statistic',
-  steps: 'Steps',
-  switch: 'Switch',
-  table: 'Table',
-  tabs: 'Tabs',
-  tag: 'Tag',
-  'time-picker': 'TimePicker',
-  timeline: 'Timeline',
-  tooltip: 'Tooltip',
-  transfer: 'Transfer',
-  tree: 'Tree',
-  'tree-select': 'TreeSelect',
-  typography: 'Typography',
-  upload: 'Upload'
-}
-
-function auto() {
-  const fileNames = fs.readdirSync('./ant-docs')
-  const entrys = []
-  for (const name of fileNames) {
-    entrys.push(
-      titleCase(name).replace(/-(\w)/g, upper)
-    )
+const components = [
+  'affix',
+  'alert',
+  'anchor',
+  'auto-complete',
+  'avatar',
+  'back-top',
+  'badge',
+  'breadcrumb',
+  'button',
+  'calendar',
+  'card',
+  'carousel',
+  'cascader',
+  'checkbox',
+  'col',
+  'collapse',
+  'comment',
+  'config-provider',
+  'date-picker',
+  'descriptions',
+  'divider',
+  'drawer',
+  'dropdown',
+  'empty',
+  'form',
+  'grid',
+  'image',
+  'input',
+  'input-number',
+  'layout',
+  'list',
+  'mentions',
+  'menu',
+  'message',
+  'modal',
+  'notification',
+  'page-header',
+  'pagination',
+  'popconfirm',
+  'popover',
+  'progress',
+  'radio',
+  'rate',
+  'result',
+  'row',
+  'segmented',
+  'select',
+  'skeleton',
+  'slider',
+  'space',
+  'spin',
+  'statistic',
+  'steps',
+  'switch',
+  'table',
+  'tabs',
+  'tag',
+  'time-picker',
+  'timeline',
+  'tooltip',
+  'transfer',
+  'tree',
+  'tree-select',
+  'typography',
+  'upload'
+]
+function toUpperName(name) {
+  const [f, l] = name.split('-')
+  const UpperName = (str) => {
+    if (!str) return ''
+    return str
+      ?.toLowerCase()
+      .replace(/( |^)[a-z]/g, (L) =>
+        L.toUpperCase()
+      )
   }
-}
-// 首字母大写
-function titleCase(str: string) {
-  return (
-    str.slice(0, 1).toUpperCase() +
-    str.slice(1).toLowerCase()
-  )
-}
-// -转大写
-function upper(all: any, letter: string) {
-  return letter.toUpperCase()
+  return UpperName(f) + UpperName(l)
 }
 
 async function genComponents() {
-  for (const name in finallyNames) {
+  for (const name of components) {
     try {
       await runExec(name)
     } catch (err) {
@@ -221,32 +145,27 @@ function runExec(name: string) {
     })
   })
 }
-
-function genDemos() {
-  for (const name in finallyNames) {
+// 临时生成在docs文件夹下
+function copyDemos() {
+  for (const name of components) {
     copyDir(
-      `ant-docs/${finallyNames[name]}/demo`,
+      `ant-docs/${name}/demo`,
       `src/${name}/docs`,
       () => {
         console.log('ok')
       }
     )
-    // try {
-    //   await runExec(name)
-    // } catch (err) {
-    //   continue
-    // }
   }
 }
 
 function copyMd() {
-  for (const name in finallyNames) {
+  for (const name of components) {
     const isExit = fs.existsSync(
-      `ant-docs/${finallyNames[name]}/index.zh-CN.md`
+      `ant-docs/${components[name]}/index.zh-CN.md`
     )
     if (!isExit) continue
     const md = fs.readFileSync(
-      `ant-docs/${finallyNames[name]}/index.zh-CN.md`,
+      `ant-docs/${components[name]}/index.zh-CN.md`,
       'utf-8'
     )
     const data = matter(md)
@@ -280,7 +199,7 @@ nav:
     )
   }
 }
-
+// 转换demos里面的md文件未tsx
 function watch(_path: string, init = false) {
   log(chalk.green('正在初始化docs临时文件'))
   const root = init ? _path : path.dirname(_path)
@@ -383,37 +302,29 @@ function watch(_path: string, init = false) {
     read,
     'utf-8'
   )
-  // !init && log(chalk.green(
-  //   '生成 ' +
-  //   chalk.blue.underline.bold(path.join(path.resolve(root, '../demos'), '_config.md'))
-  //   + ' 文件，请复制到 ' +
-  //   chalk.blue.underline.bold(path.join(path.resolve(root, '../'), 'README.md'))
-  //   + ' 占位符里面'
-  // ))
 }
 function md2Tsx() {
-  for (const name in finallyNames) {
-    // const fileNames = fs.readdirSync(`src/${name}/docs`)
+  for (const name of components) {
     watch(`src/${name}/docs`, true)
   }
 }
-
+// 移除docs临时文件夹
 function removeMd() {
-  for (const name in finallyNames) {
+  for (const name of components) {
     // const fileNames = fs.readdirSync(`src/${name}/docs`)
     fs.existsSync(`src/${name}/docs`) &&
       delDir(`src/${name}/docs`)
   }
 }
-
+// 主md转换成dumi需要的md形式
 function fixMd() {
-  for (const name in finallyNames) {
+  for (const name of components) {
     const isExit = fs.existsSync(
-      `src/${[name]}/README.md`
+      `src/${name}/README.md`
     )
     if (!isExit) continue
     const md = fs.readFileSync(
-      `src/${[name]}/README.md`,
+      `src/${name}/README.md`,
       'utf-8'
     )
     const data = matter(md)
@@ -432,72 +343,78 @@ nav:
     }
   path: /components
 --- `
-    //     const result = `${formatter}\n# ${data?.data?.subtitle} ${data?.data?.title}\n${data.content}`
-    //     const pure = result
-    //       .split('```tsx')
-    //       .join('```tsx | pure')
-    //       .split('```jsx')
-    //       .join('```jsx | pure')
-    //       .split('```__react')
-    //       .join('```__react | pure')
-    // 重新编译为dumi readme需要的格式
+    const result = `${formatter}\n# ${data?.data?.subtitle} ${data?.data?.title}\n${data.content}`
+    // pure 是不需要编译的
+    const pure = result
+      .split('```tsx')
+      .join('```tsx | pure')
+      .split('```jsx')
+      .join('```jsx | pure')
+      .split('```__react')
+      .join('```__react | pure')
     fs.writeFileSync(
-      path.join(`src/${[name]}/README.md`),
+      path.join(`src/${name}/README.md`),
       `${formatter}\n${data.content}`,
       'utf-8'
     )
   }
 }
-
+// 引入css
 function autoImportCss() {
-  for (const name in finallyNames) {
+  for (const name of components) {
     fs.writeFileSync(
-      path.join(`src/${[name]}/style/index.less`),
-      `@import 'antd/es/${finallyNames[name]}/style/index.less';
-@import '../../style/custom.less';
-@import './my-${finallyNames[name]}.less';`,
+      path.join(`src/${name}/style/index.less`),
+      `@import 'antd/es/${toUpperName(
+        name
+      )}/style/index.less';
+    @import '../../style/custom.less';
+    @import './${name}.less';`,
       'utf-8'
     )
 
     fs.writeFileSync(
       path.join(
-        `src/${[name]}/style/my-${
-          finallyNames[name]
-        }.less`
+        `src/${[name]}/style/${name}.less`
       ),
-      `.my-${finallyNames[name]}{
+      `.${name}{
 
-}`,
+    }`,
+      'utf-8'
+    )
+
+    fs.writeFileSync(
+      path.join(`src/${[name]}/style/index.ts`),
+      `import './index.less'`,
       'utf-8'
     )
   }
 }
 
 function fixFolder() {
-  for (const name in finallyNames) {
+  for (const name of components) {
     fs.writeFileSync(
       path.join(`src/${name}/${name}.tsx`),
-      `import { ${finallyNames[name]} } from 'antd'\n
-export { ${finallyNames[name]}Props } from 'antd/lib/${name}'\n
+      `import { ${components[name]} } from 'antd'\n
+export { ${components[name]}Props } from 'antd/lib/${name}'\n
 export * from 'antd/lib/${name}'\n
-export default ${finallyNames[name]}`,
+export default ${components[name]}`,
       'utf-8'
     )
     //     fs.writeFileSync(
     //       path.join(
-    //         `src/${[name]}/${finallyNames[name]}.d.ts`
+    //         `src/${[name]}/${components[name]}.d.ts`
     //       ),
-    //       `import { ${name}Props as My${name}Props } from 'antd/lib/${finallyNames[name]}'\n
-    // export * from 'antd/lib/${finallyNames[name]}'\n
+    //       `import { ${name}Props as My${name}Props } from 'antd/lib/${components[name]}'\n
+    // export * from 'antd/lib/${components[name]}'\n
     // export type ${name}Props = My${name}Props`,
     //       'utf-8'
     //     )
 
     fs.writeFileSync(
       path.join(`src/${[name]}/index.tsx`),
-      `import ${finallyNames[name]} from './${name}'\n
-export { ${finallyNames[name]}Props } from './${name}'\n
-export default ${finallyNames[name]}`,
+      `import ${components[name]} from './${name}'\n
+export { ${components[name]}Props } from './${name}'\n
+export default ${components[name]}`,
       'utf-8'
     )
     //     fs.writeFileSync(
@@ -526,25 +443,19 @@ export default ${finallyNames[name]}`,
     // fs.unlinkSync(path.join(`src/${[name]}/index.tsx`))
   }
 }
-function renameFolder() {
-  for (const name in finallyNames) {
-    fs.renameSync(
-      `src/${name}`,
-      `src/${finallyNames[name]}`
-    )
-  }
-}
+
 // 生成基本组件结构
 // genComponents()
 
-// 获取antd所有组件名字
-// auto()
-// 生成demos
-// genDemos()
+// 复制antd的demos
+// copyDemos()
+
 // 复制md
 // copyMd()
+
 // docs里面的md转换成tsx
 // md2Tsx()
+
 // 删除md临时文件
 // removeMd()
 
@@ -552,11 +463,8 @@ function renameFolder() {
 // fixMd()
 
 // 按需加载css
-// autoImportCss()
+autoImportCss()
 
 // 重新组织目录结构
 
 // fixFolder()
-
-// 文件夹改名字
-// renameFolder()

@@ -20,11 +20,11 @@ import {
 import './layout.less'
 import { useDarkreader } from './useDarkreader'
 moment.locale('zh-cn')
-// 调整自定义样式最后加载
-window.onload = function () {
-  import('/src/style/index.less')
-  import('../../src/style/components.less')
-}
+// // 调整自定义样式最后加载
+// window.onload = function () {
+//   import('/src/style/index.less')
+//   import('../../src/style/components.less')
+// }
 
 const DarkButton = () => {
   const colorScheme = useMemo(() => {

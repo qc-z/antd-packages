@@ -7,118 +7,121 @@
 import path from 'path'
 import fs from 'fs'
 import { spawn } from 'child_process'
-import klawSync from 'klaw-sync'
+// import klawSync from 'klaw-sync'
 import chalk from 'chalk'
 
-const finallyNames = {
-  Affix: 'affix',
-  Alert: 'alert',
-  Anchor: 'anchor',
-  AutoComplete: 'auto-complete',
-  Avatar: 'avatar',
-  BackTop: 'back-top',
-  Badge: 'badge',
-  Breadcrumb: 'breadcrumb',
-  Button: 'button',
-  Calendar: 'calendar',
-  Card: 'card',
-  Carousel: 'carousel',
-  Cascader: 'cascader',
-  Checkbox: 'checkbox',
-  Col: 'col',
-  Collapse: 'collapse',
-  Comment: 'comment',
-  ConfigProvider: 'config-provider',
-  DatePicker: 'date-picker',
-  Descriptions: 'descriptions',
-  Divider: 'divider',
-  Drawer: 'drawer',
-  Dropdown: 'dropdown',
-  Empty: 'empty',
-  Form: 'form',
-  Grid: 'grid',
-  Image: 'image',
-  Input: 'input',
-  InputNumber: 'input-number',
-  Layout: 'layout',
-  List: 'list',
-  Mentions: 'mentions',
-  Menu: 'menu',
-  message: 'message',
-  Modal: 'modal',
-  notification: 'notification',
-  PageHeader: 'page-header',
-  Pagination: 'pagination',
-  Popconfirm: 'popconfirm',
-  Popover: 'popover',
-  Progress: 'progress',
-  Radio: 'radio',
-  Rate: 'rate',
-  Result: 'result',
-  Row: 'row',
-  Segmented: 'segmented',
-  Select: 'select',
-  Skeleton: 'skeleton',
-  Slider: 'slider',
-  Space: 'space',
-  Spin: 'spin',
-  Statistic: 'statistic',
-  Steps: 'steps',
-  Switch: 'switch',
-  Table: 'table',
-  Tabs: 'tabs',
-  Tag: 'tag',
-  TimePicker: 'time-picker',
-  Timeline: 'timeline',
-  Tooltip: 'tooltip',
-  Transfer: 'transfer',
-  Tree: 'tree',
-  TreeSelect: 'tree-select',
-  Typography: 'typography',
-  Upload: 'upload'
-}
-function findKey(key: string) {
-  for (const name in finallyNames) {
-    if (key === 'mentions') {
-      return 'Mention'
-    }
-    if (
-      finallyNames[
-        name as keyof typeof finallyNames
-      ] === key
-    )
-      return name
+const components = [
+  'affix',
+  'alert',
+  'anchor',
+  'auto-complete',
+  'avatar',
+  'back-top',
+  'badge',
+  'breadcrumb',
+  'button',
+  'calendar',
+  'card',
+  'carousel',
+  'cascader',
+  'checkbox',
+  'col',
+  'collapse',
+  'comment',
+  'config-provider',
+  'date-picker',
+  'descriptions',
+  'divider',
+  'drawer',
+  'dropdown',
+  'empty',
+  'form',
+  'grid',
+  'image',
+  'input',
+  'input-number',
+  'layout',
+  'list',
+  'mentions',
+  'menu',
+  'message',
+  'modal',
+  'notification',
+  'page-header',
+  'pagination',
+  'popconfirm',
+  'popover',
+  'progress',
+  'radio',
+  'rate',
+  'result',
+  'row',
+  'segmented',
+  'select',
+  'skeleton',
+  'slider',
+  'space',
+  'spin',
+  'statistic',
+  'steps',
+  'switch',
+  'table',
+  'tabs',
+  'tag',
+  'time-picker',
+  'timeline',
+  'tooltip',
+  'transfer',
+  'tree',
+  'tree-select',
+  'typography',
+  'upload'
+]
+function toUpperName(name: string) {
+  // 不需要转换
+  const excludes = ['message', 'notification']
+  if (excludes.includes(name)) return name
+
+  const [f, l] = name.split('-')
+  const UpperName = (str: string) => {
+    if (!str) return ''
+    return str
+      ?.toLowerCase()
+      .replace(/( |^)[a-z]/g, (L: string) =>
+        L.toUpperCase()
+      )
   }
+  return UpperName(f) + UpperName(l)
 }
 
-const CWD = process.cwd()
-const PACKAGES_PATH = path.resolve(
-  __dirname,
-  '../src'
-)
-const componentEntrys = klawSync(PACKAGES_PATH, {
-  nofile: true,
-  depthLimit: 0
-})
-  .filter(
-    (dir: { path: string }) =>
-      !~dir.path.indexOf('.') &&
-      !~dir.path.indexOf('style')
-  )
-  .map((dir: { path: string }) =>
-    /^win/.test(process.platform)
-      ? path
-          .join(dir.path)
-          .split(path.sep)
-          .join(path.posix.sep)
-      : path.join(dir.path)
-  )
+// const CWD = process.cwd()
+// const PACKAGES_PATH = path.resolve(
+//   __dirname,
+//   '../src'
+// )
+// const componentEntrys = klawSync(PACKAGES_PATH, {
+//   nofile: true,
+//   depthLimit: 0
+// })
+//   .filter(
+//     (dir: { path: string }) =>
+//       !~dir.path.indexOf('.') &&
+//       !~dir.path.indexOf('style')
+//   )
+//   .map((dir: { path: string }) =>
+//     /^win/.test(process.platform)
+//       ? path
+//           .join(dir.path)
+//           .split(path.sep)
+//           .join(path.posix.sep)
+//       : path.join(dir.path)
+//   )
 
-let str = ''
+let scripts = ''
 let style = ''
 
-export async function parseComponentExports() {
-  const componentNames = []
+function parseComponentExports() {
+  // const componentNames = []
 
   /**
    * 遍历组件
@@ -128,50 +131,47 @@ export async function parseComponentExports() {
     'notification',
     'message'
   ]
-  for (const comp of componentEntrys) {
-    componentNames.push(path.basename(comp))
-    const name = path.basename(comp)
+  for (const name of components) {
+    // componentNames.push(path.basename(comp))
+    // const name = path.basename(comp)
 
     // str += `export { default as ${name} } from './${name}'\n`
-    str += `export { default as ${
-      name === 'mentions'
-        ? 'Mentions'
-        : findKey(name)
-    } } from './${name}'\n`
+    scripts += `export { default as ${toUpperName(
+      name
+    )} } from './${name}'\n`
     if (name === 'slider') {
-      str += `export type { SliderSingleProps } from './${name}'\n`
+      scripts += `export type { SliderSingleProps } from './${name}'\n`
+    } else if (name === 'mentions') {
+      scripts += `export type { MentionProps } from './${name}'\n`
     } else if (!excludes.includes(name)) {
-      str += `export type { ${findKey(
+      scripts += `export type { ${toUpperName(
         name
       )}Props } from './${name}'\n`
     }
 
-    let componentName = name.replace(
-      name[0],
-      name[0].toLowerCase()
-    )
-    componentName = componentName.replace(
-      /([A-Z])/g,
-      (match, p1, offset, string) => {
-        // 一个捕获组捕获全部，所以match等于p1
-        return '-' + p1.toLowerCase()
-      }
-    )
+    // let componentName = name.replace(
+    //   name[0],
+    //   name[0].toLowerCase()
+    // )
+    // componentName = componentName.replace(
+    //   /([A-Z])/g,
+    //   (match, p1, offset, string) => {
+    //     // 一个捕获组捕获全部，所以match等于p1
+    //     return '-' + p1.toLowerCase()
+    //   }
+    // )
 
-    style += `@import '../${name}/style/my-${componentName}.less';\n`
+    style += `@import '../${name}/style/${name}.less';\n`
   }
 
-  return str
+  // return str
 }
 
 async function writeEntry() {
+  parseComponentExports()
+  fs.writeFileSync('src/index.ts', scripts)
   fs.writeFileSync(
-    `${CWD}/src/index.ts`,
-    await parseComponentExports()
-  )
-  fs.writeFileSync(`${CWD}/src/index.d.ts`, str)
-  fs.writeFileSync(
-    `${CWD}/src/style/components.less`,
+    'src/style/components.less',
     style
   )
   /**
@@ -190,11 +190,11 @@ async function writeEntry() {
       '已更新 src/index.ts 入口文件'
     )}`
   )
-  console.log(
-    `${chalk.cyanBright.bold(
-      '已更新 src/index.d.ts 入口文件'
-    )}`
-  )
+  // console.log(
+  //   `${chalk.cyanBright.bold(
+  //     '已更新 src/index.d.ts 入口文件'
+  //   )}`
+  // )
   console.log(
     `${chalk.cyanBright.bold(
       '已更新 src/style/components.less 样式文件'
