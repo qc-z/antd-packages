@@ -34,7 +34,7 @@ export default defineConfig({
   navs: [
     {
       title: '文档',
-      path: '/introduce'
+      path: '/react'
     },
     {
       title: '组件',

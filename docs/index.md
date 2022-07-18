@@ -2,7 +2,7 @@
 hero:
   actions:
     - text: 快速开始 →
-      link: /introduce/quick-start
+      link: /react/introduce
 features:
   - icon: https://mdn.alipayobjects.com/yuyan_qk0oxh/afts/img/q48YQ5X4ytAAAAAAAAAAAAAAFl94AQBr
     title: 简单易用
