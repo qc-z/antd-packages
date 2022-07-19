@@ -1,6 +1,6 @@
 import { Transfer } from 'antd'
 
-export { TransferProps } from 'antd/lib/transfer'
+export type { TransferProps } from 'antd/lib/transfer'
 
 export * from 'antd/lib/transfer'
 

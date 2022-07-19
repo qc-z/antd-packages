@@ -38,13 +38,10 @@ pnpm install antd-packages --save
 ## 🔨 示例
 
 ```jsx
-import { Button, DatePicker } from 'antd-packages'
+import { Button } from 'antd-packages'
 
 const App = () => (
-  <>
-    <Button type="primary">PRESS ME</Button>
-    <DatePicker />
-  </>
+  <Button type="primary">按钮</Button>
 )
 ```
 

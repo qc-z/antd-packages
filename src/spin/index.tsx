@@ -1,5 +1,5 @@
 import Spin from './spin'
 
-export { SpinProps } from './spin'
+export type { SpinProps } from './spin'
 
 export default Spin

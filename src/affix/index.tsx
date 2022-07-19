@@ -1,5 +1,5 @@
 import Affix from './affix'
 
-export { AffixProps } from './affix'
+export type { AffixProps } from './affix'
 
 export default Affix

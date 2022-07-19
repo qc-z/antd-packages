@@ -1,6 +1,6 @@
 import { Badge } from 'antd'
 
-export { BadgeProps } from 'antd/lib/badge'
+export type { BadgeProps } from 'antd/lib/badge'
 
 export * from 'antd/lib/badge'
 

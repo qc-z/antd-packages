@@ -1,6 +1,6 @@
 import { Statistic } from 'antd'
 
-export { StatisticProps } from 'antd/lib/statistic'
+export type { StatisticProps } from 'antd/lib/statistic'
 
 export * from 'antd/lib/statistic'
 

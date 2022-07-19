@@ -1,6 +1,6 @@
 import { Popconfirm } from 'antd'
 
-export { PopconfirmProps } from 'antd/lib/popconfirm'
+export type { PopconfirmProps } from 'antd/lib/popconfirm'
 
 export * from 'antd/lib/popconfirm'
 

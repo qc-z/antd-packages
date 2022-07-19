@@ -1,6 +1,6 @@
 import { ConfigProvider } from 'antd'
 
-export { ConfigProviderProps } from 'antd/lib/config-provider'
+export type { ConfigProviderProps } from 'antd/lib/config-provider'
 
 export * from 'antd/lib/config-provider'
 

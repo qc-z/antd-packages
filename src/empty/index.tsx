@@ -1,5 +1,5 @@
 import Empty from './empty'
 
-export { EmptyProps } from './empty'
+export type { EmptyProps } from './empty'
 
 export default Empty

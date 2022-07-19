@@ -1,5 +1,5 @@
 import Col from './col'
 
-export { ColProps } from './col'
+export type { ColProps } from './col'
 
 export default Col

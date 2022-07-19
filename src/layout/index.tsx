@@ -1,5 +1,5 @@
 import Layout from './layout'
 
-export { LayoutProps } from './layout'
+export type { LayoutProps } from './layout'
 
 export default Layout

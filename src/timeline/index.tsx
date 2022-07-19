@@ -1,5 +1,5 @@
 import Timeline from './timeline'
 
-export { TimelineProps } from './timeline'
+export type { TimelineProps } from './timeline'
 
 export default Timeline

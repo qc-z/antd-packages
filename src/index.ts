@@ -1,3 +1,4 @@
+// auto create by gen-entry
 export { default as Affix } from './affix'
 export type { AffixProps } from './affix'
 export { default as Alert } from './alert'
@@ -109,6 +110,8 @@ export { default as Tabs } from './tabs'
 export type { TabsProps } from './tabs'
 export { default as Tag } from './tag'
 export type { TagProps } from './tag'
+export { default as Test } from './test'
+export type { TestProps } from './test'
 export { default as TimePicker } from './time-picker'
 export type { TimePickerProps } from './time-picker'
 export { default as Timeline } from './timeline'

@@ -1,5 +1,5 @@
 import Breadcrumb from './breadcrumb'
 
-export { BreadcrumbProps } from './breadcrumb'
+export type { BreadcrumbProps } from './breadcrumb'
 
 export default Breadcrumb

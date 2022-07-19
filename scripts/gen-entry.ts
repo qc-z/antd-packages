@@ -7,7 +7,7 @@
 import path from 'path'
 import fs from 'fs'
 import { spawn } from 'child_process'
-// import klawSync from 'klaw-sync'
+import klawSync from 'klaw-sync'
 import chalk from 'chalk'
 
 const components = [
@@ -95,30 +95,30 @@ function toUpperName(name: string) {
 }
 
 // const CWD = process.cwd()
-// const PACKAGES_PATH = path.resolve(
-//   __dirname,
-//   '../src'
-// )
-// const componentEntrys = klawSync(PACKAGES_PATH, {
-//   nofile: true,
-//   depthLimit: 0
-// })
-//   .filter(
-//     (dir: { path: string }) =>
-//       !~dir.path.indexOf('.') &&
-//       !~dir.path.indexOf('style')
-//   )
-//   .map((dir: { path: string }) =>
-//     /^win/.test(process.platform)
-//       ? path
-//           .join(dir.path)
-//           .split(path.sep)
-//           .join(path.posix.sep)
-//       : path.join(dir.path)
-//   )
+const PACKAGES_PATH = path.resolve(
+  __dirname,
+  '../src'
+)
+const componentEntrys = klawSync(PACKAGES_PATH, {
+  nofile: true,
+  depthLimit: 0
+})
+  .filter(
+    (dir: { path: string }) =>
+      !~dir.path.indexOf('.') &&
+      !~dir.path.indexOf('style')
+  )
+  .map((dir: { path: string }) =>
+    /^win/.test(process.platform)
+      ? path
+          .join(dir.path)
+          .split(path.sep)
+          .join(path.posix.sep)
+      : path.join(dir.path)
+  )
 
-let scripts = ''
-let style = ''
+let scripts = '// auto create by gen-entry\n'
+let style = '// auto create by gen-entry\n'
 
 function parseComponentExports() {
   // const componentNames = []
@@ -131,9 +131,9 @@ function parseComponentExports() {
     'notification',
     'message'
   ]
-  for (const name of components) {
+  for (const comp of componentEntrys) {
     // componentNames.push(path.basename(comp))
-    // const name = path.basename(comp)
+    const name = path.basename(comp)
 
     // str += `export { default as ${name} } from './${name}'\n`
     scripts += `export { default as ${toUpperName(

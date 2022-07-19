@@ -1,6 +1,6 @@
 import { Radio } from 'antd'
 
-export { RadioProps } from 'antd/lib/radio'
+export type { RadioProps } from 'antd/lib/radio'
 
 export * from 'antd/lib/radio'
 

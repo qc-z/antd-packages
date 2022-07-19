@@ -1,5 +1,5 @@
 import Popover from './popover'
 
-export { PopoverProps } from './popover'
+export type { PopoverProps } from './popover'
 
 export default Popover

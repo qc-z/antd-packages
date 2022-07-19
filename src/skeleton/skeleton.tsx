@@ -1,6 +1,6 @@
 import { Skeleton } from 'antd'
 
-export { SkeletonProps } from 'antd/lib/skeleton'
+export type { SkeletonProps } from 'antd/lib/skeleton'
 
 export * from 'antd/lib/skeleton'
 

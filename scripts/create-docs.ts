@@ -463,8 +463,26 @@ export default ${components[name]}`,
 // fixMd()
 
 // 按需加载css
-autoImportCss()
+// autoImportCss()
 
 // 重新组织目录结构
 
 // fixFolder()
+
+function exportType() {
+  for (const name of components) {
+    const data = fs.readFileSync(
+      `${path.resolve(`src/${name}/index.tsx`)}`,
+      'utf-8'
+    )
+    const data1 = data
+      .split('export {')
+      .join('export type {')
+    fs.writeFileSync(
+      path.join(`src/${name}/index.tsx`),
+      data1,
+      'utf-8'
+    )
+  }
+}
+exportType()

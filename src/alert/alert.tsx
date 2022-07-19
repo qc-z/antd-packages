@@ -1,6 +1,6 @@
 import { Alert } from 'antd'
 
-export { AlertProps } from 'antd/lib/alert'
+export type { AlertProps } from 'antd/lib/alert'
 
 export * from 'antd/lib/alert'
 

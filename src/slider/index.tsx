@@ -1,5 +1,5 @@
 import Slider from './slider'
 
-export { SliderSingleProps } from './slider'
+export type { SliderSingleProps } from './slider'
 
 export default Slider

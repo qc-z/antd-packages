@@ -7,7 +7,8 @@ export default {
     globals: {
       react: 'React',
       antd: 'antd',
-      'react-dom': 'ReactDOM'
+      'react-dom': 'ReactDOM',
+      'react/jsx-runtime': 'jsxRuntime'
     }
   },
   extraExternals: ['antd'],

@@ -1,6 +1,6 @@
 import { Tabs } from 'antd'
 
-export { TabsProps } from 'antd/lib/tabs'
+export type { TabsProps } from 'antd/lib/tabs'
 
 export * from 'antd/lib/tabs'
 

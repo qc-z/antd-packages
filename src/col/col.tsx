@@ -1,6 +1,6 @@
 import { Col } from 'antd'
 
-export { ColProps } from 'antd/lib/col'
+export type { ColProps } from 'antd/lib/col'
 
 export * from 'antd/lib/col'
 

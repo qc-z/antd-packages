@@ -1,6 +1,6 @@
 import { TimePicker } from 'antd'
 
-export { TimePickerProps } from 'antd/lib/time-picker'
+export type { TimePickerProps } from 'antd/lib/time-picker'
 
 export * from 'antd/lib/time-picker'
 
