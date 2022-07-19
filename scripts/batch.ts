@@ -8,7 +8,7 @@ import chalk from 'chalk'
 const { copyDir, delDir } = require('./utils')
 const log = console.log.bind(console)
 const matter = require('gray-matter')
-
+// antd顺序
 const typeOrder = {
   // Component
   Overview: -1,
@@ -41,6 +41,7 @@ const typeOrder = {
   模板文档: 3,
   'Template Document': 3
 }
+// antd现有组件
 const components = [
   'affix',
   'alert',
@@ -108,6 +109,7 @@ const components = [
   'typography',
   'upload'
 ]
+// 转换大小写
 function toUpperName(name) {
   const [f, l] = name.split('-')
   const UpperName = (str) => {
@@ -120,7 +122,7 @@ function toUpperName(name) {
   }
   return UpperName(f) + UpperName(l)
 }
-
+// 生成基础组件
 async function genComponents() {
   for (const name of components) {
     try {
@@ -145,19 +147,18 @@ function runExec(name: string) {
     })
   })
 }
-// 临时生成在docs文件夹下
+// 复制antd组件示例文档到docs文件夹
 function copyDemos() {
   for (const name of components) {
     copyDir(
       `ant-docs/${name}/demo`,
       `src/${name}/docs`,
-      () => {
-        console.log('ok')
-      }
+      () =>
+        console.log(`${name} 文档已生成在docs下`)
     )
   }
 }
-
+// 复制antd主文档到README.md 并转换为dumi需要的格式（readme不需要编译 加上 | pure）
 function copyMd() {
   for (const name of components) {
     const isExit = fs.existsSync(
@@ -272,7 +273,7 @@ function watch(_path: string, init = false) {
       data.md,
       'utf-8'
     )
-    // // 获取所有配置
+    // 获取所有配置
     config.push({
       name: data.fileName.split('.md')[0],
       order,
@@ -311,13 +312,12 @@ function md2Tsx() {
 // 移除docs临时文件夹
 function removeMd() {
   for (const name of components) {
-    // const fileNames = fs.readdirSync(`src/${name}/docs`)
     fs.existsSync(`src/${name}/docs`) &&
       delDir(`src/${name}/docs`)
   }
 }
-// 主md转换成dumi需要的md形式
-function fixMd() {
+// READMD.md转换成dumi需要的头部注释
+function fixMdMatter() {
   for (const name of components) {
     const isExit = fs.existsSync(
       `src/${name}/README.md`
@@ -359,19 +359,20 @@ nav:
     )
   }
 }
-// 引入css
+// 处理组件样式文件
 function autoImportCss() {
   for (const name of components) {
+    // index.less
     fs.writeFileSync(
       path.join(`src/${name}/style/index.less`),
       `@import 'antd/es/${toUpperName(
         name
       )}/style/index.less';
-    @import '../../style/custom.less';
-    @import './${name}.less';`,
+@import '../../style/custom.less';
+@import './${name}.less';`,
       'utf-8'
     )
-
+    // self.less
     fs.writeFileSync(
       path.join(
         `src/${[name]}/style/${name}.less`
@@ -381,7 +382,7 @@ function autoImportCss() {
     }`,
       'utf-8'
     )
-
+    // index.ts
     fs.writeFileSync(
       path.join(`src/${[name]}/style/index.ts`),
       `import './index.less'`,
@@ -392,55 +393,23 @@ function autoImportCss() {
 
 function fixFolder() {
   for (const name of components) {
+    // self.tsx
     fs.writeFileSync(
       path.join(`src/${name}/${name}.tsx`),
       `import { ${components[name]} } from 'antd'\n
-export { ${components[name]}Props } from 'antd/lib/${name}'\n
+export type { ${components[name]}Props } from 'antd/lib/${name}'\n
 export * from 'antd/lib/${name}'\n
 export default ${components[name]}`,
       'utf-8'
     )
-    //     fs.writeFileSync(
-    //       path.join(
-    //         `src/${[name]}/${components[name]}.d.ts`
-    //       ),
-    //       `import { ${name}Props as My${name}Props } from 'antd/lib/${components[name]}'\n
-    // export * from 'antd/lib/${components[name]}'\n
-    // export type ${name}Props = My${name}Props`,
-    //       'utf-8'
-    //     )
-
+    // index.tsx
     fs.writeFileSync(
       path.join(`src/${[name]}/index.tsx`),
       `import ${components[name]} from './${name}'\n
-export { ${components[name]}Props } from './${name}'\n
+export type { ${components[name]}Props } from './${name}'\n
 export default ${components[name]}`,
       'utf-8'
     )
-    //     fs.writeFileSync(
-    //       path.join(`src/${[name]}/index.d.ts`),
-    //       `import ${name} from './${name.toLowerCase()}'\n
-    // export * from './${name.toLowerCase()}.d'\n
-    // export default ${name}`,
-    //       'utf-8'
-    //     )
-    // fs.unlinkSync(path.join(`src/${[name]}/${[name]}.tsx`))
-    // fs.existsSync(
-    //   `src/${[name]}/${name
-    //     .split('-')
-    //     .join('')}.tsx`
-    // ) &&
-    //   fs.unlinkSync(
-    //     path.join(
-    //       `src/${[name]}/${name
-    //         .split('-')
-    //         .join('')}.tsx`
-    //     )
-    //   )
-    // fs.unlinkSync(
-    //   path.join(`src/${[name]}/${name.toLowerCase()}.d.ts`)
-    // )
-    // fs.unlinkSync(path.join(`src/${[name]}/index.tsx`))
   }
 }
 
@@ -459,30 +428,11 @@ export default ${components[name]}`,
 // 删除md临时文件
 // removeMd()
 
-// bug 重新处理md数据
-// fixMd()
+// READMD.md转换成dumi需要的头部注释
+// fixMdMatter()
 
-// 按需加载css
-// autoImportCss()
+// 处理组件样式文件
+autoImportCss()
 
 // 重新组织目录结构
-
 // fixFolder()
-
-function exportType() {
-  for (const name of components) {
-    const data = fs.readFileSync(
-      `${path.resolve(`src/${name}/index.tsx`)}`,
-      'utf-8'
-    )
-    const data1 = data
-      .split('export {')
-      .join('export type {')
-    fs.writeFileSync(
-      path.join(`src/${name}/index.tsx`),
-      data1,
-      'utf-8'
-    )
-  }
-}
-exportType()

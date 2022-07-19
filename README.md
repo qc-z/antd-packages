@@ -31,13 +31,19 @@
 
 ## 📦 安装
 
+### 使用 pnpm 或 yarn 安装
+
+**我们推荐使用 pnpm 或 yarn 的方式进行开发**，不仅可在开发环境轻松调试，也可放心地在生产环境打包部署使用，享受整个生态圈和工具链带来的诸多好处。
+
+如果你的网络环境不佳，推荐使用 [cnpm](https://github.com/cnpm/cnpm)。
+
 ```bash
 pnpm install antd-packages --save
 ```
 
 ## 🔨 示例
 
-```jsx
+```tsx | pure
 import { Button } from 'antd-packages'
 
 const App = () => (
@@ -49,6 +55,76 @@ const App = () => (
 
 ```jsx
 import 'antd-packages/es/style/index.css'
+```
+
+_推荐_ `less 2.7.2` `less-loader 6.0.0`
+
+```bash
+pnpm i less@2.7.2  less-loader@6.0.0 -D
+```
+
+webpack.config.base.js 配置
+
+```js | pure
+if (preProcessor) {
+  if (preProcessor === 'less-loader') {
+    loaders.push({
+      loader: require.resolve(preProcessor),
+      options: {
+        lessOptions: {
+          javascriptEnabled: true
+        },
+        // modifyVars: {
+        //   // 修改主题色
+        //   "@primary-color": "#f40"
+        // },
+        sourceMap: isEnvProduction
+          ? shouldUseSourceMap
+          : isEnvDevelopment
+      }
+    })
+  } else {
+    loaders.push(
+      {
+        loader: require.resolve(
+          'resolve-url-loader'
+        ),
+        options: {
+          sourceMap: isEnvProduction
+            ? shouldUseSourceMap
+            : isEnvDevelopment,
+          root: paths.appSrc
+        }
+      },
+      {
+        loader: require.resolve(preProcessor),
+        options: {
+          sourceMap: true
+        }
+      }
+    )
+  }
+}
+```
+
+## 按需加载
+
+安装 `babel-plugin-import`
+`pnpm i babel-plugin-import -D`
+根目录新建.babelrc 文件并写入
+
+```js | pure
+{
+  "plugins": [
+    [
+      "import",
+      {
+        "libraryName": "antd-packages",
+        "style": true
+      }
+    ]
+  ]
+}
 ```
 
 ## ⌨️ 本地开发
