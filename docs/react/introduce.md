@@ -58,7 +58,7 @@ const App = () => (
 
 引入样式：
 
-```jsx
+```jsx | pure
 import 'antd-packages/es/style/index.css'
 ```
 

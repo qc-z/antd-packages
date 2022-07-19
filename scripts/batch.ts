@@ -362,12 +362,11 @@ nav:
 // 处理组件样式文件
 function autoImportCss() {
   for (const name of components) {
+    if (name === 'col' || name === 'row') continue
     // index.less
     fs.writeFileSync(
       path.join(`src/${name}/style/index.less`),
-      `@import 'antd/es/${toUpperName(
-        name
-      )}/style/index.less';
+      `@import 'antd/es/${name}/style/index.less';
 @import '../../style/custom.less';
 @import './${name}.less';`,
       'utf-8'
@@ -377,9 +376,9 @@ function autoImportCss() {
       path.join(
         `src/${[name]}/style/${name}.less`
       ),
-      `.${name}{
+      `.${name} {
 
-    }`,
+}`,
       'utf-8'
     )
     // index.ts
