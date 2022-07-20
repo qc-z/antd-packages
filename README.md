@@ -53,19 +53,20 @@ const App = () => (
 
 引入样式：
 
-```jsx
+```jsx | pure
 import 'antd-packages/es/style/index.css'
 ```
 
-_推荐_ `less 2.7.2` `less-loader 6.0.0`
+_推荐_ `less 4.1.3` `less-loader 6.0.0`
 
 ```bash
-pnpm i less@2.7.2  less-loader@6.0.0 -D
+pnpm i less@4.1.3  less-loader@6.0.0 -D
 ```
 
-webpack.config.base.js 配置
+如果你使用 `webpack`
 
 ```js | pure
+// webpack.config.base.js
 if (preProcessor) {
   if (preProcessor === 'less-loader') {
     loaders.push({
@@ -74,10 +75,6 @@ if (preProcessor) {
         lessOptions: {
           javascriptEnabled: true
         },
-        // modifyVars: {
-        //   // 修改主题色
-        //   "@primary-color": "#f40"
-        // },
         sourceMap: isEnvProduction
           ? shouldUseSourceMap
           : isEnvDevelopment
@@ -105,6 +102,21 @@ if (preProcessor) {
     )
   }
 }
+```
+
+如果你使用 `vite`
+
+```js
+// vite.config.js
+...
+  css: {
+    preprocessorOptions: {
+      less: {
+        javascriptEnabled: true,
+      },
+    }
+  }
+...
 ```
 
 ## 按需加载

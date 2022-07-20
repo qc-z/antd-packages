@@ -17,7 +17,6 @@ export default defineConfig({
   manifest: {
     fileName: 'manifest.json'
   },
-  // mfsu
   mfsu: {},
   esbuild: {},
   // extraBabelPlugins: [
@@ -53,6 +52,9 @@ export default defineConfig({
       path: 'https://github.com/qc-z/antd-packages'
     }
   ],
+  alias: {
+    '@': '/src'
+  },
   chainWebpack(config) {
     config.module
       .rule('media')

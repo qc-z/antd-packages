@@ -1,3 +1,5 @@
+/// <reference types="vitest" />
+
 import {
   defineConfig,
   configDefaults
@@ -8,7 +10,7 @@ export default defineConfig({
     jsxInject: "import React from 'react'"
   },
   test: {
-    environment: 'jsdom',
+    environment: 'happy-dom',
     globals: true,
     exclude: [
       ...configDefaults.exclude,

@@ -1,10 +1,10 @@
 import React, { useState } from 'react'
 
-export type TestProps = {
+export type TooltipButtonProps = {
   name: string
 }
 
-const Test: React.FC = () => {
+const TooltipButton: React.FC = () => {
   const [count, setCount] = useState(0)
   return (
     <div>
@@ -20,4 +20,4 @@ const Test: React.FC = () => {
   )
 }
 
-export default Test
+export default TooltipButton
