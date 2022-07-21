@@ -2,14 +2,10 @@ import {
   assert,
   describe,
   it,
-  expect,
-  test
+  expect
 } from 'vitest'
-import '@testing-library/jest-dom'
-import Button from '../button'
-import React from 'react'
-import renderer from 'react-test-renderer'
-console.log(Button)
+// import '@testing-library/jest-dom'
+
 describe.skip('skipped suite', () => {
   it('test', () => {
     assert.equal(Math.sqrt(4), 3)
@@ -43,32 +39,11 @@ describe('dom test', () => {
   })
 })
 
-function toJson(
-  component: renderer.ReactTestRenderer
-) {
-  const result = component.toJSON()
-  expect(result).toBeDefined()
-  expect(result).not.toBeInstanceOf(Array)
-  return result as renderer.ReactTestRendererJSON
-}
-
-// test.skip('Link changes the class when hovered', () => {
-//   const component = renderer.create(
-//     <Button>22</Button>
-//   )
-//   let tree = toJson(component)
-//   expect(tree).toMatchSnapshot()
-
-//   // manually trigger the callback
-//   tree.props.onMouseEnter()
-
-//   // re-rendering
-//   tree = toJson(component)
-//   expect(tree).toMatchSnapshot()
-
-//   // manually trigger the callback
-//   tree.props.onMouseLeave()
-//   // re-rendering
-//   tree = toJson(component)
-//   expect(tree).toMatchSnapshot()
+it('快照', () => {
+  const result = 'foobar'.toUpperCase()
+  expect(result).toMatchSnapshot()
+})
+// it('内联快照', () => {
+//   const result = 'foobar'.toUpperCase()
+//   expect(result).toMatchInlineSnapshot()
 // })

@@ -91,6 +91,7 @@
     "@umijs/fabric": "^2.12.2",
     "@umijs/plugin-esbuild": "^1.4.1",
     "@umijs/ssr-darkreader": "^4.9.45",
+    "@vitejs/plugin-react": "^2.0.0",
     "antd-img-crop": "^4.2.3",
     "array-move": "^4.0.0",
     "babel-plugin-import": "^1.13.5",
@@ -138,7 +139,7 @@
     "react-sticky": "^6.0.3",
     "react-test-renderer": "^18.2.0",
     "react-window": "^1.8.7",
-    "vitest": "^0.17.1",
+    "vitest": "0.18.1",
     "yorkie": "^2.0.0",
     "zh-cn": "link:moment/locale/zh-cn"
   }

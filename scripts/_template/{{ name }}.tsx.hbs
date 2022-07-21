@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-
+import { Button, Tag } from 'antd-packages'
 export type {{ properCase name }}Props = {
   name: string
 }
@@ -8,8 +8,8 @@ const {{ properCase name }}: React.FC = () => {
   const [count,setCount] = useState(0)
   return (
     <div>
-      {count}
-      <button onClick={() => { setCount(count + 1) }}>点击+1</button>
+      <Tag color="blue">{count}</Tag>
+      <Button type="primary" onClick={() => { setCount(count + 1) }}>点击+1</Button>
     </div>
   )
 }

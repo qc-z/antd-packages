@@ -3,7 +3,7 @@
     "target": "esnext",
     "module": "esnext",
     "moduleResolution": "node",
-    "jsx": "react-jsx",
+    "jsx": "react",
     "esModuleInterop": true,
     "types": ["vitest/globals"],
     "strict": true,
