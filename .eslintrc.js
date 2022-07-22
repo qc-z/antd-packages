@@ -22,7 +22,7 @@ module.exports = {
   rules: {
     '@typescript-eslint/no-var-requires': 0,
     semi: [2, 'never'], // 不使用分号
-    quotes: [2, 'single'], //单引号
+    // quotes: [2, 'single'], //单引号
     indent: ['off', 2], // 相同的缩进2
     '@typescript-eslint/no-explicit-any': 'off',
     'react/react-in-jsx-scope': 'off'
