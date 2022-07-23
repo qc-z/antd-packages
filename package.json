@@ -1,6 +1,6 @@
 {
   "name": "antd-packages",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "帮助你快速创建react组件库(集成antd)",
   "scripts": {
     "docs:dev": "pnpm gen-entry && dumi dev",
