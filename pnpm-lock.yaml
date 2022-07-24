@@ -65,7 +65,6 @@ specifiers:
   react-window: ^1.8.7
   vitest: 0.18.1
   yorkie: ^2.0.0
-  zh-cn: link:moment/locale/zh-cn
 
 dependencies:
   '@ant-design/icons': 4.7.0_biqbaboplfbrettd7655fr4n2y
@@ -134,7 +133,6 @@ devDependencies:
   react-window: 1.8.7_biqbaboplfbrettd7655fr4n2y
   vitest: 0.18.1_2qa3oqs5inv4vyzsh6ix6utq2m
   yorkie: 2.0.0
-  zh-cn: link:moment/locale/zh-cn
 
 packages:
 
