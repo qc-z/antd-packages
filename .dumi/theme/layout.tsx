@@ -1,4 +1,4 @@
-﻿import dumiContext from '@umijs/preset-dumi/lib/theme/context'
+﻿// import dumiContext from '@umijs/preset-dumi/lib/theme/context'
 import { ConfigProvider, Switch } from 'antd'
 import zhCN from 'antd/es/locale/zh_CN'
 import Layout from 'dumi-theme-default/src/layout'
@@ -123,16 +123,16 @@ const LayoutPage = ({
   children,
   ...props
 }: IRouteComponentProps) => {
-  const context = useContext(dumiContext)
-  const title = useMemo(() => {
-    if (context.meta.title?.includes('-')) {
-      return `${context.meta.title}`
-    }
-    if (!context.meta.title) {
-      return '组件'
-    }
-    return `${context.meta.title} - antd-packages`
-  }, [context])
+  // const context = useContext(dumiContext)
+  // const title = useMemo(() => {
+  //   if (context.meta.title?.includes('-')) {
+  //     return `${context.meta.title}`
+  //   }
+  //   if (!context.meta.title) {
+  //     return '组件'
+  //   }
+  //   return `${context.meta.title} - antd-packages`
+  // }, [context])
 
   const Versions = Object.keys(docVersions).map(
     (v) => {
@@ -148,9 +148,9 @@ const LayoutPage = ({
       <ConfigProvider locale={zhCN}>
         <Layout {...props}>
           <div>
-            <Helmet key="title">
+            {/* <Helmet key="title">
               <title>{title}</title>
-            </Helmet>
+            </Helmet> */}
             <div key="children">{children}</div>
             <div
               style={{

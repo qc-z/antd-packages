@@ -1,15 +1,35 @@
-on: push
+name: 发布npm包
+
+on:
+  push:
+    branches: ['master']
+  pull_request:
+    branches: ['master']
 
 jobs:
-  publish:
+  build:
     runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        node-version: [16.x]
+
     steps:
       - uses: pnpm/action-setup@v2.2.2
         with:
           version: 6.0.2
-      - uses: actions/checkout@v1
-      - uses: actions/setup-node@v1
+      # 拉取 github 仓库代码
+      - uses: actions/checkout@v3
+
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v3
         with:
-          node-version: 16
-      - run: pnpm i
-      - run: pnpm deploy
+          node-version: ${{ matrix.node-version }}
+
+      - name: Build
+        run: |
+          pnpm install
+          pnpm build
+      - uses: JS-DevTools/npm-publish@v1
+        with:
+          token: ${{ secrets.antd }}
