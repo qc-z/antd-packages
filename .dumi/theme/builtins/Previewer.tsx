@@ -2,6 +2,7 @@
 import PreView, {
   IPreviewerProps
 } from 'dumi-theme-default/src/builtins/Previewer'
+import React from 'react'
 
 export default ({
   children,

@@ -4,6 +4,10 @@ import zhCN from 'antd/es/locale/zh_CN'
 import Layout from 'dumi-theme-default/src/layout'
 import moment from 'moment'
 import 'moment/locale/zh-cn'
+import React from 'react'
+import { docVersions } from '../../docs/themeConfig'
+const { Option } = Select
+
 import {
   useContext,
   useEffect,
@@ -19,6 +23,7 @@ import {
 } from 'umi'
 import './layout.less'
 import { useDarkreader } from './useDarkreader'
+import { Select } from 'antd-packages'
 moment.locale('zh-cn')
 // // 调整自定义样式最后加载
 // window.onload = function () {
@@ -26,6 +31,10 @@ moment.locale('zh-cn')
 //   import('../../src/style/components.less')
 // }
 
+const handleChange = (value: string) => {
+  console.log(`selected ${value}`)
+  window.location.href = value
+}
 const DarkButton = () => {
   const colorScheme = useMemo(() => {
     if (!isBrowser()) {
@@ -125,6 +134,15 @@ const LayoutPage = ({
     return `${context.meta.title} - antd-packages`
   }, [context])
 
+  const Versions = Object.keys(docVersions).map(
+    (v) => {
+      return (
+        <Option value={docVersions[v]} key={v}>
+          {v}
+        </Option>
+      )
+    }
+  )
   return (
     <HelmetProvider>
       <ConfigProvider locale={zhCN}>
@@ -146,6 +164,18 @@ const LayoutPage = ({
               key="procomponents_dark_theme_view"
               className="procomponents_dark_theme_view"
             >
+              <Select
+                size="small"
+                defaultValue="0.0.x"
+                style={{
+                  width: 80,
+                  marginLeft: 20,
+                  marginRight: 20
+                }}
+                onChange={handleChange}
+              >
+                {Versions}
+              </Select>
               {isBrowser() ? (
                 <DarkButton />
               ) : null}
