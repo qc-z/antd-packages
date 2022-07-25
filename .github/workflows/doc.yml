@@ -7,9 +7,6 @@ jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
     steps:
-      - uses: pnpm/action-setup@v2.2.2
-        with:
-          version: 6.0.2
       - name: Checkout
         uses: actions/checkout@master
 
@@ -19,4 +16,4 @@ jobs:
           ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
           BRANCH: gh-pages
           FOLDER: build
-          BUILD_SCRIPT: pnpm i && pnpm docs:build
+          BUILD_SCRIPT: git config --global user.email "18826255448@163.com" && git config --global user.name "qc-z" && pnpm install && pnpm build
