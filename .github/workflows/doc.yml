@@ -1,19 +1,17 @@
 name: 发布文档
-on:
-  push:
-    branches:
-      - master
+
+on: push
+
 jobs:
-  build-and-deploy:
+  publish:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
-        uses: actions/checkout@master
-
-      - name: Build and Deploy
-        uses: JamesIves/github-pages-deploy-action@master
-        env:
-          ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
-          BRANCH: gh-pages
-          FOLDER: build
-          BUILD_SCRIPT: git config --global user.email "18826255448@163.com" && git config --global user.name "qc-z" && pnpm install && pnpm build
+      - uses: pnpm/action-setup@v2.2.2
+        with:
+          version: 6.0.2
+      - uses: actions/checkout@v1
+      - uses: actions/setup-node@v1
+        with:
+          node-version: 16
+      - run: pnpm i
+      - run: git config --global user.email "18826255448@163.com" && git config --global user.name "qc-z" && pnpm deploy
