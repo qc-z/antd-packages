@@ -14,4 +14,4 @@ jobs:
         with:
           node-version: 16
       - run: pnpm i
-      - run: git config --global user.email "18826255448@163.com" && git config --global user.name "藤原托漆" && pnpm deploy
+      - run: git config --global user.email "18826255448@163.com" && git config --global user.name "qc-z" && pnpm deploy
