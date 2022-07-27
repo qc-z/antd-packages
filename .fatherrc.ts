@@ -3,7 +3,7 @@ export default {
   esm: 'babel',
   cjs: 'babel',
   umd: {
-    name: 'antd-packages',
+    name: 'AntdPackages',
     globals: {
       react: 'React',
       antd: 'antd',
@@ -11,7 +11,7 @@ export default {
       'react/jsx-runtime': 'jsxRuntime'
     }
   },
-  extraExternals: ['antd'],
+  // extraExternals: ['antd'],
   extractCSS: true,
   // lessInBabelMode: true,
   extraRollupPlugins: []
