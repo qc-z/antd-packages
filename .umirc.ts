@@ -8,8 +8,8 @@ export default defineConfig({
   logo: '/images/logo.svg',
   description: '用于快速二次封装antd组件',
   // 打包路径配置
-  // base: '/mydocs',
-  // publicPath: '/mydocs/', // 打包文件时，引入地址生成 mydocs/xxx.js
+  base: '/antd-packages',
+  // publicPath: '/antd-packages/', // 打包文件时，引入地址生成 mydocs/xxx.js
   outputPath: 'docs-dist',
   exportStatic: {}, // 对每隔路由输出html
   dynamicImport: {}, // 动态导入

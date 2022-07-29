@@ -4,6 +4,8 @@ const fs = require('fs')
 const less = require('gulp-less')
 const path = require('path')
 const chalk = require('chalk')
+const cleancss = require('gulp-clean-css')
+const rename = require('gulp-rename')
 
 function getComponentsName() {
   const CWD = process.cwd()
@@ -27,7 +29,7 @@ function getComponentsName() {
   })
   return result
 }
-function buildComponentCss(cb) {
+function buildComponentCss(done) {
   const components = getComponentsName()
   components.forEach((name) => {
     src(`../src/${name}/style/**.less`, {
@@ -37,25 +39,35 @@ function buildComponentCss(cb) {
       .pipe(dest(`../lib/${name}/style`))
       .pipe(dest(`../es/${name}/style`))
   })
-  cb()
-  console.log(
-    `${chalk.cyanBright.bold('文件编译完成')}`
-  )
+  done()
 }
 
-function buildEntryCss() {
+function buildEntryCss(done) {
   src(`../src/style/**.less`, {
     allowEmpty: true
   })
     .pipe(less({ javascriptEnabled: true }))
     .pipe(dest(`../lib/style`))
     .pipe(dest(`../es/style`))
+  done()
+}
+
+function minCss(done) {
+  src(`../src/style/index.less`, {
+    allowEmpty: true
+  })
+    .pipe(less({ javascriptEnabled: true }))
     .pipe(dest(`../dist`))
+    .pipe(cleancss())
+    .pipe(rename('index.min.css'))
+    .pipe(dest(`../dist`))
+    .pipe(dest(`../lib/style`))
+    .pipe(dest(`../es/style`))
+  done()
 }
 
-function entry(cb) {
-  buildComponentCss(cb)
-  buildEntryCss(cb)
-}
-
-exports.default = gulp.series(entry)
+exports.default = gulp.series(
+  buildComponentCss,
+  buildEntryCss,
+  minCss
+)
