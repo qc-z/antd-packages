@@ -8,8 +8,8 @@ export default defineConfig({
   logo: '/images/logo.svg',
   description: '用于快速二次封装antd组件',
   // 打包路径配置
-  base: '/antd-packages',
-  // publicPath: '/antd-packages/', // 打包文件时，引入地址生成 mydocs/xxx.js
+  base: '/antd-packages/',
+  publicPath: '/antd-packages/', // 打包文件时，引入地址生成 mydocs/xxx.js
   outputPath: 'docs-dist',
   exportStatic: {}, // 对每隔路由输出html
   dynamicImport: {}, // 动态导入
@@ -61,10 +61,7 @@ export default defineConfig({
       .test(/\.(mp3|4)$/)
       .use('file-loader')
       .loader(require.resolve('file-loader'))
-    config.module
-      .rule('mjs-rule')
-      .test(/.m?js/)
-      .resolve.set('fullySpecified', false)
+    config.module.rule('mjs-rule').test(/.m?js/).resolve.set('fullySpecified', false)
   }
 
   // more config: https://d.umijs.org/config

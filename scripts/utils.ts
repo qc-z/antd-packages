@@ -23,11 +23,7 @@ module.exports = {
  * @param src {String} 要复制的目录
  * @param dist {String} 复制到目标目录
  */
-function copyDir(
-  src: string,
-  dist: string,
-  callback: (arg0: any) => void
-) {
+function copyDir(src: string, dist: string, callback: (arg0: any) => void) {
   fs.access(dist, function (err: any) {
     if (err) {
       // 目录不存在时创建目录
@@ -37,52 +33,41 @@ function copyDir(
   })
 }
 
-function _copy(
-  err: null,
-  src: string,
-  dist: string,
-  callback: (data: any) => void
-) {
+function _copy(err: null, src: string, dist: string, callback: (data: any) => void) {
   if (err) {
     callback(err)
   } else {
-    fs.readdir(
-      src,
-      function (err: any, paths: any[]) {
-        if (err) {
-          callback(err)
-        } else {
-          paths.forEach(function (path) {
-            const _src = src + '/' + path
-            const _dist = dist + '/' + path
-            fs.stat(
-              _src,
-              function (
-                err: any,
-                stat: {
-                  isFile: () => any
-                  isDirectory: () => any
-                }
-              ) {
-                if (err) {
-                  callback(err)
-                } else {
-                  // 判断是文件还是目录
-                  if (stat.isFile()) {
-                    fs.writeFileSync(
-                      _dist,
-                      fs.readFileSync(_src)
-                    )
-                  } else if (stat.isDirectory()) {
-                    // 当是目录是，递归复制
-                    copyDir(_src, _dist, callback)
-                  }
+    fs.readdir(src, function (err: any, paths: any[]) {
+      if (err) {
+        callback(err)
+      } else {
+        paths.forEach(function (path) {
+          const _src = src + '/' + path
+          const _dist = dist + '/' + path
+          fs.stat(
+            _src,
+            function (
+              err: any,
+              stat: {
+                isFile: () => any
+                isDirectory: () => any
+              }
+            ) {
+              if (err) {
+                callback(err)
+              } else {
+                // 判断是文件还是目录
+                if (stat.isFile()) {
+                  fs.writeFileSync(_dist, fs.readFileSync(_src))
+                } else if (stat.isDirectory()) {
+                  // 当是目录是，递归复制
+                  copyDir(_src, _dist, callback)
                 }
               }
-            )
-          })
-        }
+            }
+          )
+        })
       }
-    )
+    })
   }
 }

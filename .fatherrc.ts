@@ -1,20 +1,25 @@
-export default {
-  entry: 'src/index.ts',
-  esm: 'babel',
-  cjs: 'babel',
+import { defineConfig } from 'father'
+
+export default defineConfig({
+  esm: { input: 'src', ignores: ['src/**/demos/**'] },
+  cjs: { input: 'src', ignores: ['src/**/demos/**'] },
   umd: {
-    name: 'AntdPackages',
-    globals: {
-      react: 'React',
-      antd: 'antd',
-      'react-dom': 'ReactDOM',
-      'react/jsx-runtime': 'jsxRuntime'
-    }
-  },
-  // extraExternals: ['antd'],
-  extractCSS: true,
+    entry: 'src/index.ts',
+    name: 'AntdPackages'
+    // externals: {
+    //   antd: 'antd'
+    // }
+    // globals: {
+    //   react: 'React',
+    //   antd: 'antd',
+    //   'react-dom': 'ReactDOM',
+    //   'react/jsx-runtime': 'jsxRuntime'
+    // }
+  }
+  // extraExternals: ['antd']
+  // extractCSS: true,
   // lessInBabelMode: true,
-  extraRollupPlugins: []
+  // extraRollupPlugins: []
   // extraBabelPlugins: [
   //   [
   //     'babel-plugin-import',
@@ -25,4 +30,4 @@ export default {
   //     }
   //   ]
   // ]
-}
+})

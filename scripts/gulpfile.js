@@ -10,20 +10,11 @@ const rename = require('gulp-rename')
 function getComponentsName() {
   const CWD = process.cwd()
   const result = []
-  const componentEntrys = fs.readdirSync(
-    path.resolve(CWD, '../src/')
-  )
+  const componentEntrys = fs.readdirSync(path.resolve(CWD, '../src/'))
   componentEntrys.forEach((name) => {
-    let fPath = path.resolve(
-      CWD,
-      `../src/${name}`
-    )
+    let fPath = path.resolve(CWD, `../src/${name}`)
     let stats = fs.statSync(fPath)
-    if (
-      stats.isDirectory() &&
-      !~name.indexOf('.') &&
-      !~name.indexOf('style')
-    ) {
+    if (stats.isDirectory() && !~name.indexOf('.') && !~name.indexOf('style')) {
       result.push(name)
     }
   })
@@ -36,8 +27,8 @@ function buildComponentCss(done) {
       allowEmpty: true
     })
       .pipe(less({ javascriptEnabled: true }))
-      .pipe(dest(`../lib/${name}/style`))
-      .pipe(dest(`../es/${name}/style`))
+      .pipe(dest(`../dist/cjs/${name}/style`))
+      .pipe(dest(`../dist/esm/${name}/style`))
   })
   done()
 }
@@ -47,8 +38,8 @@ function buildEntryCss(done) {
     allowEmpty: true
   })
     .pipe(less({ javascriptEnabled: true }))
-    .pipe(dest(`../lib/style`))
-    .pipe(dest(`../es/style`))
+    .pipe(dest(`../dist/cjs/style`))
+    .pipe(dest(`../dist/esm/style`))
   done()
 }
 
@@ -57,17 +48,13 @@ function minCss(done) {
     allowEmpty: true
   })
     .pipe(less({ javascriptEnabled: true }))
-    .pipe(dest(`../dist`))
+    .pipe(dest(`../dist/umd`))
     .pipe(cleancss())
     .pipe(rename('index.min.css'))
-    .pipe(dest(`../dist`))
-    .pipe(dest(`../lib/style`))
-    .pipe(dest(`../es/style`))
+    .pipe(dest(`../dist/umd`))
+    .pipe(dest(`../dist/cjs/style`))
+    .pipe(dest(`../dist/esm/style`))
   done()
 }
 
-exports.default = gulp.series(
-  buildComponentCss,
-  buildEntryCss,
-  minCss
-)
+exports.default = gulp.series(buildComponentCss, buildEntryCss, minCss)
