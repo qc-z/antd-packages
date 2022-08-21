@@ -27,8 +27,8 @@ function buildComponentCss(done) {
       allowEmpty: true
     })
       .pipe(less({ javascriptEnabled: true }))
-      .pipe(dest(`../dist/cjs/${name}/style`))
-      .pipe(dest(`../dist/esm/${name}/style`))
+      .pipe(dest(`../lib/${name}/style`))
+      .pipe(dest(`../es/${name}/style`))
   })
   done()
 }
@@ -38,8 +38,8 @@ function buildEntryCss(done) {
     allowEmpty: true
   })
     .pipe(less({ javascriptEnabled: true }))
-    .pipe(dest(`../dist/cjs/style`))
-    .pipe(dest(`../dist/esm/style`))
+    .pipe(dest(`../lib/style`))
+    .pipe(dest(`../es/style`))
   done()
 }
 
@@ -52,8 +52,8 @@ function minCss(done) {
     .pipe(cleancss())
     .pipe(rename('index.min.css'))
     .pipe(dest(`../dist/umd`))
-    .pipe(dest(`../dist/cjs/style`))
-    .pipe(dest(`../dist/esm/style`))
+    .pipe(dest(`../lib/style`))
+    .pipe(dest(`../es/style`))
   done()
 }
 

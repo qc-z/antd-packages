@@ -1,6 +1,6 @@
 {
   "name": "antd-packages",
-  "version": "1.1.10",
+  "version": "1.1.12",
   "description": "帮助你快速创建react组件库(集成antd)",
   "scripts": {
     "docs:dev": "pnpm gen-entry && dumi dev",
@@ -17,13 +17,16 @@
     "prettier": "prettier --write \"**/*.{js,jsx,tsx,ts,less,md,json}\"",
     "create": "esno ./scripts/batch.ts",
     "dev": "father dev",
-    "build:deps": "father prebundle"
+    "build:deps": "father prebundle",
+    "getExports": "esno ./scripts/getExports.ts"
   },
   "main": "lib/index.js",
   "module": "es/index.js",
   "typings": "lib/index.d.ts",
-  "unpkg": "dist/index.min.js",
+  "unpkg": "dist/umd/antd-packages.min.js",
   "files": [
+    "es",
+    "lib",
     "dist"
   ],
   "keywords": [
@@ -108,6 +111,7 @@
     "fetch-jsonp": "^1.2.1",
     "file-loader": "^6.2.0",
     "gh-pages": "^4.0.0",
+    "gogocode": "^1.0.55",
     "gray-matter": "^4.0.3",
     "gulp": "^4.0.2",
     "gulp-clean-css": "^4.3.0",
@@ -121,6 +125,7 @@
     "lint-staged": "^13.0.3",
     "lodash": "^4.17.21",
     "moment": "^2.29.4",
+    "pkg-exports": "^0.1.1",
     "plop": "2.7.4",
     "prettier": "^2.7.1",
     "qs": "^6.11.0",
